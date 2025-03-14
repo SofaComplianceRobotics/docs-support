@@ -3,10 +3,10 @@ title: App User Manual
 sidebar_position: 3
 ---
 
-# App User Manual
-[emio labs user manual](https://docs-support.compliance-robotics.com/User-Manual-Software-136582ce7d3a809680a5d3326ad2e658)
+import emiolabs_overview from './img/emio-labs-overview.png';
+import exercise_overview from './img/exercise.png';
 
-# User Manual - Software
+# App User Manual
 
 ## 1. Introduction
 
@@ -39,9 +39,8 @@ Ensure your system meets the following minimum requirements:
 - Simulation Interface: Launch and interact with the numerical twin of Emio.
 - To reset the application go to **Edit > Reset App** in the main menu bar. This will reset the quiz, select the default parameters in the labs, etc.
 
-
-![emio labs overview](img/emio-labs-overview.png "emio labs overview")
-*The **emio-labs** application on the Introduction page. The main dashboard is located at the top of each page.*
+<img className="centered" src={emiolabs_overview} width="50%" alt="emio labs overview"/>
+<figcaption>The **emio-labs** application on the Introduction page. The main dashboard is located at the top of each page.</figcaption>
 
 
 
@@ -61,7 +60,7 @@ To access a lab:
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
-If you want to create your own content simply follow this [documentation](https://www.notion.so/13c582ce7d3a80ceb636ca3153f5594a?pvs=21). 
+If you want to create your own content simply follow this [documentation](create-your-lab). 
 
 ## 5. Using the Simulation Software
 
@@ -69,10 +68,10 @@ The simulation software provides a numerical twin of Emio for experimentation:
 
 - Each lab contains exercise sections within you could be asked to launch the simulation corresponding to the exercise.
 - To launch the simulation, click the **SOFA** button within the section.
-- For information about the simulation software, follow the [Simulation Software User Manual](https://www.notion.so/136582ce7d3a8087a6ddd36a4f3ed1b2?pvs=21).
+- For information about the simulation software, follow the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual).
 
-![exercise](img/exercise.png "exercise")
-_Example of a lab exercise. Notice the SOFA button at the bottom of the section. Follow the instructions and click on this button to launch the simulation of the exercise._
+<img className="centered" src={exercise_overview} width="50%" alt="overview of an exercise section"/>
+<figcaption>Example of a lab exercise. Notice the SOFA button at the bottom of the section. Follow the instructions and click on this button to launch the simulation of the exercise.</figcaption>
 
 ## 6. Piloting the Real Device
 
@@ -80,7 +79,7 @@ After completing the requirements in simulation, you may have the opportunity to
 
 - Ensure the physical device is properly connected and powered on.
 - Toggle the "Simulation/Robot" button at the top of the simulation software.
-- And finally use the interface controls to send commands to the real robot (see the [Simulation Software User Manual](https://www.notion.so/136582ce7d3a8087a6ddd36a4f3ed1b2?pvs=21)).
+- And finally use the interface controls to send commands to the real robot (see the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual)).
 
 ## 7. Sandbox
 
@@ -93,7 +92,7 @@ The **emio-labs** application offers a sandbox mode which allow you to set up Em
 
 Access supplementary materials through this website, including:
 
-- [Video tutorials](https://www.notion.so/138582ce7d3a8077bb51c7dcd901fa49?pvs=21)
-- [FAQs](https://www.notion.so/136582ce7d3a8025a374f5ad4b8a3e53?pvs=21)
+- (WIP) Video tutorials
+- [FAQs](faq)
 
 For additional help or inquiries, please contact our support team using this [form](/emio-support-form).

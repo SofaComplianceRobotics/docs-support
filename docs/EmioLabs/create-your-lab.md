@@ -1,20 +1,28 @@
 ---
 title: Create your own lab
-sidebar_position: 4
+sidebar_position: 5
 ---
+
+import emio_labs_directory from './img/emio-labs-directory.png'
+import emio_labs_dashboard from './img/emio-labs-dashboard.png'
+import emio_labs_quizopen from './img/emio-labs-quizopen.png'
+import emio_labs_quizopenanswer from './img/emio-labs-quizopenanswer.png'
+import emio_labs_qcm01 from './img/emio-labs-qcm01.png'
+import emio_labs_qcm02 from './img/emio-labs-qcm02.png'
+import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
 
 # Introduction
 The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
 
 A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the :sofaicon: button in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
-![Markdown and python files of the lab1. ](img/emio-labs-directory.png)
+<img className="centered" src={emio_labs_directory} width="20%"/>
 <figcaption>Markdown and python files of the lab1.</figcaption>
 
 # Compose your own Set of Labs
 
-![The main dashboard of the emio-labs application shows the labs content of the application. ](img/emio-labs-dashboard.png)
-*The main dashboard of the emio-labs application shows the labs content of the application.*
+<img className="centered" src={emio_labs_dashboard} width="70%"/>
+<figcaption>The main dashboard of the emio-labs application shows the labs content of the application.</figcaption>
 
 The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs simply modify this file. You'll need to provide:
 
@@ -96,12 +104,10 @@ Beam models simplify calculations compared to full three-dimensional models, red
 
 This will give the following :
 
-![Question with an open answer.](img/emio-labs-quizopen.png)
+<img className="centered" src={emio_labs_quizopen} width="70%"/>
 <figcaption>Question with an open answer.</figcaption>
 
- 
-
-![After giving an answer and clicking on the *Submit* button. ](img/emio-labs-quizopenanswer.png)
+<img className="centered" src={emio_labs_quizopenanswer} width="70%"/>
 <figcaption>After giving an answer and clicking on the `Submit` button.</figcaption>
 
 For a question with multiple choice, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the list of possible answer the next line, inside the block fence. The good answers are set with `[X]` and the wrong answers with `[]` . For example : 
@@ -118,13 +124,13 @@ For a question with multiple choice, create a block fence with the keyword `quiz
 
 This will give the following :
 
-![Question with multiple choice answer.](img/emio-labs-qcm01.png)
+<img className="centered" src={emio_labs_qcm01} width="70%"/>
 <figcaption>Question with multiple choice answer.</figcaption>
 
-![When selected the answer.](img/emio-labs-qcm03.png)
+<img className="centered" src={emio_labs_qcm03} width="70%"/>
 <figcaption>When selected the answer.</figcaption>
 
-![After submitting the answer.](img/emio-labs-qcm02.png)
+<img className="centered" src={emio_labs_qcm02} width="70%"/>
 <figcaption>After submitting the answer.</figcaption>
 
 ### **Video**

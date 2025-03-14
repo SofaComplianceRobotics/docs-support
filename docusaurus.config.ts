@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import EmioSupportForm from './src/pages/emio-support-form';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -36,6 +37,10 @@ const config: Config = {
       'classic',
       {
         docs: {
+          admonitions: {
+            keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
+            extendDefaults: true,
+          },
           sidebarPath: './sidebars.ts'
         },
         theme: {
@@ -60,10 +65,9 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Support',
+          to: 'emio-support-form'
         },
       ],
     },
