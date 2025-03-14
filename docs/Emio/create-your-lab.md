@@ -3,21 +3,18 @@ title: Create your own lab
 sidebar_position: 4
 ---
 
-The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
-
 # Introduction
+The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
 
 A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the :sofaicon: button in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
-![Markdown and python files of the lab1. ](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/2809d22b-e23b-4b54-9e6e-8c94d4ce74fb/emio-labs-directory.png)
-
-Markdown and python files of the lab1. 
+![Markdown and python files of the lab1. ](img/emio-labs-directory.png)
+<figcaption>Markdown and python files of the lab1.</figcaption>
 
 # Compose your own Set of Labs
 
-![The main dashboard of the emio-labs application shows the labs content of the application. ](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/9b599cbb-70ad-4e37-a867-f5b62bacc7fa/emio-labs-dashboard.png)
-
-The main dashboard of the emio-labs application shows the labs content of the application. 
+![The main dashboard of the emio-labs application shows the labs content of the application. ](img/emio-labs-dashboard.png)
+*The main dashboard of the emio-labs application shows the labs content of the application.*
 
 The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs simply modify this file. You'll need to provide:
 
@@ -99,15 +96,13 @@ Beam models simplify calculations compared to full three-dimensional models, red
 
 This will give the following :
 
-![Question with an open answer.](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/bbef3769-4c54-4ab8-8ee0-45a6cf5ad02d/emio-labs-quizopen.png)
-
-Question with an open answer.
+![Question with an open answer.](img/emio-labs-quizopen.png)
+<figcaption>Question with an open answer.</figcaption>
 
  
 
-![After giving an answer and clicking on the *Submit* button. ](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/164f72d6-9df1-4c3f-80b2-26390ac4aa5b/emio-labs-quizopenanswer.png)
-
-After giving an answer and clicking on the *Submit* button. 
+![After giving an answer and clicking on the *Submit* button. ](img/emio-labs-quizopenanswer.png)
+<figcaption>After giving an answer and clicking on the `Submit` button.</figcaption>
 
 For a question with multiple choice, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the list of possible answer the next line, inside the block fence. The good answers are set with `[X]` and the wrong answers with `[]` . For example : 
 
@@ -123,17 +118,14 @@ For a question with multiple choice, create a block fence with the keyword `quiz
 
 This will give the following :
 
-![Question with multiple choice answer.](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/c2008877-f395-4e82-a642-62d155b7513d/emio-labs-qcm01.png)
+![Question with multiple choice answer.](img/emio-labs-qcm01.png)
+<figcaption>Question with multiple choice answer.</figcaption>
 
-Question with multiple choice answer.
+![When selected the answer.](img/emio-labs-qcm03.png)
+<figcaption>When selected the answer.</figcaption>
 
-![When selected the answer.](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/805b6c20-9248-4ab4-9370-193d6d0da21e/emio-labs-qcm03.png)
-
-When selected the answer.
-
-![After submitting the answer.](https://prod-files-secure.s3.us-west-2.amazonaws.com/04b8ceec-edfb-425d-a33f-79d5c02834fb/64478e7b-7db3-4841-b949-253e2fdec6e5/emio-labs-qcm02.png)
-
-After submitting the answer.
+![After submitting the answer.](img/emio-labs-qcm02.png)
+<figcaption>After submitting the answer.</figcaption>
 
 ### **Video**
 

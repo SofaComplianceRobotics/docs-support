@@ -25,3 +25,17 @@
 [data-theme='dark'] {
   --ifm-color-primary: var(--cr-blue-green-light);
 }
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #777;
+  text-align: center;
+}
+
+img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
