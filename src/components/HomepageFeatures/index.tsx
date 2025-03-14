@@ -13,35 +13,23 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Emio',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    link: "/docs/category/emio",
+    title: 'Emio Labs',
+    Svg: require('@site/static/img/logo_emio_labs_light.svg').default,
+    link: "/docs/category/emio-labs",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Find all the documentation about Emio, our reconfigurable continuum parallel robot for academia. 
+        Find your labs, learn how to create your own teaching content, and more.
       </>
     ),
   },
   {
-    title: 'Simulation',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    link: "/docs/category/simulation",
+    title: 'SOFA Robotics',
+    Svg: require('@site/static/img/logo_sofa_robotics_light.svg').default,
+    link: "/docs/category/sofa-robotics",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Support Request',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    link: "/emio-support-form",
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Need help to use the simulation software with our robotic oriented GUI ? Find all the documentation here. 
       </>
     ),
   },
@@ -49,11 +37,11 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, link, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--3 col--offset-1', 'card')}>
+    <div className={clsx('col col--3 col--offset-2')}>
     <div className="card__image">
       <div className="text--center">
         <a href={link}> 
-          <Svg className={styles.featureSvg} role="img" />
+          <Svg className={styles.featureSvg} role="img" /> 
         </a>
       </div>
     </div>

@@ -1,10 +1,9 @@
 ---
-title: Emio Labs - User Manual
+title: App User Manual
 sidebar_position: 3
 ---
-import Image from '@theme/IdealImage';
 
-# Emio Labs - User Manual
+# App User Manual
 [emio labs user manual](https://docs-support.compliance-robotics.com/User-Manual-Software-136582ce7d3a809680a5d3326ad2e658)
 
 # User Manual - Software
@@ -41,8 +40,7 @@ Ensure your system meets the following minimum requirements:
 - To reset the application go to **Edit > Reset App** in the main menu bar. This will reset the quiz, select the default parameters in the labs, etc.
 
 
-<!-- ![emio labs overview](img/emio-labs-overview.png "emio labs overview") -->
-<Image img={require('./img/emio-labs-overview.png')} />
+![emio labs overview](img/emio-labs-overview.png "emio labs overview")
 *The **emio-labs** application on the Introduction page. The main dashboard is located at the top of each page.*
 
 
@@ -73,7 +71,7 @@ The simulation software provides a numerical twin of Emio for experimentation:
 - To launch the simulation, click the **SOFA** button within the section.
 - For information about the simulation software, follow the [Simulation Software User Manual](https://www.notion.so/136582ce7d3a8087a6ddd36a4f3ed1b2?pvs=21).
 
-<Image img={require('./img/exercise.png')}/>
+![exercise](img/exercise.png "exercise")
 _Example of a lab exercise. Notice the SOFA button at the bottom of the section. Follow the instructions and click on this button to launch the simulation of the exercise._
 
 ## 6. Piloting the Real Device

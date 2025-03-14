@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Docs & Support | Compliance Robotics',
+  title: 'Compliance Robotics | Docs & Support',
   tagline: 'A different kind of robotics',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/CRIcon.svg',
 
   // Set the production url of your site here
   url: 'https://docs-support.compliance-robotics.com',
@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'SofaComplianceRobotics', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'docs-support', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,13 +45,12 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      // title: 'Docs',
       logo: {
         alt: 'Compliance Robotics Logo',
-        src: 'img/cr_1L.png',
+        src: 'img/CRLogo_A2L.svg',
+        srcDark: 'img/CRLogo_B2L.svg',
+        height: "50%",
       },
       items: [
         {
@@ -61,9 +60,10 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://compliance-robotics.com',
-          label: 'Compliance Robotics',
-          position: 'right',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Support',
         },
       ],
     },
@@ -71,50 +71,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs',
-            },
-          ],
+          html: `
+          <a href="https://www.linkedin.com/company/compliance-robotics">
+             <img src="/img/footer_icon_linkedin.png" width="30" height="30" />
+          </a>
+          `
         },
         {
-          title: 'Community',
-          items: [
-            {
-              html: `
-                  <a href='https://www.youtube.com/channel/UCF3i0VVyEyDHjhjj9xRJoAQ' class="footer__link-item" target="_blank" rel="noreferrer noopener" aria-label="Link to Compliance Robotics Youtube Channel">Youtube
-                  </a>
-                `,
-            },
-            {
-              html: `
-                  <a href='https://www.linkedin.com/company/compliance-robotics' class="footer__link-item" target="_blank" rel="noreferrer noopener" aria-label="Link to Compliance Robotics LinkedIn">LinkedIn
-                  </a>
-                `,
-            }
-          ],
+          html: `
+          <a href="https://www.youtube.com/@ComplianceRobotics">
+             <img src="/img/footer_icon_youtube.png" width="30" height="30" />
+          </a>
+          `
         },
         {
-          title: 'More',
-          items: [
-            {
-              html: `
-                  <a href='https://compliance-robotics.com' class="footer__link-item" target="_blank" rel="noreferrer noopener" aria-label="Link to Compliance Robotics Website">Company Site
-                  </a>
-                `,
-            },
-            {
-              html: `
-                  <a href='https://github.com/SofaComplianceRobotics/docs' class="footer__link-item" target="_blank" rel="noreferrer noopener" aria-label="Link to GitHub Repo">GitHub
-                  </a>
-                `,
-            },
-          ],
-        },
+          html: `
+          <a href="https://www.compliance-robotics.com">
+             <img src="/img/footer_icon_CR.png" width="30" height="30" />
+          </a>
+          `
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Compliance Robotics. Built with Docusaurus.`,
+      copyright: `Copyright © 2024 - ${new Date().getFullYear()} Compliance Robotics. All rights reserved. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

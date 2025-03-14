@@ -14,15 +14,20 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          Documentation and Support Hub
+          Compliance Robotics | 
+          Docs & Support
         </Heading>
-        <p className="hero__subtitle">Compliance Robotics, {siteConfig.tagline}</p>
+        <p className="hero__subtitle">Explore our documentation and get the help you need.</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx("button button--secondary button--lg", styles.whitebutton)}
             to="/docs">
-            Documentation
+            Get Started
           </Link>
+        </div>
+        <br/>
+        <div className='center'>
+           <img src="img/emio_SOFA.jpg" width="30%"/>
         </div>
       </div>
     </header>
@@ -33,7 +38,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      description="Learn how to use our products">
+      description="Learn how to use our products.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

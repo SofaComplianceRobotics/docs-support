@@ -21,3 +21,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.whitebutton {
+  background-color: white;
+  border: 0;
+}
+
+.whitebutton:hover {
+  background-color: lightgray;
+}
