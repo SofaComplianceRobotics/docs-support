@@ -19,7 +19,10 @@
   --ifm-link-color: var(--cr-blue-light);
   --ifm-color-primary-darker: var(--cr-blue-light);
   --ifm-code-font-size: 95%;
+  --ifm-navbar-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-info-contrast-background : white;
+  --ifm-color-info-dark : var(--cr-blue-green-dark);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
