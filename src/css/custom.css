@@ -43,3 +43,7 @@ img {
   margin-right: auto;
 }
 
+a, a:hover {
+  color: #357DED;
+}
+
