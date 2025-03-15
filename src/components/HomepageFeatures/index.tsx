@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Emio Support',
-    Svg: require('@site/static/img/icon_support.svg').default,
+    Svg: require('@site/static/img/icon_support_light.svg').default,
     link: "/emio-support-form",
     description: (
       <>
