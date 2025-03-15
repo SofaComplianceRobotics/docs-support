@@ -3,6 +3,8 @@ title: Frequently Asked Questions
 sidebar_position: 1
 ---
 
+# Frequently Asked Questions
+
 ## My Robot
 
 <details> 

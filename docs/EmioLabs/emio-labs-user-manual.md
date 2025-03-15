@@ -8,13 +8,13 @@ import exercise_overview from './img/exercise.png';
 
 # App User Manual
 
-## 1. Introduction
+## Introduction
 
 Welcome to the user manual of the software **emio-labs**. This desktop application is designed to teach soft robotics through interactive labs. This manual will guide you through the application's features and help you navigate the learning process.
 
-## 2. Getting Started
+## Getting Started
 
-### 2.1 System Requirements
+### System Requirements
 
 Ensure your system meets the following minimum requirements:
 
@@ -22,7 +22,7 @@ Ensure your system meets the following minimum requirements:
 - RAM: 8GB minimum, 16GB recommended
 - Storage: 2GB free space
 
-### 2.2 Installation
+### Installation
 
 1. [Download](https://compliance-robotics.com/compliance-lab/) the **emio-labs** application and follow the instructions provided with the download links. Download the version that corresponds to your OS. There are three options, an installer, a portable version, or a `.zip` file containing the binaries:
     1. If you have downloaded an installer, run it and follow the on-screen instructions. When the installation is completed, simply search for the **emio-labs** application on your computer, as you would do with any other software.
@@ -30,7 +30,7 @@ Ensure your system meets the following minimum requirements:
     3. If you have downloaded the `.zip` file, first, unzip the directory. The **emio-labs** application is then located at the root of the directory. 
 2. Launch the **emio-labs** application after installation is complete.
 
-## 3. Application Overview
+## Application Overview
 
 **emio-labs** consists of several key components:
 
@@ -44,7 +44,7 @@ Ensure your system meets the following minimum requirements:
 
 
 
-## 4. Navigating the Labs
+## Navigating the Labs
 
 The original content of **emio-labs** created by Compliance Robotics offers a series of labs covering various aspects of soft robotics:
 
@@ -62,7 +62,7 @@ To access a lab:
 
 If you want to create your own content simply follow this [documentation](create-your-lab). 
 
-## 5. Using the Simulation Software
+## Using the Simulation Software
 
 The simulation software provides a numerical twin of Emio for experimentation:
 
@@ -73,7 +73,7 @@ The simulation software provides a numerical twin of Emio for experimentation:
 <img className="centered" src={exercise_overview} width="50%" alt="overview of an exercise section"/>
 <figcaption>Example of a lab exercise. Notice the SOFA button at the bottom of the section. Follow the instructions and click on this button to launch the simulation of the exercise.</figcaption>
 
-## 6. Piloting the Real Device
+## Piloting the Real Device
 
 After completing the requirements in simulation, you may have the opportunity to pilot the real soft robot:
 
@@ -81,14 +81,14 @@ After completing the requirements in simulation, you may have the opportunity to
 - Toggle the "Simulation/Robot" button at the top of the simulation software.
 - And finally use the interface controls to send commands to the real robot (see the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual)).
 
-## 7. Sandbox
+## Sandbox
 
 The **emio-labs** application offers a sandbox mode which allow you to set up Emio exactly as you want. Using the original set of legs and connectors or your own designed parts. In the main dashboard click on the Sandbox link to open the corresponding page: 
 
 1. Follow the instructions to help you set up your Emio and the numerical twin.
 2. Launch the corresponding simulation by clicking on the SOFA button as usual, and enjoy.
 
-## 8. Additional Resources
+## Additional Resources
 
 Access supplementary materials through this website, including:
 
