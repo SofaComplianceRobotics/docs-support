@@ -15,6 +15,7 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: var(--cr-blue-green-dark);
+  --ifm-color-herobanner: var(--cr-blue);
   --ifm-color-secondary: var(--cr-blue-green-light);
   --ifm-link-color: var(--cr-blue-light);
   --ifm-color-primary-darker: var(--cr-blue-light);
@@ -28,6 +29,7 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: var(--cr-blue-green-light);
+  --ifm-color-herobanner: var(--cr-blue-green-light);
 }
 
 figcaption {
