@@ -11,7 +11,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero hero--primary', styles.heroBannerHomePage)}>
         <div style={{display: "flex", alignItems:"center"}}>
           <div className="container" style={{flex: "1 1 0%"}}>
             <Heading as="h1" className="hero__title">
