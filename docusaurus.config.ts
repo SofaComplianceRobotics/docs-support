@@ -77,7 +77,11 @@ const config: Config = {
         },
         {
           type: 'docsVersionDropdown',
-          position: 'right'
+          position: 'right',
+          versions: {
+            current: {label: 'v25.06-coming'},
+            'v24.12': {label: 'v24.12'},
+          },
         },
       ],
     },
