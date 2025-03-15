@@ -106,7 +106,7 @@ const config: Config = {
           `
         }
       ],
-      copyright: `Copyright © 2024 - ${new Date().getFullYear()} Compliance Robotics. All rights reserved. Built with Docusaurus.`,
+      copyright: `Copyright © 2024 - ${new Date().getFullYear()} Compliance Robotics. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

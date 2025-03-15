@@ -33,11 +33,22 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    title: 'Emio Support',
+    Svg: require('@site/static/img/icon_support.svg').default,
+    link: "/emio-support-form",
+    description: (
+      <>
+        Browse the documentation and frequently asked questions. 
+        If you can't find the answer to your question, feel free to reach out to us using this form.
+      </>
+    ),
+  },
 ];
 
 function Feature({title, Svg, link, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--3 col--offset-2')}>
+    <div className={clsx('col col--3 col--offset-1')}>
     <div className="card__image">
       <div className="text--center">
         <a href={link}> 
