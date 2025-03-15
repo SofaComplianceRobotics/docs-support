@@ -12,7 +12,7 @@ function PageHeader() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <Heading as="h1" className="hero__title">
-          Emio Support Request Form
+          Support Request Form
           </Heading>
           <p className="hero__subtitle">Please fill out this form to create a support request.</p>
         </div>

@@ -5,6 +5,8 @@ sidebar_position: 1
 
 # Frequently Asked Questions
 
+Check the following list of frequently asked questions. If you can't find the answer to your question here, feel free to reach out to us using this [form](/emio-support-form).
+
 ## My Robot
 
 <details> 

@@ -10,6 +10,8 @@ import robotbutton from './img/gui-robot-button.png';
 import simulationbutton from './img/gui-simulation-button.png';
 import viewportbuttons from './img/gui-viewport-buttons.png';
 
+Learn how to use the graphical user interface (GUI) for SOFA Robotics, designed to facilitate the programming and control of your robot simulations.
+
 :::note[about]
 [SOFA](https://www.sofa-framework.org/) is an open-source framework designed for interactive mechanical simulations, with a strong focus on bio-mechanics and robotics. It provides advanced constitutive models and algorithms for efficiently computing both soft and rigid body dynamics. SOFA supports linear and non-linear elastic models, offers both explicit and implicit integration schemes, and includes traditional linear solvers. This powerful engine integrates numerous algorithms and models, making it highly suitable for complex simulation needs in bio-mechanics and robotics.
 

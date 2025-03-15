@@ -13,6 +13,8 @@ import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
 
 # Create your own Lab
 
+Learn how to create your own labs for the **emio-labs** application.
+
 ## Introduction
 The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
 

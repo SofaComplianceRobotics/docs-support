@@ -65,9 +65,19 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          position: 'left',
+          type: 'dropdown',
           label: 'Support',
-          to: 'emio-support-form'
+          position: 'left',
+          items: [
+            {
+              label: 'Emio',
+              to: 'emio-support-form',
+            }
+          ],
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right'
         },
       ],
     },

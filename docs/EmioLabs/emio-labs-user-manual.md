@@ -8,6 +8,8 @@ import exercise_overview from './img/exercise.png';
 
 # App User Manual
 
+Learn how to use the **emio-labs** application.
+
 ## Introduction
 
 Welcome to the user manual of the software **emio-labs**. This desktop application is designed to teach soft robotics through interactive labs. This manual will guide you through the application's features and help you navigate the learning process.
