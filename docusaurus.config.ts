@@ -55,6 +55,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
   themeConfig: {
     navbar: {
       logo: {
@@ -123,6 +124,24 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/EmioLabs/find-labs',
+            from: '/Find-your-Labs-13c582ce7d3a802bbe72d37b72e02e50',
+          },
+          {
+            to: '/docs/EmioLabs/create-your-lab',
+            from: '/Create-your-own-Labs-13c582ce7d3a80ceb636ca3153f5594a',
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 export default config;
