@@ -62,7 +62,7 @@ To access a lab:
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
-If you want to create your own content simply follow this [documentation](create-your-lab). 
+If you want to create your own content simply follow this [documentation](/docs/EmioLabs/create-your-lab). 
 
 ## Using the Simulation Software
 
@@ -70,7 +70,7 @@ The simulation software provides a numerical twin of Emio for experimentation:
 
 - Each lab contains exercise sections within you could be asked to launch the simulation corresponding to the exercise.
 - To launch the simulation, click the **SOFA** button within the section.
-- For information about the simulation software, follow the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual).
+- For information about the simulation software, follow the [SOFA Robotics docs](/docs/SOFARobotics/GUI-user-manual).
 
 <img className="centered" src={exercise_overview} width="50%" alt="overview of an exercise section"/>
 <figcaption>Example of a lab exercise. Notice the SOFA button at the bottom of the section. Follow the instructions and click on this button to launch the simulation of the exercise.</figcaption>
@@ -81,7 +81,7 @@ After completing the requirements in simulation, you may have the opportunity to
 
 - Ensure the physical device is properly connected and powered on.
 - Toggle the "Simulation/Robot" button at the top of the simulation software.
-- And finally use the interface controls to send commands to the real robot (see the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual)).
+- And finally use the interface controls to send commands to the real robot (see the [SOFA Robotics docs](/docs/SOFARobotics/GUI-user-manual)).
 
 ## Sandbox
 
@@ -95,6 +95,6 @@ The **emio-labs** application offers a sandbox mode which allow you to set up Em
 Access supplementary materials through this website, including:
 
 - (WIP) Video tutorials
-- [FAQs](faq)
+- [FAQs](/docs/EmioLabs/faq)
 
 For additional help or inquiries, please contact our support team using this [form](/emio-support-form).

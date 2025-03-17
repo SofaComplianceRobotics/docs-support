@@ -11,10 +11,11 @@ const config: Config = {
   favicon: 'img/CRIcon.svg',
 
   // Set the production url of your site here
-  // url: 'https://docs-support.compliance-robotics.com',
+  // url: 'https://SofaComplianceRobotics.github.io',
+  url: 'https://docs-support.compliance-robotics.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'docs-support',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -96,21 +97,21 @@ const config: Config = {
         {
           html: `
           <a href="https://www.linkedin.com/company/compliance-robotics">
-             <img src="/img/footer_icon_linkedin.png" width="30" height="30" />
+             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_linkedin.png' width="30" height="30" />
           </a>
           `
         },
         {
           html: `
           <a href="https://www.youtube.com/@ComplianceRobotics">
-             <img src="/img/footer_icon_youtube.png" width="30" height="30" />
+             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_youtube.png' width="30" height="30" />
           </a>
           `
         },
         {
           html: `
           <a href="https://www.compliance-robotics.com">
-             <img src="/img/footer_icon_CR.png" width="30" height="30" />
+             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_CR.png' width="30" height="30" />
           </a>
           `
         }
