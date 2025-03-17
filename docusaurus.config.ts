@@ -11,15 +11,20 @@ const config: Config = {
   favicon: 'img/CRIcon.svg',
 
   // Set the production url of your site here
-  url: 'https://docs-support.compliance-robotics.com',
+  // url: 'https://docs-support.compliance-robotics.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: 'docs-support',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'SofaComplianceRobotics', // Usually your GitHub org/user name.
   projectName: 'docs-support', // Usually your repo name.
+  // deploymentBranch: '', // The name of the deployment branch. 
+  // It defaults to 'gh-pages' for non-organization GitHub Pages repos (projectName not ending in .github.io). 
+  // Otherwise, it needs to be explicit as a config field or environment variable.
+  trailingSlash: true, //GitHub Pages adds a trailing slash to Docusaurus URLs by default. 
+  // It is recommended to set a trailingSlash config (true or false, not undefined).
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
