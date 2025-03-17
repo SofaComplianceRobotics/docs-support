@@ -1,8 +1,0 @@
-{
-  "label": "SOFA Robotics",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Need help to use the simulation software with our robotic oriented GUI ? Find all the documentation here."
-  }
-}
