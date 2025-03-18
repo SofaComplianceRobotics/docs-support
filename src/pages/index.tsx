@@ -13,6 +13,7 @@ function HomepageHeader() {
   return (
       <header className={clsx('hero hero--primary', styles.heroBannerHomePage)}>
         <div style={{display: "flex", alignItems:"center"}}>
+
           <div className="container" style={{flex: "1 1 0%"}}>
             <Heading as="h1" className="hero__title">
               Compliance Robotics | 
@@ -28,8 +29,9 @@ function HomepageHeader() {
               </Link>
             </div>
           </div>
-          <img src="img/emio_SOFA.jpg" style={{width:"40%", height:"100%", borderRadius:"0", clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
-}}/>
+
+          <img src="img/emio_SOFA.jpg" className={styles.heroBannerImage}/>
+
         </div>
       </header>
   );

@@ -9,21 +9,27 @@
   position: relative;
   overflow: hidden;
   background-color: var(--ifm-color-herobanner);
-}
-
-@media screen and (max-width: 996px) {
-  .heroBannerHomePage, .heroBanner {
-    padding: 0rem;
-  }
+  min-height: 400px;
 }
 
 .heroBanner {
   padding: 4rem 0;
 }
 
+.heroBannerImage {
+  width: 40%;
+  border-radius: 0; 
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+  object-fit: cover;
+  min-height: 400px;
+}
+
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .heroBannerHomePage, .heroBanner {
+    padding: 2rem 0;
+  }
+  .heroBannerImage {
+    display: none  ;
   }
 }
 
