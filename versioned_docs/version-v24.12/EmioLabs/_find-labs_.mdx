@@ -1,0 +1,39 @@
+export const LabDescription = ({description, image}) => (
+    <div
+      style={{
+          display: 'flex',
+      }}>
+      <div style={{ flex: '1 1 0%', 'padding-right': '2rem' }}>{description}</div>
+      <div style={{ flex: '0 0 30%' }}>{image}</div>
+    </div>
+  );
+
+<!-- AUTHORS PRESENTATION -->
+export const AuthorPresentation = ({bio, photo}) => (
+    <div
+      style={{
+          display: 'flex',
+      }}>
+      <div style={{ flex: '0 0 10%'}}>{photo}</div>
+      <div style={{ flex: '1 1 0%', 'padding-left': '1rem' }}>{bio}</div>
+    </div>
+  );
+
+<!-- Quentin Peyron -->
+import quentinpeyronphoto from './img/quentinpeyron.png';
+export const QuentinPeyronLink = () => (
+    <a href="https://www.linkedin.com/in/quentin-peyron-22924683/?originalSubdomain=fr">Quentin Peyron</a>
+)
+export const QuentinPeyron = () => (
+    <AuthorPresentation 
+        bio={<>
+            Quentin Peyron is currently a Researcher with INRIA, <a href='https://www.defrost.inria.fr/'>DEFROST Team</a>, Lille, France. His research interests include the modeling, singularity analysis, and design and control of deformable robots. He focuses in particular on the eco-design of soft parallel robots, which are promising candidates to tackle social and environmental challenges in robotics.  
+        </>}
+        photo={<>
+            <img src={quentinpeyronphoto}/> 
+        </>}
+    />
+)
+
+
+

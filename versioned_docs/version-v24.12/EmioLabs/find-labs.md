@@ -8,17 +8,9 @@ import lab_inverse from './img/emio-SOFA-extended.png';
 import project_picknplace from './img/emio-gripper-contact3.png';
 import lab_design from './img/legDesign.png';
 import lab_closed from './img/emio-simulationgui.png';
+import {LabDescription} from './_find-labs_.mdx';
+import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 
-export const LabDescription = ({description, image}) => (
-  <div
-    style={{
-        display: 'flex',
-        padding: '0.2rem',
-    }}>
-    <div style={{ flex: '1 1 0%', 'padding-right': '2rem' }}>{description}</div>
-    <div style={{ flex: '0 0 30%' }}>{image}</div>
-  </div>
-);
 
 # Find your Labs
 
@@ -32,7 +24,7 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Discover and analyse different models. Discover the accuracy and limitation of continuum mechanics models.**
@@ -51,7 +43,7 @@ Author: Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Explore the principles of inverse kinematics as applied to soft robots, and write your own inverse kinematic solver in python.**
@@ -71,7 +63,7 @@ Author: Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Start from scratch, end up with a full deformable pick & place robot, and solve a pick and place task.**
@@ -88,8 +80,10 @@ Author: Compliance Robotics \
 ## Lab 3. Design
 
 :::verified
-Author: Compliance Robotics \
-*Distributed with Emio*
+Authors: <QuentinPeyronLink/> & Compliance Robotics \
+*Distributed with the Emio Labs application*
+
+<QuentinPeyron/>
 :::
 
 **Design your own legs and gripper for Emio, and check their performance in simulation.**
@@ -107,7 +101,7 @@ Author: Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Discover closed loop control strategies, from basic inverse kinematic proportional control, to state feedback plus observer.**

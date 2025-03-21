@@ -8,17 +8,9 @@ import lab_inverse from './img/emio-SOFA-extended.png';
 import project_picknplace from './img/emio-gripper-contact3.png';
 import lab_design from './img/legDesign.png';
 import lab_closed from './img/emio-simulationgui.png';
+import {LabDescription} from './_find-labs_.mdx';
+import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 
-export const LabDescription = ({description, image}) => (
-  <div
-    style={{
-        display: 'flex',
-        padding: '0.2rem',
-    }}>
-    <div style={{ flex: '1 1 0%', 'padding-right': '2rem' }}>{description}</div>
-    <div style={{ flex: '0 0 30%' }}>{image}</div>
-  </div>
-);
 
 # Find your Labs
 
@@ -28,11 +20,11 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 *[Easily compose your labs and add your own content](/docs/EmioLabs/create-your-lab). Share your content for Emio with the community. Contact us to add your content to this page by sending an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).*
 :::
 
-## Lab 1. Models for Soft Robotics
+## Lab - Models for Soft Robotics
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Discover and analyse different models. Discover the accuracy and limitation of continuum mechanics models.**
@@ -43,15 +35,15 @@ Author: Compliance Robotics \
     </>}
     image={<>
     <img className="centered" src={lab_models} width="250px"/>
-    <figcaption> Lab 1. Models </figcaption>
+    <figcaption> Lab Models </figcaption>
     </>}
 />
 
-## Lab 2. Inverse Kinematics
+## Lab - Inverse Kinematics
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Explore the principles of inverse kinematics as applied to soft robots, and write your own inverse kinematic solver in python.**
@@ -63,15 +55,15 @@ Author: Compliance Robotics \
     </>}
     image={<>
     <img className="centered" src={lab_inverse} width="250px"/>
-    <figcaption> Lab 2. Inverse Kinematics </figcaption>
+    <figcaption> Lab Inverse Kinematics </figcaption>
     </>}
 />
 
-## Project 1. Pick & Place
+## Project - Pick & Place
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Start from scratch, end up with a full deformable pick & place robot, and solve a pick and place task.**
@@ -81,33 +73,35 @@ Author: Compliance Robotics \
     </>}
     image={<>
     <img className="centered" src={project_picknplace} width="250px"/>
-    <figcaption> Project 1. Pick & Place </figcaption>
+    <figcaption> Project Pick & Place </figcaption>
     </>}
 />
 
-## Lab 3. Design
+## Lab - Design
 
 :::verified
-Author: Compliance Robotics \
-*Distributed with Emio*
+Authors: <QuentinPeyronLink/> & Compliance Robotics \
+*Distributed with the Emio Labs application*
+
+<QuentinPeyron/>
 :::
 
 **Design your own legs and gripper for Emio, and check their performance in simulation.**
 
 <LabDescription
-    description={<>In this lab session, we will work on the design of the flexible legs composing Emio such that a pick & place task can be realized.In particular, we aim at picking an object which is not reachable with the initial design of the robot.For that purpose, we propose you to follow an iterative and interactive design process where fast mechanical simulations are used to predict the system behavior and performances.
+    description={<>In this lab, we will work on the design of the flexible legs composing Emio such that a pick & place task can be realized.In particular, we aim at picking an object which is not reachable with the initial design of the robot. For that purpose, we propose you to follow an iterative and interactive design process where fast mechanical simulations are used to predict the system behavior and performances.
     </>}
     image={<>
     <img className="centered" src={lab_design} width="250px"/>
-    <figcaption> Lab 3. Design </figcaption>
+    <figcaption> Lab Design </figcaption>
     </>}
 />
 
-## Lab 4. Closed Loop
+## Lab - Closed Loop
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with Emio*
+*Distributed with the Emio Labs application*
 :::
 
 **Discover closed loop control strategies, from basic inverse kinematic proportional control, to state feedback plus observer.**
@@ -121,6 +115,6 @@ Author: Compliance Robotics \
     </>}
     image={<>
     <img className="centered" src={lab_closed} width="250px"/>
-    <figcaption> Lab 4. Closed Loop </figcaption>
+    <figcaption> Lab Closed Loop </figcaption>
     </>}
 />
