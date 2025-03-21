@@ -53,8 +53,8 @@ The original content of **emio-labs** created by Compliance Robotics offers a se
 - Modeling
 - Inverse Kinematics
 - Pick & Place
-- Design Principles
-- Control
+- Design 
+- Closed Loop
 
 To access a lab:
 

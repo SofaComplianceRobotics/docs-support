@@ -6,7 +6,6 @@ import programwindow from './img/gui-program-window.png';
 import movewindow from './img/gui-move-window.png';
 import myrobotwindow from './img/gui-myrobot-window.png';
 import plottingwindow from './img/gui-plotting-window.png';
-import robotbutton from './img/gui-robot-button.png';
 import simulationbutton from './img/gui-simulation-button.png';
 import viewportbuttons from './img/gui-viewport-buttons.png';
 
@@ -25,7 +24,10 @@ At Compliance Robotics, we have developed a dedicated graphical user interface (
 
 ### Simulation & Windows
 
-The software consists of two main components: a 3D view of the simulation and a set of windows. In the 3D view, you can observe the simulated robot. The windows offer various functionalities, enabling you to program or directly control your robot.
+The software consists of two main components: a 3D view of the simulation and a set of windows. In the 3D view, you can observe the simulated robot.
+To change what is displayed in the 3D view, from the main bar, go to **View>Viewport**. 
+
+The windows offer various functionalities, enabling you to program or directly control your robot.
 
 #### Overview of the Windows
 
@@ -34,17 +36,15 @@ The software consists of two main components: a 3D view of the simulation and a 
 - **Input/Output (beta):** Create your program using inputs from external software.
 - **My Robot:** View information about the robot and adjust settings.
 - **Plotting:** Display simulation data in graphical form.
-- **Display Options:** Customize the visual presentation of the simulation.
 
 #### Overview of the Viewport
 
 - 3D view of the simulated robot.
 - **Play/Pause/Step** the simulation using the buttons at the top center of the 3D view.
 - TCP target visualized as a frame (blue, red, and green).
-- The *Simulation State* pane shows data like TCP position.
-- Use the **Driving Tab** to choose which tab (window) controls the TCP target:
+- Use the *combo box* near the *play/pause/step* buttons to choose which window controls the TCP target:
     - Move (via sliders)
-    - Input/Output (beta: via an external software)
+    - Input/Output (wip: via an external software)
     - Program (via way-points)
 
 
@@ -53,7 +53,6 @@ The software consists of two main components: a 3D view of the simulation and a 
 The *Simulation/Robot* switch button toggles the connection between the simulation and the real robot. In *Simulation* mode, the robot remains stationary. It's advisable to use this mode to test your programs before operating the actual robot.
 
 <img className="centered" src={simulationbutton} alt="Simulation/Robot switch button" width="15%"/>
-<img className="centered" src={robotbutton} alt="Simulation/Robot switch button" width="15%"/>
 <figcaption>Simulation/Robot switch button</figcaption>
 
 ### Light / Dark Mode
@@ -97,6 +96,7 @@ The *Program Window* also has the following buttons (from left to right):
 - **Import**: Import a program (.crprog file) to the software
 - **Export**: Export a program
 - **Restart**: Restart the program
+- **Display Blocks** based on simulation time or not 
 - **Draw** the trajectory
 - **Repeat**: Repeat the entire program from start to end
 - **Reverse**: Loop the entire program, going forward and backward
@@ -123,7 +123,7 @@ This window is particularly useful for:
 </div>
 </div>
 
-### Input/Output Window (beta)
+### Input/Output Window (WIP)
 
 The Input/Output Window allows you to interface the simulation with external software. Using communication protocols like ROS (Robot Operating System), you can send data directly to control the robot's behavior.
 
@@ -141,7 +141,7 @@ The window provides options to configure the communication settings and monitor 
 <div style={{flex: "1 1 0%"}}>
 The *My Robot Window* displays essential information about your robot and allows you to adjust various settings. Key features include:
 
-- **Robot Information:** View technical specifications, model details, and current status of your robot
+- **Robot Information:** View technical specifications
 - **Settings Configuration:** Adjust operational parameters such as maximum speed and acceleration
 </div>
 <div style={{flex: "0 0 40%"}}>
@@ -169,7 +169,6 @@ This tool is particularly useful for:
 - Analyzing robot movement patterns
 - Verifying program execution
 - Debugging unexpected behavior
-- Performance optimization
 
 <img className="centered" src={plottingwindow} alt="Plotting Window" width="100%"/>
 <figcaption>Plotting Window</figcaption>

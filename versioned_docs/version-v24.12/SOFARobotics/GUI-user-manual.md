@@ -31,7 +31,6 @@ The software consists of two main components: a 3D view of the simulation and a 
 
 - **Program:** Create a program for your robot
 - **Move:** Directly control your robot using sliders for the tool center point’s (TCP) target or motor adjustments.
-- **Input/Output (beta):** Create your program using inputs from external software.
 - **My Robot:** View information about the robot and adjust settings.
 - **Plotting:** Display simulation data in graphical form.
 - **Display Options:** Customize the visual presentation of the simulation.
@@ -123,25 +122,13 @@ This window is particularly useful for:
 </div>
 </div>
 
-### Input/Output Window (beta)
-
-The Input/Output Window allows you to interface the simulation with external software. Using communication protocols like ROS (Robot Operating System), you can send data directly to control the robot's behavior.
-
-This integration enables:
-
-- Real-time control of the robot from external applications
-- Data exchange between the simulation and other robotics software
-- Implementation of custom control algorithms developed in other environments
-
-The window provides options to configure the communication settings and monitor the data flow between the simulation and external software.
-
 ### My Robot Window
 
 <div style={{display: "flex"}}>
 <div style={{flex: "1 1 0%"}}>
 The *My Robot Window* displays essential information about your robot and allows you to adjust various settings. Key features include:
 
-- **Robot Information:** View technical specifications, model details, and current status of your robot
+- **Robot Information:** View technical specifications
 - **Settings Configuration:** Adjust operational parameters such as maximum speed and acceleration
 </div>
 <div style={{flex: "0 0 40%"}}>
@@ -169,7 +156,6 @@ This tool is particularly useful for:
 - Analyzing robot movement patterns
 - Verifying program execution
 - Debugging unexpected behavior
-- Performance optimization
 
 <img className="centered" src={plottingwindow} alt="Plotting Window" width="100%"/>
 <figcaption>Plotting Window</figcaption>
