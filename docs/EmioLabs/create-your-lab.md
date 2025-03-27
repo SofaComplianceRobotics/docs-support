@@ -10,6 +10,7 @@ import emio_labs_quizopenanswer from './img/emio-labs-quizopenanswer.png'
 import emio_labs_qcm01 from './img/emio-labs-qcm01.png'
 import emio_labs_qcm02 from './img/emio-labs-qcm02.png'
 import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
+import emio_labs_input from './img/emio-labs-input.png'
 
 # Create your own Lab
 
@@ -217,6 +218,25 @@ We use the icon library [font awesome](https://fontawesome.com/icons). For exa
 ```markdown
 #icon(warning)
 ```
+
+#### **Input**
+
+```markdown
+#input("MY_UNIQUE_INPUT_NAME", "MY_OPTIONAL_PLACEHOLDER", "MY_OPTIONAL_DEFAULT_VALUE")
+```
+
+For example:
+
+```markdown
+#input("customleg") // no placeholder and no default value
+#input("customleg", "leg name") // with placeholder
+#input("customleg", "leg name", "blueleg") // with placeholder and default value
+#input("customleg", "", "blueleg") // no placeholder and default value
+```
+
+<img className="centered" src={emio_labs_input} width="40%"/>
+<figcaption>Input example. (left) Placeholder. (right) Value.</figcaption>
+
 
 ## Share your Labs
 
