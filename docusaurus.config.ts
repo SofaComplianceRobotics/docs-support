@@ -72,6 +72,10 @@ const config: Config = {
           label: 'Documentation',
         },
         {
+          to: 'blog', 
+          label: 'News', 
+          position: 'left'}, 
+        {
           type: 'dropdown',
           label: 'Support',
           position: 'left',
