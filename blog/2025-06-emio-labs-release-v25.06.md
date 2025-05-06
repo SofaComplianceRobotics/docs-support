@@ -1,25 +1,13 @@
 ---
 title: emio-labs v25.06
-description: This is my first post on Docusaurus.
-slug: welcome-docusaurus-v2
+description: We are happy to announce **emio-labs v25.06**.
 authors:
-  - name: Hanae Rateau
-    title: R&D Software Engineer
-    url: https://hanaerateau.com/
-    image_url: https://avatars.githubusercontent.com/u/12253361?v=4
-    socials:
-      github: HanaeRateau
-      linkedin: https://www.linkedin.com/in/hanaerateau/
-  - name: Eulalie Coevoet
-    title: R&D Software Engineer
-    url: https://eulaliecoevoet.com
-    image_url: https://avatars.githubusercontent.com/u/12150715?v=4
-    socials:
-      github: EulalieCoevoet
-      linkedin: https://www.linkedin.com/in/eulalie-coevoet-216b669a/
-tags: [v25.06, emio-labs, sofa-robotics]
+  - hanaerateau
+  - eulaliecoevoet
+tags: [v25.06, release, emio-labs]
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
+date: 2025-06-30T10:00
 ---
 
 We are happy to announce **emio-labs v25.06**. With this release emio-labs is now available for MacOS. 

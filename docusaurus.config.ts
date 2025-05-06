@@ -52,6 +52,12 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: {
+          blogTitle: 'News',
+          postsPerPage: 3,
+          blogSidebarTitle: 'All news',
+          blogSidebarCount: 'ALL',
+        },
       } satisfies Preset.Options,
     ],
   ],
