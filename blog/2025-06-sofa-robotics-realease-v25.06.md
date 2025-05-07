@@ -1,5 +1,5 @@
 ---
-title: sofa-robotics v25.06
+title: release - sofa-robotics v25.06
 description: We are happy to announce **sofa-robotics v25.06**
 slug: welcome-docusaurus-v2
 authors:

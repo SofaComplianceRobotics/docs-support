@@ -1,5 +1,5 @@
 ---
-title: emio-labs v25.06
+title: release - emio-labs v25.06
 description: We are happy to announce **emio-labs v25.06**.
 authors:
   - hanaerateau
