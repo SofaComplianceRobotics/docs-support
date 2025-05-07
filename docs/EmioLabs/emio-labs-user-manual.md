@@ -20,17 +20,42 @@ Welcome to the user manual of the software **emio-labs**. This desktop applicati
 
 Ensure your system meets the following minimum requirements:
 
-- Operating System (OS) minimum: Windows 10 or Ubuntu 22.04
+- Operating System (OS) minimum: Windows 10, Ubuntu 22.04 or MacOS14
 - RAM: 8GB minimum, 16GB recommended
 - Storage: 2GB free space
 
 ### Installation
 
-1. [Download](https://compliance-robotics.com/compliance-lab/) the **emio-labs** application and follow the instructions provided with the download links. Download the version that corresponds to your OS. There are three options, an installer, a portable version, or a `.zip` file containing the binaries:
-    1. If you have downloaded an installer, run it and follow the on-screen instructions. When the installation is completed, simply search for the **emio-labs** application on your computer, as you would do with any other software.
-    2. If you have downloaded a portable version (`.appImage` for Linux, `.exe` for Windows), just untar the file if necessary, the **emio-labs** application is the resulting executable file.  
-    3. If you have downloaded the `.zip` file, first, unzip the directory. The **emio-labs** application is then located at the root of the directory. 
-2. Launch the **emio-labs** application after installation is complete.
+Visit our [website](https://compliance-robotics.com/compliance-lab/) and download the **emio-labs** application for free. After completing a form, you'll receive an email with download links. Choose the version that matches your operating system. Each version comes in three formats: an installer, a portable version, or a `.zip` file containing the binaries.
+
+Once installed, try the emio-labs application. 
+
+:::tip[important]
+A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
+:::
+
+### Installation on Linux
+
+1. **Installer.** If you have downloaded an installer `.deb`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **emio-labs** application on your computer, as you would do with any other software.
+2. **Portable.** If you have downloaded a portable version `.appImage`, untar the file, the **emio-labs** application is the resulting executable file.   
+3. **Binaries.** If you have downloaded the `.zip` file, first, unzip the directory. The **emio-labs** application is then located at the root of the directory. 
+
+:::note[requirements]
+The `.appImage` needs libfuse2 to be installed: `sudo apt install libfuse2`
+::: 
+
+### Installation on Windows
+
+1. **Installer.** If you have downloaded an installer `.msi`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **emio-labs** application on your computer, as you would do with any other software.
+2. **Portable.** If you have downloaded a portable version `.exe`, the **emio-labs** application is this executable file. Note that the application may take a while to open, as the software needs to install itself in a temporary directory before launching.   
+3. **Binaries.** If you have downloaded the `.zip` file, first, unzip the directory. The **emio-labs** application is then located at the root of the directory. 
+
+:::note[requirements]
+All versions require [Microsoft Visual C++ 2022 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed.
+:::
+
+### Installation on MacOS
+
 
 ## Application Overview
 
@@ -38,7 +63,7 @@ Ensure your system meets the following minimum requirements:
 
 - Main Dashboard: Navigate between different labs and access resources.
 - Lab Environment: Interactive space where you'll follow learning materials and complete exercises and simulations.
-- Simulation Interface: Launch and interact with the numerical twin of Emio.
+- Simulation Interface (sofa-robotics): Launch and interact with the numerical twin of Emio.
 - To reset the application go to **Edit > Reset App** in the main menu bar. This will reset the quiz, select the default parameters in the labs, etc.
 
 <img className="centered" src={emiolabs_overview} width="50%" alt="emio labs overview"/>
@@ -80,8 +105,8 @@ The simulation software provides a numerical twin of Emio for experimentation:
 After completing the requirements in simulation, you may have the opportunity to pilot the real soft robot:
 
 - Ensure the physical device is properly connected and powered on.
-- Toggle the "Simulation/Robot" button at the top of the simulation software.
-- And finally use the interface controls to send commands to the real robot (see the [SOFA Robotics docs](/docs/SOFARobotics/GUI-user-manual)).
+- Toggle the "Simulation/Robot" button at the top of the simulation software to establish a connection between the simulator and the real device. When in "Robot" mode, pressing the play button will send simulation commands directly to the real device. 
+- And finally use the interface controls to pilote Emio (see the [SOFA Robotics docs](/docs/SOFARobotics/GUI-user-manual)).
 
 ## Sandbox
 
