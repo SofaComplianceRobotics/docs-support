@@ -1,5 +1,5 @@
 ---
-title: release - sofa-robotics v25.06
+title: Release - SOFA Robotics v25.06
 description: We are happy to announce **sofa-robotics v25.06**
 slug: welcome-docusaurus-v2
 authors:
@@ -11,7 +11,7 @@ hide_table_of_contents: false
 date: 2025-06-30T10:00
 ---
 
-We are happy to announce **sofa-robotics v25.06**, distributed with **emio-labs v25.06**. With this release sofa-robotics is now available for MacOS. 
+We are happy to announce **sofa-robotics v25.06**, distributed with **Emio Labs v25.06**. With this release sofa-robotics is now available for MacOS. 
 The release also contains many new exciting features and improvements.
 To upgrade, download the new version !
 
@@ -21,11 +21,11 @@ To upgrade, download the new version !
 
 ## Highlights
 
-You can now try sofa-robotics for MacOS ! Download it with emio-labs or on [GitHub](https://github.com/SofaComplianceRobotics/SofaGLFW/tree/robotics).
+You can now try sofa-robotics for MacOS ! Download it with Emio Labs or on [GitHub](https://github.com/SofaComplianceRobotics/SofaGLFW/tree/robotics).
 
 ## Other changes
 
-- Fixes some display issues that were appiring on some computer
+- Fixes some display issues (appearing on some computers)
 - Fixes reload simulation (with python arguments) and add the short cut `ctrl+r`
 - Adds options menu to the `Windows>Program>StartMove` block
 - The `Display Options` window has been moved to `View>Viewport`

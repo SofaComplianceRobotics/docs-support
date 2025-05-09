@@ -1,16 +1,16 @@
 ---
-title: release - emio-labs v25.06
-description: We are happy to announce **emio-labs v25.06**.
+title: Release - Emio Labs v25.06
+description: We are happy to announce **Emio Labs v25.06**.
 authors:
   - hanaerateau
   - eulaliecoevoet
-tags: [v25.06, release, emio-labs]
+tags: [v25.06, release, Emio Labs]
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
 date: 2025-06-30T10:00
 ---
 
-We are happy to announce **emio-labs v25.06**. With this release emio-labs is now available for MacOS. 
+We are happy to announce **Emio Labs v25.06**. With this release Emio Labs is now available for MacOS. 
 The release also contains many new exciting features and improvements.
 To upgrade, download the new version !
 
@@ -20,7 +20,7 @@ To upgrade, download the new version !
 
 ## Highlights
 
-You can now download emio-labs for MacOS ! 
+You can now download Emio Labs for MacOS ! 
 
 ## Other changes
 - The labs have been renamed, removing the numbering to let you organize the labs as you want
