@@ -52,6 +52,12 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: {
+          blogTitle: 'News',
+          postsPerPage: 3,
+          blogSidebarTitle: 'All news',
+          blogSidebarCount: 'ALL',
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -71,6 +77,10 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
+        {
+          to: 'blog', 
+          label: 'News', 
+          position: 'left'}, 
         {
           type: 'dropdown',
           label: 'Support',
