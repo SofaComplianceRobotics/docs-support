@@ -62,7 +62,7 @@ To access a lab:
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
-If you want to create your own content simply follow this [documentation](/docs/EmioLabs/create-your-lab). 
+If you want to create your own content you can follow this [documentation](/docs/EmioLabs/create-your-lab). 
 
 ## Using the Simulation Software
 
@@ -94,7 +94,6 @@ The **emio-labs** application offers a sandbox mode which allow you to set up Em
 
 Access supplementary materials through this website, including:
 
-- (WIP) Video tutorials
 - [FAQs](/docs/EmioLabs/faq)
 
 For additional help or inquiries, please contact our support team using this [form](/emio-support-form).

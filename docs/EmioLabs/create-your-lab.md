@@ -14,10 +14,10 @@ import emio_labs_input from './img/emio-labs-input.png'
 
 # Create your own Lab
 
-Learn how to create your own labs for the **emio-labs** application.
+Learn how to create your own labs for the **Emio Labs** application.
 
 ## Introduction
-The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
+The content of the **Emio Labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
 
 A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the :sofaicon: button in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
@@ -27,7 +27,7 @@ A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (w
 ## Compose your own Set of Labs
 
 <img className="centered" src={emio_labs_dashboard} width="70%"/>
-<figcaption>The main dashboard of the emio-labs application shows the labs content of the application.</figcaption>
+<figcaption>The main dashboard of the Emio Labs application shows the labs content of the application.</figcaption>
 
 The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs simply modify this file. You'll need to provide:
 
