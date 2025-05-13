@@ -62,7 +62,7 @@ To access a lab:
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
-If you want to create your own content you can follow this [documentation](/docs/EmioLabs/create-your-lab). 
+If you want to create your own content, you can follow this [documentation](/docs/EmioLabs/create-your-lab). 
 
 ## Using the Simulation Software
 
