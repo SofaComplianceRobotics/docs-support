@@ -12,7 +12,7 @@ Check the following list of frequently asked questions. If you can't find the an
 <details> 
     <summary>Can I customize Emio's setup in simulation?</summary>
     <aside>
-    The **emio-labs** application offers a sandbox mode that allows you to set up Emio exactly as you want, using either the original set of legs and connectors or your own designed parts. In the main dashboard, click on the Sandbox link to open the corresponding page:
+    The **Emio Labs** application offers a sandbox mode that allows you to set up Emio exactly as you want, using either the original set of legs and connectors or your own designed parts. In the main dashboard, click on the Sandbox link to open the corresponding page:
     
     1. Follow the instructions to set up your Emio and its numerical twin.
     2. Launch the corresponding simulation by clicking the SOFA button as usual, and enjoy!
@@ -36,8 +36,8 @@ Check the following list of frequently asked questions. If you can't find the an
     <aside>
     - Check that the physical device is properly connected and powered on. Refer to Emio's [Hardware User Manual](https://www.notion.so/136582ce7d3a810aa99cdf5a5640ec86?pvs=21) for detailed instructions.
     - Make sure only one simulation is running. Close all active simulations and restart the simulation software.
-    - Check for any errors in the corresponding logs (found in the emio-labs application, beneath the SOFA button you've just clicked).
-    - If you encounter an error message, consult the **emio-labs > Introduction > Let's try Emio > Troubleshooting** section.
+    - Check for any errors in the corresponding logs (found in the Emio Labs application, beneath the SOFA button you've just clicked).
+    - If you encounter an error message, consult the **Emio Labs > Introduction > Let's try Emio > Troubleshooting** section.
     - Verify that you've toggled the **Simulation / Robot** button at the top of the simulation software (it should be green).
     </aside>
 </details>
