@@ -25,12 +25,18 @@ You can now try sofa-robotics for MacOS ! Download it with Emio Labs or on [GitH
 
 ## Other changes
 
-- Fixes some display issues (appearing on some computers)
-- Fixes reload simulation (with python arguments) and add the short cut `ctrl+r`
+### Enhancements
 - Adds options menu to the `Windows>Program>StartMove` block
 - The `Display Options` window has been moved to `View>Viewport`
-- You can now display the origin and a grid
 - The size of the window is saved when you close the software
-- A new window is available `Windows>Log` 
 - The toggle button `Simulation/Robot` now integrates the connection with the robot. On a failed connection, have a look at `Windows>Log` to understand why the connection has failed and click on the button again
+
+### New features
+- You can now display the origin and a grid
 - You can now align the camera, see `View>Align Camera`
+
+### Bug fixes
+- Fixes some display issues (appearing on some computers)
+- Fixes load / reload simulation (with python arguments) and add the short cut `ctrl+r`
+- A new window is available `Windows>Log` 
+
