@@ -23,6 +23,12 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Fetch API docs
+        shell: bash
+        run: |
+          curl --output-dir "./docs/Developers" -L https://github.com/SofaComplianceRobotics/Emio.API/releases/download/release-main/emio-api.md
+          
+
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
