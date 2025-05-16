@@ -18,7 +18,9 @@ Learn how to create your own labs for the **emio-labs** application.
 ## Introduction
 The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
 
-A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the :sofaicon: button in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
+A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. 
+
+Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button ( <img src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> ) in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
 <img className="centered" src={emio_labs_directory} width="20%"/>
 <figcaption>Markdown and python files of the lab1.</figcaption>
@@ -28,11 +30,11 @@ A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (w
 <img className="centered" src={emio_labs_dashboard} width="70%"/>
 <figcaption>The main dashboard of the emio-labs application shows the labs content of the application.</figcaption>
 
-The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs simply modify this file. You'll need to provide:
+The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. You'll need to provide:
 
-- the **name** of the directory containing your `.md` **file
+- the **name** of the directory containing your `.md` file
 - the **filename** (if different than the directory name)
-- a **title** and **description** to display in the main dashboard
+- a **title** and a **description** to display in the main dashboard
 
 The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
 
