@@ -18,6 +18,11 @@ jobs:
           node-version: 18
           cache: npm
 
+      - name: Fetch API docs
+        shell: bash
+        run: |
+          curl --output-dir "./docs/Developers" -L https://github.com/SofaComplianceRobotics/Emio.API/releases/download/release-main/emio-api.md
+          
       - name: Install dependencies
         run: npm ci
       - name: Test build website
