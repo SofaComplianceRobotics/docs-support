@@ -18,7 +18,7 @@ This guide provides instructions for using SOFA Robotics independently of the Em
 
 ## Locate the SOFA Robotics Directory and Executable
 
-Begin by locating the SOFA Robotics directory and executable file, typically named `runSofa` (or `runSofa.exe` on Windows). Follow the instructions below depending on your chosen format: 
+To find the paths to the SOFA Robotics directory and executable, follow the instructions below depending on your chosen package format: 
 
 <Tabs className="unique-tabs">
   <TabItem value="installer" label="Installer" default>
