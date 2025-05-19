@@ -91,7 +91,9 @@ Open a terminal and run the commands for your operating system as outlined below
 ## Launch the Software
 
 In the same terminal, try the following command: `runSofa -l SofaPython3,SofaImGui`.
-This should run the SOFA Robotics with a default simulation (press the play button). To run your own simulation:
+This should run the SOFA Robotics with a default simulation (press the play button). 
+
+To run your own simulation:
 
 
 
