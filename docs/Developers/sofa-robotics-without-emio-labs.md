@@ -11,7 +11,9 @@ import TabItem from '@theme/TabItem';
 This guide provides instructions for using SOFA Robotics independently of the Emio Labs application.
 
 :::warning
-To use SOFA Robotics independently of Emio Labs, you first need to download the appropriate package for your operating system. This package may come as an installer (`.deb` for Linux, `.msi` for Windows, or `.dmg` for MacOS) or as a compressed archive (`.zip`). It is important to note that portable formats, which run from a temporary directory, are not supported. Ensure you extract or install the package to a permanent location on your system before proceeding.
+- To use SOFA Robotics independently of Emio Labs, you first need to download the appropriate Emio Labs package for your operating system. This package may come as an installer (`.deb` for Linux, `.msi` for Windows, or `.dmg` for MacOS) or as a compressed archive (`.zip`). 
+- It is important to note that portable formats (`.AppImage` for Linux, `.exe` for Windows, `.app` for MacOS), which run from a temporary directory, are **not** supported. 
+- Ensure you extract or install the package to a permanent location on your system before proceeding.
 :::
 
 ## Locate the SOFA Robotics Directory and Executable
