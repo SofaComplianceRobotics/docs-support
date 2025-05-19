@@ -30,7 +30,7 @@ Ensure your system meets the following minimum requirements:
 
 Visit our [website and download](https://compliance-robotics.com/compliance-lab/) the **Emio Labs** application for free. After completing a form, you'll receive an email with download links. Choose the version that matches your operating system. Each version comes in three formats: an installer, a portable, or a `.zip` file containing the binaries.
 
-<Tabs className="unique-tabs">
+<Tabs className="unique-tabs" groupId="operating-systems">
   <TabItem value="linux" label="Linux" default>
        :::warning[requirements]
        To use the portable `.AppImage`, install libfuse2: `sudo apt install libfuse2`

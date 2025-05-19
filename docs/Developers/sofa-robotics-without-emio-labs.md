@@ -49,7 +49,7 @@ The steps below will help you set up these variables temporarily. Note that thes
 
 Open a terminal and run the commands for your operating system as outlined below.
 
-<Tabs className="unique-tabs">
+<Tabs className="unique-tabs" groupId="operating-systems">
   <TabItem value="linux" label="Linux" default>
         ```bash
         export SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
@@ -92,7 +92,7 @@ Open a terminal and run the commands for your operating system as outlined below
 
 In the same terminal, try the following command: 
 
-<Tabs className="unique-tabs">
+<Tabs className="unique-tabs" groupId="operating-systems">
   <TabItem value="linux" label="Linux" default>
       ```bash
       runSofa -l SofaPython3,SofaImGui
@@ -115,7 +115,7 @@ To run your own simulation:
 
 
 
-<Tabs className="unique-tabs">
+<Tabs className="unique-tabs" groupId="operating-systems">
   <TabItem value="linux" label="Linux" default>
       ```bash
       runSofa -l SofaPython3,SofaImGui your_scene.py
