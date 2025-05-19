@@ -25,6 +25,11 @@ To find the paths to the SOFA Robotics directory and executable, follow the inst
       1. Locate the directory where you installed the Emio Labs application. We will refer to this directory as `PATH_TO_EMIO_LABS`. 
       2. Within this directory, you will find the SOFA Robotics directory at `PATH_TO_EMIO_LABS/assets/resources/sofa`. 
       3. Inside this directory, you will find the `bin` subdirectory, which contains the executable file required to run the software. This executable is essential for launching SOFA Robotics independently.
+      
+      :::tip
+      - A typical path example when you installed Emio Labs on Windows using the `.msi` installer is `C:\Users\YOUR_USERNAME\AppData\Local\Programs\emio-labs`
+      - A typical example on Linux when you used the `.deb` installer is `/opt/emio-labs`
+      :::
   </TabItem>
   <TabItem value="archive" label="Compressed Archive">
       1. Extract the compressed archive to your chosen location (referred to as `PATH_TO_EMIO_LABS`).
