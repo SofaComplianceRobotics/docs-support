@@ -5,6 +5,8 @@ sidebar_position: 3
 
 import emiolabs_overview from './img/emio-labs-overview.png';
 import exercise_overview from './img/exercise.png';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # App User Manual
 
@@ -28,40 +30,40 @@ Ensure your system meets the following minimum requirements:
 
 Visit our [website and download](https://compliance-robotics.com/compliance-lab/) the **Emio Labs** application for free. After completing a form, you'll receive an email with download links. Choose the version that matches your operating system. Each version comes in three formats: an installer, a portable, or a `.zip` file containing the binaries.
 
+<Tabs className="unique-tabs">
+  <TabItem value="linux" label="Linux" default>
+       :::warning[requirements]
+       To use the portable `.AppImage`, install libfuse2: `sudo apt install libfuse2`
+       ::: 
+       1. **Installer.** If you have downloaded an installer `.deb`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
+       2. **Portable.** If you have downloaded a portable `.AppImage`, untar the file, the **Emio Labs** application is the resulting executable file.   
+       3. **Binaries.** If you have downloaded the `.zip` file, first, unzip the directory. The **Emio Labs** application is then located at the root of the directory. 
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+       :::warning[requirements]
+       All formats require [Microsoft Visual C++ 2022 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed.
+       :::
+
+       1. **Installer.** If you have downloaded an installer `.msi`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
+       2. **Portable.** If you have downloaded a portable `.exe`, the **Emio Labs** application is this executable file. Note that the application may take a while to open, as the software needs to install itself in a temporary directory before launching.   
+       3. **Binaries.** If you have downloaded the `.zip` file, first, unzip the directory. The **Emio Labs** application is then located at the root of the directory. 
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+       :::warning[requirements]
+       Install [Python 3.10](https://www.python.org/downloads/release/python-31011/) for MacOS from [python.org](http://python.org/). Download the file `requirements.txt` and install the required Python modules by running `python -m pip install -r requirements.txt`.
+       :::
+
+       1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
+       2. **Portable.** If you have downloaded the `.zip`, double-click the file to create a `.app` file. To launch the **Emio Labs** application, simply click this new file. 
+  </TabItem>
+</Tabs>
+
 Once installed, try the Emio Labs application. 
 
 :::tip[important]
 A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
 :::
-
-### Installation on Linux
-
-:::note[requirements]
-To use the portable `.AppImage`, install libfuse2: `sudo apt install libfuse2`
-::: 
-
-1. **Installer.** If you have downloaded an installer `.deb`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
-2. **Portable.** If you have downloaded a portable `.AppImage`, untar the file, the **Emio Labs** application is the resulting executable file.   
-3. **Binaries.** If you have downloaded the `.zip` file, first, unzip the directory. The **Emio Labs** application is then located at the root of the directory. 
-
-### Installation on Windows
-
-:::note[requirements]
-All formats require [Microsoft Visual C++ 2022 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed.
-:::
-
-1. **Installer.** If you have downloaded an installer `.msi`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
-2. **Portable.** If you have downloaded a portable `.exe`, the **Emio Labs** application is this executable file. Note that the application may take a while to open, as the software needs to install itself in a temporary directory before launching.   
-3. **Binaries.** If you have downloaded the `.zip` file, first, unzip the directory. The **Emio Labs** application is then located at the root of the directory. 
-
-### Installation on MacOS
-
-:::note[requirements]
-Install [Python 3.10](https://www.python.org/downloads/release/python-31011/) for MacOS from [python.org](http://python.org/). Download the file `requirements.txt` and install the required Python modules by running `python -m pip install -r requirements.txt`.
-:::
-
-1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
-2. **Portable.** If you have downloaded the `.zip`, double-click the file to create a `.app` file. To launch the **Emio Labs** application, simply click this new file. 
 
 ## Application Overview
 

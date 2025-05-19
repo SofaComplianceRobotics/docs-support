@@ -40,7 +40,7 @@ The content of the application is set in the file `assets/labs/labsConfig.json`.
 
 The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
 
-```json
+```json title="/assets/labs/labsConfig.json"
 {
     "labs": [
         {
