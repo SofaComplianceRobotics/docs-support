@@ -76,5 +76,9 @@ img {
     var(--ifm-blockquote-padding-horizontal);
 }
 
+.menu__link {
+  font-weight: normal;
+  font-size: normal;
+}
 
 
