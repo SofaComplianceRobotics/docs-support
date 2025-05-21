@@ -32,6 +32,7 @@ jobs:
         uses: robinraju/release-downloader@v1
         with:
           repository: 'SofaComplianceRobotics/EmioLabs'
+          token: ${{ secrets.SUPPORT_TOKEN }}
           tag: 'release-main'
           fileName: 'emio-sofa-api.md'
 
