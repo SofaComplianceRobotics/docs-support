@@ -39,7 +39,7 @@ The software consists of two main components: a 3D view of the simulation and a 
 
 - 3D view of the simulated robot.
 - **Play/Pause/Step** the simulation using the buttons at the top center of the 3D view.
-- TCP target visualized as a frame (blue, red, and green).
+- The TCP target is visualized as a frame (blue, red, and green).
 - The *Simulation State* pane shows data like TCP position.
 - Use the **Driving Tab** to choose which tab (window) controls the TCP target:
     - Move (via sliders)
@@ -80,7 +80,7 @@ Switch the GUI between dark and light mode using the *sun*/*moon* button at the 
 This window is used to program the robot. You can add action and modifier blocks to a track to compose your program:
 
 - **Action** blocks:
-    - **Move**: Define a waypoint for your effector
+    - **Move**: Define a waypoint for the TCP target
     - **Pick**: When equipped with a gripper, program the closing of the gripper
     - **Place**: Program the opening of the gripper
     - **Wait**: Add a pause to your program
@@ -106,7 +106,7 @@ When the *Draw trajectory* button is toggled, you can highlight the section of t
 
 <div style={{display: "flex"}}>
 <div style={{flex: "1 1 0%"}}>
-The Move Window allows you to directly control your robot in real-time using sliders. There are two control modes available:
+The Move Window allows you to directly control your robot in real-time using sliders. There are typically two control modes available:
 
 - **Effector Control:** Control the position and orientation of the robot's end-effector (TCP) using six sliders for X, Y, Z positions and Roll, Pitch, Yaw rotations.
 - **Motor Control:** Directly control individual motor angles of the robot using dedicated sliders for each angle.

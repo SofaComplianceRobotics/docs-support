@@ -33,15 +33,20 @@ The windows offer various functionalities, enabling you to program or directly c
 
 - **Program:** Create a program for your robot
 - **Move:** Directly control your robot using sliders for the tool center point’s (TCP) target or motor adjustments.
-- **Input/Output (beta):** Create your program using inputs from external software.
+- **Input/Output (wip):** Create your program using inputs from external software.
 - **My Robot:** View information about the robot and adjust settings.
 - **Plotting:** Display simulation data in graphical form.
+
+- **Viewport:** Control the 3D view of the simulation.
+
+- **Scene Graph**: View the scene graph of the simulation.
+- **Log:** Display the log of the simulation.
 
 #### Overview of the Viewport
 
 - 3D view of the simulated robot.
 - **Play/Pause/Step** the simulation using the buttons at the top center of the 3D view.
-- TCP target visualized as a frame (blue, red, and green).
+- The TCP target is visualized as a frame (blue, red, and green).
 - Use the *combo box* near the *play/pause/step* buttons to choose which window controls the TCP target:
     - Move (via sliders)
     - Input/Output (wip: via an external software)
@@ -80,7 +85,7 @@ Switch the GUI between dark and light mode using the *sun*/*moon* button at the 
 This window is used to program the robot. You can add action and modifier blocks to a track to compose your program:
 
 - **Action** blocks:
-    - **Move**: Define a waypoint for your effector
+    - **Move**: Define a waypoint for the TCP target
     - **Pick**: When equipped with a gripper, program the closing of the gripper
     - **Place**: Program the opening of the gripper
     - **Wait**: Add a pause to your program
@@ -107,7 +112,7 @@ When the *Draw trajectory* button is toggled, you can highlight the section of t
 
 <div style={{display: "flex"}}>
 <div style={{flex: "1 1 0%"}}>
-The Move Window allows you to directly control your robot in real-time using sliders. There are two control modes available:
+The Move Window allows you to directly control your robot in real-time using sliders. There are typically two control modes available:
 
 - **Effector Control:** Control the position and orientation of the robot's end-effector (TCP) using six sliders for X, Y, Z positions and Roll, Pitch, Yaw rotations.
 - **Motor Control:** Directly control individual motor angles of the robot using dedicated sliders for each angle.
@@ -125,7 +130,7 @@ This window is particularly useful for:
 
 ### Input/Output Window (WIP)
 
-The Input/Output Window allows you to interface the simulation with external software. Using communication protocols like ROS (Robot Operating System), you can send data directly to control the robot's behavior.
+The Input/Output Window allows you to interface the simulation with external software. Using communication libraries like ROS (Robot Operating System), you can send data directly to control the robot's behavior.
 
 This integration enables:
 
