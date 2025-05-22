@@ -1,6 +1,6 @@
 ---
 title: Find your labs
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import lab_models from './img/volumemodel.png';

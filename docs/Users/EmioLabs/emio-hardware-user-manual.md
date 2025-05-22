@@ -1,6 +1,6 @@
 ---
 title: Robot User Manual
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Robot User Manual
