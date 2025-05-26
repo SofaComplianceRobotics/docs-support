@@ -33,7 +33,9 @@ Visit our [website and download](https://compliance-robotics.com/compliance-lab/
 <Tabs className="unique-tabs" groupId="operating-systems">
   <TabItem value="linux" label="Linux" default>
        :::warning[requirements]
-       To use the portable `.AppImage`, install libfuse2: `sudo apt install libfuse2`
+       - To use the portable `.AppImage`, install libfuse2: `sudo apt install libfuse2`
+
+       - When trying to connect the real robot, if you get a `[Errno 13] Permission denied: '/dev/ttyUSB0'` message. Run the following command in terminal: `sudo chmod 777 /dev/ttyUSB0`. Make sure that the name of the USB port matches the one from the error message.
        ::: 
        1. **Installer.** If you have downloaded an installer `.deb`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
        2. **Portable.** If you have downloaded a portable `.AppImage`, untar the file, the **Emio Labs** application is the resulting executable file.   
@@ -41,8 +43,12 @@ Visit our [website and download](https://compliance-robotics.com/compliance-lab/
   </TabItem>
   <TabItem value="windows" label="Windows">
        :::warning[requirements]
-       All formats require [Microsoft Visual C++ 2022 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed.
-       :::
+       - All formats require [Microsoft Visual C++ 2022 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed.
+
+       - Depending on your version of Windows, you may need to install the [FTDI drivers](https://ftdichip.com/drivers/vcp-drivers/) to pilot the robot. This is typically necessary if, upon connecting the robot to your computer, you encounter the following error message:  
+       `[ERROR] No serial port found with manufacturer = FTDI`.  
+       Installing the drivers should resolve this issue.
+       :::   
 
        1. **Installer.** If you have downloaded an installer `.msi`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
        2. **Portable.** If you have downloaded a portable `.exe`, the **Emio Labs** application is this executable file. Note that the application may take a while to open, as the software needs to install itself in a temporary directory before launching.   
@@ -51,7 +57,9 @@ Visit our [website and download](https://compliance-robotics.com/compliance-lab/
   </TabItem>
   <TabItem value="macos" label="MacOS">
        :::warning[requirements]
-       Install [Python 3.10](https://www.python.org/downloads/release/python-31011/) for MacOS from [python.org](http://python.org/). Download the file [requirements.txt](https://www.dropbox.com/scl/fi/ruzghkla5f2b2bfbng0cz/requirements.txt?rlkey=bipcw34buoegxqs101srpt20u&st=b8vw0dya&dl=1) and install the required Python modules by running `python -m pip install -r requirements.txt`.
+       1. Install [Python 3.10](https://www.python.org/downloads/release/python-31011/) for MacOS from [python.org](http://python.org/). 
+       2. Download the file [requirements.txt](https://www.dropbox.com/scl/fi/ruzghkla5f2b2bfbng0cz/requirements.txt?rlkey=bipcw34buoegxqs101srpt20u&st=b8vw0dya&dl=1).
+       3. And finally, install the required Python modules by running `python -m pip install -r requirements.txt`.
        :::
 
        1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
