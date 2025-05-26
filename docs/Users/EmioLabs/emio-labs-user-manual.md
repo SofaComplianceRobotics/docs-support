@@ -51,7 +51,7 @@ Visit our [website and download](https://compliance-robotics.com/compliance-lab/
   </TabItem>
   <TabItem value="macos" label="MacOS">
        :::warning[requirements]
-       Install [Python 3.10](https://www.python.org/downloads/release/python-31011/) for MacOS from [python.org](http://python.org/). Download the file `requirements.txt` and install the required Python modules by running `python -m pip install -r requirements.txt`.
+       Install [Python 3.10](https://www.python.org/downloads/release/python-31011/) for MacOS from [python.org](http://python.org/). Download the file [requirements.txt](https://www.dropbox.com/scl/fi/ruzghkla5f2b2bfbng0cz/requirements.txt?rlkey=bipcw34buoegxqs101srpt20u&st=b8vw0dya&dl=1) and install the required Python modules by running `python -m pip install -r requirements.txt`.
        :::
 
        1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
