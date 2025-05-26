@@ -17,42 +17,58 @@ import motor_cap4 from './img/motor-cap4.png';
 Emio is a parallel deformable robot developed by [Compliance Robotics](https://compliance-robotics.com/). 
 It features a structure composed of four servo motor-actuated deformable legs connected together. 
 
-The robot comes equipped with a depth camera and a set of accessories, including multiple deformable legs and connectors, all stored in a dedicated drawer. This modular design enables to customize Emio for specific applications.
+The robot comes equipped with a depth camera and a set of accessories, including multiple deformable legs and connectors, all stored in a dedicated drawer.
 
 Emio features two distinct configurations, as shown in the images below:
 
 1. **Extended Configuration**: In this setup, the legs point downward, enabling it to perform tasks such as pick-and-place.
 2. **Compact Configuration**: Here, the legs are oriented upward, facilitating easier interaction with the robot.
 
-These configurations, combined with its deformable structure, make Emio a versatile tool for both educational and research purposes.
+
 
 <div style={{display: "flex"}}>
     <div>
         <img className="centered" src={emio_drawer_camera} width="70%"/>
-        <figcaption>(1) The drawer in which you will find Emio's accessories. (2) The depth camera that can be oriented up or down. </figcaption>
+        <figcaption>Emio in extended configuration with (1) the drawer in which you will find Emio's accessories, (2) the depth camera that can be oriented up or down. </figcaption>
     </div>
     <div>
         <img className="centered" src={emio_motors} width="70%"/>
-        <figcaption>The four motors with their corresponding identification number (n°0, n°1, n°2, n°3), which we use in the labs. </figcaption>
+        <figcaption>Emio in compact configuration with the four motors with their corresponding identification number (n°0, n°1, n°2, n°3), which we use in the labs. </figcaption>
     </div>
 </div>
 
+
 <div style={{display: "flex"}}>
     <div>
-        <img className="centered" src={emio_connections} width="70%"/>
-        <figcaption>(1) USB connection. (2) Power connection. (3) Switch to power the robot.</figcaption>
-    </div>
-    <div>
-        <img className="centered" src={accessories} width="70%"/>
+        <img className="centered" src={accessories} width="50%"/>
         <figcaption> Emio's accessories </figcaption>
     </div>
 </div>
 
-You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch. 
-Each motor is equipped with a drum and a cap for connecting a leg. 
-You can take a leg from the drawer and attach it to a motor. 
-Simply rotate the cap until you can set the leg into the desired orientation (as shown in the images). 
-The zero position of the motor is indicated by the orange marker pointing upward.
+## Connecting Emio to Your Computer
+You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch.
+To connect Emio to your computer:
+1. Plug the USB cable into the USB port of Emio (see Figure 2),
+2. Connect the other end of the USB cable to your computer,
+3. Plug the power supply into the power port of Emio (see Figure 3),
+4. Turn on the switch to power the robot (see Figure 3).
+
+<div style={{display: "flex"}}>
+    <div>
+        <img className="centered" src={emio_connections} width="50%"/>
+        <figcaption>(1) USB connection. (2) Power connection. (3) Switch to power the robot.</figcaption>
+    </div>
+</div>
+
+
+## Attaching Legs to Motors
+Each motor is equipped with a drum and a cap for connecting a leg.
+
+To attach a leg to a motor:
+    1. Find the zero position of the motor is indicated by the orange marker pointing upward,
+    2. Simply rotate the cap until you can set the leg into the desired orientation,
+    3. Once the leg is in place, rotate the cap again to lock it.
+
 
 <div style={{display: "flex"}}>
     <div>
