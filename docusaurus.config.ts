@@ -47,7 +47,8 @@ const config: Config = {
             keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
             extendDefaults: true,
           },
-          sidebarPath: './sidebars.ts'
+          sidebarPath: './sidebars.ts',
+          sidebarCollapsed: false
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,6 +64,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 5,
+    },
     navbar: {
       logo: {
         alt: 'Compliance Robotics Logo',
@@ -75,7 +80,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         {
           to: 'blog', 
@@ -132,6 +137,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['powershell','bash','markdown'],
     },
   } satisfies Preset.ThemeConfig,
 

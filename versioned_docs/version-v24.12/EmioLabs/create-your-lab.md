@@ -18,7 +18,9 @@ Learn how to create your own labs for the **emio-labs** application.
 ## Introduction
 The content of the **emio-labs** application can be easily adjusted or completely changed. By following this documentation you’ll be able to modify the labs and create your own content.
 
-A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the :sofaicon: button in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
+A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. 
+
+Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button ( <img src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> ) in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
 <img className="centered" src={emio_labs_directory} width="20%"/>
 <figcaption>Markdown and python files of the lab1.</figcaption>
@@ -28,11 +30,11 @@ A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (w
 <img className="centered" src={emio_labs_dashboard} width="70%"/>
 <figcaption>The main dashboard of the emio-labs application shows the labs content of the application.</figcaption>
 
-The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs simply modify this file. You'll need to provide:
+The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. You'll need to provide:
 
-- the **name** of the directory containing your `.md` **file
+- the **name** of the directory containing your `.md` file
 - the **filename** (if different than the directory name)
-- a **title** and **description** to display in the main dashboard
+- a **title** and a **description** to display in the main dashboard
 
 The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
 
@@ -80,7 +82,7 @@ These are the elements outlined in John Gruber’s original design document. All
 | Link | ```[title](https://www.example.com)``` |
 | Image | ```![alt text](image.jpg)``` |
 
-### **Extended Syntax**
+### Extended Syntax
 
 These elements extend the basic syntax by adding additional features. It will only be understood by this application. We use nested fenced block principle to define our custom blocks. A block fence is a sequence of at least three consecutive `:`. The content of the fenced block consists of all subsequent lines, until a closing block fence with at least as many `:` as the opening block fence.
 
@@ -94,7 +96,7 @@ MY_CONTENT
 :::: // end of parent
 ```
 
-#### **Quiz**
+#### Quiz
 
 You can create a quiz with **open answer** or a **multiple choice question**. For an open answer, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the answer on the next line, inside the block fence. For example : 
 
@@ -137,7 +139,7 @@ This will give the following :
 <img className="centered" src={emio_labs_qcm02} width="70%"/>
 <figcaption>After submitting the answer.</figcaption>
 
-#### **Video**
+#### Video
 
 You can add videos by using the following container :
 
@@ -148,7 +150,7 @@ You can add videos by using the following container :
 
 The `main-video` will move to the bottom right corner of the application when scrolling down. Only one `main-video` should be used in a markdown file (lab).
 
-#### **Highlighted block**
+#### Highlighted block
 
 You can highlight some text by using the following block fence with the keyword `highlight` :
 
@@ -158,7 +160,7 @@ MY_CONTENT
 :::
 ```
 
-#### **Exercise block**
+#### Exercise block
 
 You can highlight your exercises by using the following block fence with the keyword `exercise` :
 
@@ -168,7 +170,7 @@ MY_EXERCISE_CONTENT
 :::
 ```
 
-#### **Collapsible block**
+#### Collapsible block
 
 Create collapsible section with the following block fence with the keyword `collapse` :
 
@@ -178,7 +180,7 @@ MY_CONTENT
 :::
 ```
 
-#### **Select block**
+#### Select block
 
 Create select content with the following block fence with the keyword `collapse` :
 
@@ -192,7 +194,7 @@ Create select content with the following block fence with the keyword `collapse`
 
 You may have as many options as you want.
 
-#### **Buttons**
+#### Buttons
 
 ```markdown
 #runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
@@ -206,7 +208,7 @@ An argument can be the current value of a select block by using its unique selec
 #runsofa-button("MY_SCENE.py", "MY_UNIQUE_SELECT_NAME", "MY_ARGUMENT_2")
 ```
 
-#### **Icons**
+#### Icons
 
 ```markdown
 #icon(ICON_NAME)

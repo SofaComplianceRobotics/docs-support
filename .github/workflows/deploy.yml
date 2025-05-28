@@ -1,10 +1,13 @@
 name: Deploy to GitHub Pages
 
-on:
+on: 
+  workflow_dispatch:
   push:
-    branches:
+    branches: 
       - main
-
+  schedule:
+    - cron: '0 3 * * *' # nightly job at 3am UTC
+    
 jobs:
   build:
     name: Build Docusaurus
@@ -17,12 +20,29 @@ jobs:
         with:
           node-version: 18
           cache: npm
+          
+      - name: Fetch Emio API docs
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: 'SofaComplianceRobotics/Emio.API'
+          tag: 'release-main'
+          out-file-path: 'docs/Developers'
+          fileName: 'emio-api.md'
+
+      - name: Fetch Emio SOFA API docs
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: 'SofaComplianceRobotics/EmioLabs'
+          token: ${{ secrets.SUPPORT_TOKEN }}
+          tag: 'release-main'
+          out-file-path: 'docs/Developers'
+          fileName: 'emio-sofa-api.md'
 
       - name: Install dependencies
         run: npm ci
       - name: Build website
         run: npm run build
-
+        
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
