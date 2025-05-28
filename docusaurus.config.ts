@@ -43,6 +43,17 @@ const config: Config = {
       'classic',
       {
         docs: {
+          lastVersion: "v24.12",
+          versions: {
+            current: {
+              label: 'v25.06-coming',
+              path: 'v25.06',
+            },
+            "v24.12": {
+              label: 'v24.12',
+              path: 'v24.12',
+            },
+          },
           admonitions: {
             keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
             extendDefaults: true,
@@ -52,6 +63,12 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        blog: {
+          blogTitle: 'News',
+          postsPerPage: 3,
+          blogSidebarTitle: 'All news',
+          blogSidebarCount: 'ALL',
         },
       } satisfies Preset.Options,
     ],
@@ -77,6 +94,10 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          to: 'blog', 
+          label: 'News', 
+          position: 'left'}, 
+        {
           type: 'dropdown',
           label: 'Support',
           position: 'left',
@@ -90,10 +111,6 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
           position: 'right',
-          versions: {
-            current: {label: 'v25.06-coming'},
-            'v24.12': {label: 'v24.12'},
-          },
         },
       ],
     },
