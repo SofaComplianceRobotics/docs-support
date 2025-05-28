@@ -14,7 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Emio Labs',
-    Svg: require('@site/static/img/logo_emio_labs_light.svg').default,
+    Svg: require('@site/static/img/logo_emio_labs_round.svg').default,
     link: "/docs/category/emio-labs",
     description: (
       <>
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'SOFA Robotics',
-    Svg: require('@site/static/img/logo_sofa_robotics_light.svg').default,
+    Svg: require('@site/static/img/logo_sofa_robotics_round.svg').default,
     link: "/docs/category/sofa-robotics",
     description: (
       <>
@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Emio Support',
-    Svg: require('@site/static/img/icon_support_light.svg').default,
+    Svg: require('@site/static/img/icon_support_round.svg').default,
     link: "/emio-support-form",
     description: (
       <>

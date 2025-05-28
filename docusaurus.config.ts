@@ -43,6 +43,17 @@ const config: Config = {
       'classic',
       {
         docs: {
+          lastVersion: "v24.12",
+          versions: {
+            current: {
+              label: 'v25.06-coming',
+              path: 'v25.06',
+            },
+            "v24.12": {
+              label: 'v24.12',
+              path: 'v24.12',
+            },
+          },
           admonitions: {
             keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
             extendDefaults: true,
@@ -100,10 +111,6 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
           position: 'right',
-          versions: {
-            current: {label: 'v25.06-coming'},
-            'v24.12': {label: 'v24.12'},
-          },
         },
       ],
     },
