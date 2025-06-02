@@ -11,6 +11,7 @@ date: 2025-06-30T10:00
 
 import emio_sofa_api_img from './2025-06-release/img/emio-sofa-api.png'
 import emio_api_img from './2025-06-release/img/emioapi.png'
+import emio_labs_macos from './2025-06-release/img/emio-labs-macos.png'
 
 
 We are happy to announce **Emio Labs v25.06**!
@@ -29,6 +30,8 @@ To upgrade, download the new version !
 
 You can now download Emio Labs for MacOS!
 Download the latest version [here](https://mailchi.mp/compliance-robotics.com/download-emio-labs) and follow the [installation steps](/docs/v25.06/Users/EmioLabs/emio-labs-user-manual/#installation).
+
+<img className="centered" src={emio_labs_macos} width="70%"/>
 
 ### ✨ A New Emio API
 Emio Labs now comes with a new API to use Emio without the simulation environment. Browse our [documentation](/docs/v25.06/Developers/emio-api/) to learn how to use this API.
