@@ -154,11 +154,11 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/EmioLabs/find-labs',
+            to: '/docs/v24.12/EmioLabs/find-labs/',
             from: '/Find-your-Labs-13c582ce7d3a802bbe72d37b72e02e50',
           },
           {
-            to: '/docs/EmioLabs/create-your-lab',
+            to: '/docs/v24.12/EmioLabs/create-your-lab/',
             from: '/Create-your-own-Labs-13c582ce7d3a80ceb636ca3153f5594a',
           },
         ],
