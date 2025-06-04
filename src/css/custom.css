@@ -41,6 +41,8 @@ figcaption {
   font-style: italic;
   color: #777;
   text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px
 }
 
 img {
