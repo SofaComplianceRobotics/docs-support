@@ -3,7 +3,7 @@ title: Getting Started with Emio
 sidebar_position: 2
 ---
 
-import accessories from './img/accessories.png';
+import accessories from './img/accessories.jpg';
 import emio_drawer_camera from './img/emio-drawer-camera.png';
 import emio_motors from './img/emio-motors.png';
 import emio_connections from './img/emio-connections.png';
