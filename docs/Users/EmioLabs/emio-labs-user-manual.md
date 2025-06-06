@@ -1,6 +1,6 @@
 ---
 title: App User Manual
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 import emiolabs_overview from './img/emio-labs-overview.png';
