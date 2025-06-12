@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Emio
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import accessories from './img/accessories.jpg';
