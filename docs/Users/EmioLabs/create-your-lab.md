@@ -184,13 +184,15 @@ MY_CONTENT
 
 #### Select block
 
-Create select content with the following block fence with the keyword `collapse` :
+Create select content with the following block fence with the keyword `select`. 
+Inside the select block, you can define options with the keyword `option` followed by the value for the option. Each option should have a unique value.
+You can optionally add a label to the option by using the syntax `[MY_LABEL]`For example:
 
 ```markdown
 :::: select MY_UNIQUE_SELECT_NAME
-::: option MY_OPTION_1
-::: option MY_OPTION_2
-::: option MY_OPTION_3
+::: option MY_OPTION_VALUE_1 [MY_LABEL_1]
+::: option MY_OPTION_VALUE_2 
+::: option MY_OPTION_VALUE_3 [MY_LABEL_3]
 ::::
 ```
 
