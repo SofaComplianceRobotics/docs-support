@@ -73,6 +73,33 @@ Once installed, try the Emio Labs application.
 A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
 :::
 
+### Running Emio Labs on MacOS
+If you are running the Emio Labs on MacOS, you need to run it with **admin privileges**. This is necessary for the application to access certain system resources and functionalities, such as connecting to the real robot.
+
+To run the application with admin privileges, open a terminal and use the following command depending on the installation method you used:
+
+If using the portable (unzipped .app file): 
+```bash
+cd path/to/where/you/unzipped/the/app
+sudo ./emio-labs.app/Contents/MacOS/emio-labs
+```
+
+If installed with the .dmg file:
+```bash
+sudo /Applications/emio-labs.app/Contents/MacOS/emio-labs
+```
+
+You may encounter a security warning when launching the application for the first time. 
+
+To resolve this:
+1. Open **System Preferences**.
+2. Go to **Security & Privacy**.
+3. Under the **Security** section, click on **Open Anyway** next to the message about the blocked application.
+4. Confirm by clicking **Open** in the pop-up dialog.
+5. Enter your password if prompted.
+6. Restart the application.
+
+
 ## Application Overview
 
 **Emio Labs** consists of several key components:
