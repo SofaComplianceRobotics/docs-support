@@ -74,6 +74,10 @@ A directory <code>~/emio-labs</code> containing all the assets (labs, python scr
 :::
 
 ### Running Emio Labs on MacOS
+:::warning
+The design Lab (Lab 3) is not working on MacOS due to an issue with `gmsh`.
+:::
+
 If you are running the Emio Labs on MacOS, you need to run it with **admin privileges**. This is necessary for the application to access certain system resources and functionalities, such as connecting to the real robot.
 
 To run the application with admin privileges, open a terminal and use the following command depending on the installation method you used:
