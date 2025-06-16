@@ -1,6 +1,6 @@
 ---
 title: FAQs
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 # Frequently Asked Questions
