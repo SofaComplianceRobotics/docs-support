@@ -37,9 +37,6 @@ Download the latest version [here](https://mailchi.mp/compliance-robotics.com/do
 Emio Labs now comes with a new API to use Emio without the simulation environment. Browse our [documentation](/docs/v25.06/Developers/emio-api/) to learn how to use this API.
 
 
-**Note**: The labs have been updated to use this new API so the previous version of the labs will not work with this newer version. Remember that a directory <code>~/emio-labs</code> is created in your Home directory after the first run of the application. The application uses the files of this directory. If you install the new Emio Labs version you need to reset the directory to the compatible version. To do that, simply delete, rename, or move it from your Home directory, then restart the application.
-
-
 <img className="centered" src={emio_api_img} width="70%"/>
 
 ### ✨ Emio SOFA API Documentation
