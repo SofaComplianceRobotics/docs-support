@@ -71,3 +71,4 @@ Check this page to learn about the [Emio SOFA API](/docs/v25.06/Developers/emio-
     - The mass of the cube in the `lab_models` was off by a factor of 10
     - The Young's modulus has been changed consequently
     - The artificial rigidity of the FEM volume model is compensated with the `tetraYMFactor` set in the `parameters.py` file
+- On Windows, we fixed the issue with paths containing spaces    
