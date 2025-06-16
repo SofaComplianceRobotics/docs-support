@@ -43,6 +43,17 @@ const config: Config = {
       'classic',
       {
         docs: {
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: 'v25.06',
+              path: 'v25.06',
+            },
+            "v24.12": {
+              label: 'v24.12',
+              path: 'v24.12',
+            },
+          },
           admonitions: {
             keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
             extendDefaults: true,
