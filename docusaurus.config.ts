@@ -43,6 +43,17 @@ const config: Config = {
       'classic',
       {
         docs: {
+          lastVersion: "v24.12",
+          versions: {
+            current: {
+              label: 'v25.06-coming',
+              path: 'v25.06',
+            },
+            "v24.12": {
+              label: 'v24.12',
+              path: 'v24.12',
+            },
+          },
           admonitions: {
             keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
             extendDefaults: true,
@@ -52,6 +63,12 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        blog: {
+          blogTitle: 'News',
+          postsPerPage: 3,
+          blogSidebarTitle: 'All news',
+          blogSidebarCount: 'ALL',
         },
       } satisfies Preset.Options,
     ],
@@ -77,6 +94,10 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          to: 'blog', 
+          label: 'News', 
+          position: 'left'}, 
+        {
           type: 'dropdown',
           label: 'Support',
           position: 'left',
@@ -90,10 +111,6 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
           position: 'right',
-          versions: {
-            current: {label: 'v25.06-coming'},
-            'v24.12': {label: 'v24.12'},
-          },
         },
       ],
     },
@@ -137,11 +154,11 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/EmioLabs/find-labs',
+            to: '/docs/v24.12/EmioLabs/find-labs/',
             from: '/Find-your-Labs-13c582ce7d3a802bbe72d37b72e02e50',
           },
           {
-            to: '/docs/EmioLabs/create-your-lab',
+            to: '/docs/v24.12/EmioLabs/create-your-lab/',
             from: '/Create-your-own-Labs-13c582ce7d3a80ceb636ca3153f5594a',
           },
         ],

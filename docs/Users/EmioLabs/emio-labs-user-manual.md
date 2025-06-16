@@ -28,7 +28,7 @@ Ensure your system meets the following minimum requirements:
 
 ### Installation
 
-Visit our [website and download](https://compliance-robotics.com/compliance-lab/) the **Emio Labs** application for free. After completing a form, you'll receive an email with download links. Choose the version that matches your operating system. Each version comes in three formats: an installer, a portable, or a `.zip` file containing the binaries.
+[Download](https://mailchi.mp/compliance-robotics.com/download-emio-labs) the **Emio Labs** application for free. After completing a form, you'll receive an email with download links. Choose the version that matches your operating system. Each version comes in three formats: an installer, a portable, or a `.zip` file containing the binaries.
 
 <Tabs className="unique-tabs" groupId="operating-systems">
   <TabItem value="linux" label="Linux" default>
@@ -69,6 +69,7 @@ Visit our [website and download](https://compliance-robotics.com/compliance-lab/
 
 Once installed, try the Emio Labs application. 
 
+
 :::tip[important]
 A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
 :::
@@ -103,7 +104,6 @@ To resolve this:
 5. Enter your password if prompted.
 6. Restart the application.
 
-
 ## Application Overview
 
 **Emio Labs** consists of several key components:
@@ -134,7 +134,7 @@ To access a lab:
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
-If you want to create your own content, you can follow this [documentation](/docs/EmioLabs/create-your-lab). 
+If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
 
 ## Using the Simulation Software
 
@@ -142,7 +142,7 @@ The simulation software provides a numerical twin of Emio for experimentation:
 
 - Each lab contains exercise sections within you could be asked to launch the simulation corresponding to the exercise.
 - To launch the simulation, click the **SOFA** button within the section.
-- For information about the simulation software, follow the [SOFA Robotics docs](/docs/SOFARobotics/GUI-user-manual).
+- For information about the simulation software, follow the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual.md).
 
 <img className="centered" src={exercise_overview} width="50%" alt="overview of an exercise section"/>
 <figcaption>Example of a lab exercise. Notice the SOFA button at the bottom of the section. Follow the instructions and click on this button to launch the simulation of the exercise.</figcaption>
@@ -153,7 +153,7 @@ After completing the requirements in simulation, you may have the opportunity to
 
 - Ensure the physical device is properly connected and powered on.
 - Toggle the "Simulation/Robot" button at the top of the simulation software to establish a connection between the simulator and the real device. When in "Robot" mode, pressing the play button will send simulation commands directly to the real device. 
-- And finally use the interface controls to pilote Emio (see the [SOFA Robotics docs](/docs/SOFARobotics/GUI-user-manual)).
+- And finally use the interface controls to pilote Emio (see the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual.md)).
 
 ## Sandbox
 
@@ -166,6 +166,6 @@ The **Emio Labs** application offers a sandbox mode which allow you to set up Em
 
 Access supplementary materials through this website, including:
 
-- [FAQs](/docs/EmioLabs/faq)
+- [FAQs](faq.md)
 
 For additional help or inquiries, please contact our support team using this [form](/emio-support-form).

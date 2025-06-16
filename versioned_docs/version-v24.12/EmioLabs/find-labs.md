@@ -17,7 +17,7 @@ import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 :::tip
 Teach soft robotics with the original content created by Compliance Robotics. It provides a practical introduction to the concepts of soft robotics: models, inverse kinematics, pick & place, design, and closed loop.
 
-*[Easily compose your labs and add your own content](/docs/EmioLabs/create-your-lab). Share your content for Emio with the community. Contact us to add your content to this page by sending an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).*
+*[Easily compose your labs and add your own content](create-your-lab.md). Share your content for Emio with the community. Contact us to add your content to this page by sending an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).*
 :::
 
 ## Lab 1. Models for Soft Robotics
