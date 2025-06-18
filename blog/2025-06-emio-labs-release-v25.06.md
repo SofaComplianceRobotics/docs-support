@@ -62,7 +62,8 @@ Check this page to learn about the [Emio SOFA API](/docs/v25.06/Developers/emio-
 - The numbering of the motors was shifted in some labs
 
 ### New Features
-- The camera orientation in the simulation is automatically changed with respect to Emio's configuration: extended or compact  
+- The camera orientation in the simulation is automatically changed with respect to Emio's configuration: extended or compact
+- While we work on implementing automatic camera calibration, we have exposed the transform parameters in the GUI, allowing manual camera calibration for the lab model.
 - In the sandbox, you can now set up Emio with a custom number of legs
 - You can use the option `show_video_feed` in the `DotTracker` to see the camera feed while running the simulation 
 
