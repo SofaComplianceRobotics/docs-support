@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
+import {useDocsPreferredVersion} from '@docusaurus/theme-common';
 
 type FeatureItem = {
   title: string;
@@ -15,7 +16,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Emio Labs',
     Svg: require('@site/static/img/logo_emio_labs_round.svg').default,
-    link: "/docs/category/emio-labs",
+    link: "/category/emio-labs", 
     description: (
       <>
         Find all the documentation about Emio, our reconfigurable continuum parallel robot for academia. 
@@ -26,7 +27,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'SOFA Robotics',
     Svg: require('@site/static/img/logo_sofa_robotics_round.svg').default,
-    link: "/docs/category/sofa-robotics",
+    link: "/category/sofa-robotics",
     description: (
       <>
         Need help to use the simulation software with our robotic oriented GUI ? Find all the documentation here. 
@@ -47,11 +48,14 @@ const FeatureList: FeatureItem[] = [
 ];
 
 function Feature({title, Svg, link, description}: FeatureItem) {
+  const preferredVersion = useDocsPreferredVersion();
+  const preferredVersionPath = `${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"/"}`;
+  const linkWithVersion = link.startsWith('/category') ? `${preferredVersionPath}${link}` : link;
   return (
     <div className={clsx('col col--3 col--offset-1')}>
     <div className="card__image">
       <div className="text--center">
-        <a href={link}> 
+        <a href={linkWithVersion}> 
           <Svg className={styles.featureSvg} role="img" /> 
         </a>
       </div>
