@@ -63,11 +63,11 @@ Open a terminal and run the commands for your operating system as outlined below
         #### Using Powershell:
 
         ```powershell
-        $env.SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
-        $env.PATH+=$env.SOFA_ROOT\bin
-        $env.PYTHONHOME=$env.SOFA_ROOT\bin\python
-        $env.PYTHONPATH=$env.SOFA_ROOT\bin\python\Lib\site-packages
-        $env.PYTHONPATH+=$env.SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages
+        $env:SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
+        $env:PATH+=";$env:SOFA_ROOT\bin"
+        $env:PYTHONHOME="$env:SOFA_ROOT\bin\python"
+        $env:PYTHONPATH="$env:SOFA_ROOT\bin\python\Lib\site-packages"
+        $env:PYTHONPATH+=";$env:SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages"
         ```
 
         #### Using Command Prompt:
