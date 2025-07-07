@@ -10,11 +10,11 @@ import TabItem from '@theme/TabItem';
 
 # App User Manual
 
-Learn how to use the **Emio Labs** application.
+Welcome to the user manual of the **Emio Labs** application.
 
 ## Introduction
 
-Welcome to the user manual of the software **Emio Labs**. This desktop application is designed to teach soft robotics through interactive labs. This manual will guide you through the application's features and help you navigate the learning process.
+This desktop application is designed to teach soft robotics through interactive labs. This manual will guide you through the application's features and help you navigate the learning process.
 
 ## Getting Started
 

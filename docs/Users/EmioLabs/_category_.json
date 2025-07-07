@@ -1,8 +1,0 @@
-{
-  "label": "Emio Labs",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Emio is a reconfigurable continuum parallel robot intended for academia to teach soft robotics. It is an hands-on platform that provides a practical introduction to the concepts of compliant and deformable robotics. Connected to the SOFA framework, this platform covers concepts such as direct and inverse deformation modeling, control, design, 3D printing and computer vision. The platform is scalable, enabling groups of students from different specialties to work together on projects"
-  }
-}
