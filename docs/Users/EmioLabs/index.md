@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 import emio_labs_overview from './img/emio-labs-overview.png';
 import emio_robot from '/static/img/emio_SOFA.jpg';
