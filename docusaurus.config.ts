@@ -62,8 +62,7 @@ const config: Config = {
             keywords: ['note', 'tip', 'info', 'warning', 'danger', 'verified'],
             extendDefaults: true,
           },
-          sidebarPath: './sidebars.ts',
-          sidebarCollapsed: false
+          sidebarPath: './sidebars.ts'
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,6 +78,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
+    },
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 5,
