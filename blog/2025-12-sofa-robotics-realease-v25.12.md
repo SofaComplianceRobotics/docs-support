@@ -24,7 +24,8 @@ import connection_section_status from './2025-12-release/img/connection-section-
 ## Other changes
 
 ### Enhancements
-- 
+- Switch to orthographic mode when aligning the camera
+
 ### New features
 - We have added a connection section. You can now connect multiple robots to your computer and choose which robot to connect to, by selecting the corresponding port.  
 
