@@ -1,7 +1,6 @@
 ---
 title: Release - SOFA Robotics v25.06
 description: We are happy to announce **SOFA Robotics v25.06**
-slug: welcome-docusaurus-v2
 authors:
   - hanaerateau
   - eulaliecoevoet
