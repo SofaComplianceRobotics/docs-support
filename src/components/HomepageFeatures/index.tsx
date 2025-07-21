@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Emio Labs',
     Svg: require('@site/static/img/logo_emio_labs_round.svg').default,
-    link: "/category/emio-labs", 
+    link: "/Users/EmioLabs", 
     description: (
       <>
         Find all the documentation about Emio, our reconfigurable continuum parallel robot for academia. 
@@ -27,7 +27,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'SOFA Robotics',
     Svg: require('@site/static/img/logo_sofa_robotics_round.svg').default,
-    link: "/category/sofa-robotics",
+    link: "/Users/SofaRobotics",
     description: (
       <>
         Need help to use the simulation software with our robotic oriented GUI ? Find all the documentation here. 
@@ -50,7 +50,7 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Svg, link, description}: FeatureItem) {
   const preferredVersion = useDocsPreferredVersion();
   const preferredVersionPath = `${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"/"}`;
-  const linkWithVersion = link.startsWith('/category') ? `${preferredVersionPath}${link}` : link;
+  const linkWithVersion = link.startsWith('/Users') ? `${preferredVersionPath}${link}` : link;
   return (
     <div className={clsx('col col--3 col--offset-1')}>
     <div className="card__image">
