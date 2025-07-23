@@ -24,13 +24,13 @@ A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (w
 
 Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button ( <img src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> ) in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
-<img className="centered" src={emio_labs_directory} width="20%"/>
+<img className="centered" src={emio_labs_directory} width="20%" alt="Hierarchy of files for a lab"/>
 <figcaption>Markdown and python files of the lab models.</figcaption>
 
 ## Compose your own Set of Labs
 
-<img className="centered" src={emio_labs_dashboard} width="70%"/>
-<figcaption>The main dashboard of the Emio Labs application shows the labs content of the application.</figcaption>
+<img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
+<figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
 The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. You'll need to provide:
 
@@ -112,10 +112,10 @@ Beam models simplify calculations compared to full three-dimensional models, red
 
 This will give the following :
 
-<img className="centered" src={emio_labs_quizopen} width="70%"/>
+<img className="centered" src={emio_labs_quizopen} width="70%" alt="Example of a rendered open-ended question"/>
 <figcaption>Question with an open answer.</figcaption>
 
-<img className="centered" src={emio_labs_quizopenanswer} width="70%"/>
+<img className="centered" src={emio_labs_quizopenanswer} width="70%" alt="Example of the correct answer displayed once the answer has been submitted"/>
 <figcaption>After giving an answer and clicking on the `Submit` button.</figcaption>
 
 For a question with multiple choice, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the list of possible answer the next line, inside the block fence. The good answers are set with `[X]` and the wrong answers with `[]` . For example : 
@@ -132,13 +132,13 @@ For a question with multiple choice, create a block fence with the keyword `quiz
 
 This will give the following :
 
-<img className="centered" src={emio_labs_qcm01} width="70%"/>
-<figcaption>Question with multiple choice answer.</figcaption>
+<img className="centered" src={emio_labs_qcm01} width="70%" alt="Example of a rendered multiple choice question"/>
+<figcaption>Question with multiple choice question.</figcaption>
 
-<img className="centered" src={emio_labs_qcm03} width="70%"/>
+<img className="centered" src={emio_labs_qcm03} width="70%" alt="Example of a multiple choice question with selected answers"/>
 <figcaption>When selected the answer.</figcaption>
 
-<img className="centered" src={emio_labs_qcm02} width="70%"/>
+<img className="centered" src={emio_labs_qcm02} width="70%" alt="Example of a multiple choice question after submission. The correct answers are highlighted in green, the wrong one in red."/>
 <figcaption>After submitting the answer.</figcaption>
 
 #### Video
@@ -239,7 +239,7 @@ For example:
 #input("customleg", "", "blueleg") // no placeholder and default value
 ```
 
-<img className="centered" src={emio_labs_input} width="40%"/>
+<img className="centered" src={emio_labs_input} width="40%" alt="Example of an input field with the placeholder and a value."/>
 <figcaption>Input example. (left) Placeholder. (right) Value.</figcaption>
 
 
