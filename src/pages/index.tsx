@@ -32,7 +32,7 @@ function HomepageHeader() {
             </div>
           </div>
 
-          <img src="img/emio_SOFA.jpg" className={styles.heroBannerImage}/>
+          <img src="img/emio_SOFA.jpg" className={styles.heroBannerImage} alt="Emio next to a computer with SOFA Robotics running on it."/>
 
         </div>
       </header>
