@@ -102,22 +102,23 @@ provided instructions by clicking on *Set up Emio*. We use colors to refer to th
 
 
 ## Calibrating The Camera
-The camera calibration is required for some labs. It allows to calculate the transform from the camera image to 3D points into the Emio reference frame. The Emio API (included with Emio Labs) comes calibrated but the calibration can vary based on if the camera has been moved. 
+The calibration allows to calculate the transform from the camera image to 3D points into the simulation reference frame. The Emio API (included with Emio Labs) comes with a default calibration, but it can vary based on if the camera has been moved. 
 
-If you notice that the markers are too far from the reality, you might need to recalibrate the camera.
+If you notice a large difference between the simulation and reality markers, you might need to re-calibrate the camera.
 
 ### Set up Emio
 You will need:
 
 - (1) the Aruco marker 
 - (2) two green markers
-- (3) the blue supports to raise the platform
+- (3) the blue elevators to raise the platform
 
 To set up Emio for calibration, follow these steps:
-1. raise the platform using the blue supports on the beam
-2. place the Aruco marker on the platform so that the small arrow points to the camera
-3. place two green markers in the slots of the Aruco marker
-4. plug emio to the computer and to the power supply
+1. Raise the platform with the blue elevators.
+2. Place the Aruco marker on the platform, arrow facing the camera.
+3. Insert two green markers into the Aruco marker slots.
+4. Connect Emio to the computer and power supply.
+5. Turn on Emio.
 
 <img className="centered" src={calib_emio} width="45%" alt="The set up for calibration of the camera."/>
 
@@ -166,7 +167,7 @@ Regardless of the method you use to start the calibraiton, the process will star
 The calibration ends when the _Calibration_ window closes and the _HSV_ window displays the position of the the two markers.
 
 To make sure the calibration is successful, you can check the simulation coordinates of the markers in the HSV window:
-- The top marker should  be at around `(32, -230, 32)`
+- The top marker should be at around `(32, -230, 32)`
 - The bottom marker should be at `(-32, -230, -32)`
 
 In the simulation, if used, the green markers (_i.e._ what the camera is tracking) should be at the same positions as the red markers (_i.e._ theoretical positions). The actual error for each marker can be seen in the _Information_ collapsible menu in the _My Robot_ window. You can expect an error of around 2-4 mm for each marker.
