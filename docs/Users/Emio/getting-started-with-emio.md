@@ -21,10 +21,12 @@ import calib_simulation from './img/calibration_simulation.png';
 
 # Getting Started with Emio
 
-Emio is a parallel deformable robot developed by [Compliance Robotics](https://compliance-robotics.com/). 
-It features a structure composed of four servo motor-actuated deformable legs connected together. 
+Emio is a parallel deformable robot. Together with the desktop application [Emio Labs](../../../Users/EmioLabs/), this hands-on platform provides a practical introduction to the concepts of compliant and deformable robotics. 
 
-The robot comes equipped with a depth camera and a set of accessories, including multiple deformable legs and connectors, all stored in a dedicated drawer.
+## Discovering Emio
+
+The robot features a structure composed of four servo motor-actuated deformable legs connected together. 
+It comes equipped with a depth camera and a set of accessories, including multiple deformable legs and connectors, all stored in a dedicated drawer.
 
 Emio features two distinct configurations, as shown in the images below:
 
@@ -51,7 +53,7 @@ Emio features two distinct configurations, as shown in the images below:
     </div>
 </div>
 
-## Connecting Emio to Your Computer
+## Connecting Emio to your Computer
 You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch.
 To connect Emio to your computer:
 1. Plug the USB cable into the USB port of Emio (see Figure 2),
@@ -100,44 +102,51 @@ Throughout the lab sessions, you will be instructed to configure Emio into speci
 provided instructions by clicking on *Set up Emio*. We use colors to refer to the legs and connectors, and numbers to identify the motors.
 :::
 
-
-## Calibrating The Camera
+## Calibrating the Camera
 The calibration allows to calculate the transform from the camera image to 3D points into the simulation reference frame. The Emio API (included with Emio Labs) comes with a default calibration, but it can vary based on if the camera has been moved. 
 
 If you notice a large difference between the simulation and reality markers, you might need to re-calibrate the camera.
 
-### Set up Emio
-You will need:
+### Set up Emio for the Calibration
 
-- (1) the Aruco marker 
-- (2) two green markers
-- (3) the blue elevators to raise the platform
+<div style={{display: "flex", columnGap: "1em"}}>
+    <div style={{flex:"1.3 1 0"}}>
 
-To set up Emio for calibration, follow these steps:
-1. Raise the platform with the blue elevators.
-2. Place the Aruco marker on the platform, arrow facing the camera.
-3. Insert two green markers into the Aruco marker slots.
-4. Connect Emio to the computer and power supply.
-5. Turn on Emio.
+        You will need (see the image to the right):
 
-<img className="centered" src={calib_emio} width="45%" alt="The set up for calibration of the camera."/>
+        - The Aruco marker 
+        - Two green markers
+        - The blue elevators to raise the platform
+
+        To set up Emio for calibration, follow these steps:
+        1. Raise the platform with the blue elevators.
+        2. Place the Aruco marker on the platform, arrow facing the camera.
+        3. Insert two green markers into the Aruco marker slots.
+        4. Connect Emio to the computer and power supply.
+        5. Turn on Emio. 
+    </div>
+    <div style={{flex:"1 1 0"}}>
+        <img className="centered" src={calib_emio} width="100%" alt="The set up for calibration of the camera."/>
+        <figcaption>The set up for calibration of the camera. (1) the Aruco marker. (2) two green markers. (3) the elevators.</figcaption>
+    </div>
+</div>
 
 ### Start the Calibration
 Calibration can be done using several methods: with Emio Labs or with the Emio API.
 
 <Tabs className="unique-tabs" groupId="calibration-methods">
   <TabItem value="emio-labs" label="Emio Labs" default>
-       The easiest way to start the calibration is to use the SOFA Robotics interface from EmioLabs:
-        1. open EmioLabs
-        2. go to the `Lab Models` page
-        3. select the `Camera Calibration` section
-        5. run the simulation by pressing the SOFA button in the section
-        6. press the _Play_ button to start the simulation
-        7. toggle the robot connection button to connect to the robot
+       The easiest way to start the calibration is to use the SOFA Robotics interface from Emio Labs:
+        1. Open Emio Labs
+        2. Go to the `Sandbox` page
+        3. Select the `Camera Calibration` section
+        5. Run the simulation by pressing the SOFA button in the section
+        6. Press the _Play_ button to start the simulation
+        7. Toggle the robot connection button to connect to the robot
   </TabItem>
   <TabItem value="emio-api" label="Emio API">
     Alternatively, you can start the calibration using Emio API.
-    From a terminal with a Python executable path that has emioapi installed, run:
+    From a terminal with a Python executable that has emioapi installed, run:
     ```bash
     python -m emioapi calibrate
     ```
@@ -151,13 +160,13 @@ Calibration can be done using several methods: with Emio Labs or with the Emio A
 Regardless of the method you use to start the calibraiton, the process will start by opening several windows, including a _Calibration_ window and a _HSV_ window.
 <div style={{display: "flex", columnGap: "1em"}}>
     <div>
-    <img className="centered" src={calib_window}  alt="The calibration window with the aruco marker being tracked."/>
+    <img className="centered" src={calib_window}  width='90%' alt="The calibration window with the aruco marker being tracked."/>
     <figcaption>
     The _Calibration_ window displays the corners and other points detected by the camera.
     </figcaption>
     </div>
     <div>
-    <img className="centered" src={calib_hsv_window}  alt="The HSV window with the result of the green markers tracking."/>
+    <img className="centered" src={calib_hsv_window} width='90%' alt="The HSV window with the result of the green markers tracking."/>
     <figcaption>
     The _HSV_ window displays the 3D position of the two markers in the frame of the camera (first line) and in the simulation frame (second line).
     </figcaption>
@@ -175,3 +184,4 @@ In the simulation, if used, the green markers (_i.e._ what the camera is trackin
 Once the calibration is done, you can close the SOFA window or `Ctrl+C` if you used Emio API. The saved calibration will be used for all the following use of the Emio API.
 
 <img className="centered" src={calib_simulation} width="90%" alt="The simulation in SOFA Robotics at the end of the calibration process. The green markers match the red ones."/>
+<figcaption>The simulation in SOFA Robotics at the end of the calibration process. The green markers match the red ones.</figcaption>
