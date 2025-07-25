@@ -32,8 +32,7 @@ jobs:
       - name: Fetch Emio SOFA API docs
         uses: robinraju/release-downloader@v1
         with:
-          repository: 'SofaComplianceRobotics/EmioLabs'
-          token: ${{ secrets.SUPPORT_TOKEN }}
+          repository: 'SofaComplianceRobotics/Emio.CoreAssets'
           tag: 'release-main'
           out-file-path: 'docs/Developers'
           fileName: 'emio-sofa-api.md'
