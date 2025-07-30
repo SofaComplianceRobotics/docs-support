@@ -103,8 +103,8 @@ provided instructions by clicking on *Set up Emio*. We use colors to refer to th
 :::
 
 ## Calibrating the Camera
-The calibration allows to calculate the transform from the camera image to 3D points into the simulation reference frame. The Emio API (included with Emio Labs) comes with a default calibration, but it can vary based on if the camera has been moved. 
 
+The calibration allows to calculate the transform from the camera image, to 3D points into the simulation reference frame. The Emio API (included with Emio Labs) comes with a default calibration, but it can vary based on if the camera has been moved. 
 If you notice a large difference between the simulation and reality markers, you might need to re-calibrate the camera.
 
 ### Set up Emio for the Calibration
@@ -157,7 +157,7 @@ Calibration can be done using several methods: with Emio Labs or with the Emio A
 
 ### Calibration Process
 
-Regardless of the method you use to start the calibraiton, the process will start by opening several windows, including a _Calibration_ window and a _HSV_ window.
+Regardless of the method you use to start the calibration, the process will start by opening several windows, including a _Calibration_ window and a _HSV_ window.
 <div style={{display: "flex", columnGap: "1em"}}>
     <div>
     <img className="centered" src={calib_window}  width='90%' alt="The calibration window with the aruco marker being tracked."/>
