@@ -16,7 +16,7 @@ import motor_cap3 from './img/motor-cap3.png';
 import motor_cap4 from './img/motor-cap4.png';
 import calib_emio from './img/calibration_emio_setup.png';
 import calib_window from './img/calibration_window.png';
-import calib_hsv_window from './img/calibration_HSV.png';
+import calib_rgb_window from './img/calibration_rgb.png';
 import calib_simulation from './img/calibration_simulation.png';
 
 # Getting Started with Emio
@@ -63,7 +63,7 @@ To connect Emio to your computer:
 
 <div style={{display: "flex"}}>
     <div>
-        <img className="centered" src={emio_connections} width="50%" alt="The connection panel on the side of Emio"/>
+        <img className="centered" src={emio_connections} width="30%" alt="The connection panel on the side of Emio"/>
         <figcaption>(1) USB connection. (2) Power connection. (3) Switch to power the robot.</figcaption>
     </div>
 </div>
@@ -110,7 +110,7 @@ If you notice a large difference between the simulation and reality markers, you
 ### Set up Emio for the Calibration
 
 <div style={{display: "flex", columnGap: "1em"}}>
-    <div style={{flex:"1.3 1 0"}}>
+    <div style={{flex:"2 1 0"}}>
 
         You will need (see the image to the right):
 
@@ -157,7 +157,7 @@ Calibration can be done using several methods: with Emio Labs or with the Emio A
 
 ### Calibration Process
 
-Regardless of the method you use to start the calibration, the process will start by opening several windows, including a _Calibration_ window and a _HSV_ window.
+Regardless of the method you use to start the calibration, the process will start by opening several windows, including a _Calibration_ window and a _RGB Frame_ window.
 <div style={{display: "flex", columnGap: "1em"}}>
     <div>
     <img className="centered" src={calib_window}  width='90%' alt="The calibration window with the aruco marker being tracked."/>
@@ -166,16 +166,16 @@ Regardless of the method you use to start the calibration, the process will star
     </figcaption>
     </div>
     <div>
-    <img className="centered" src={calib_hsv_window} width='90%' alt="The HSV window with the result of the green markers tracking."/>
+    <img className="centered" src={calib_rgb_window} width='90%' alt="The _RGB Frame_ window with the result of the green markers tracking."/>
     <figcaption>
-    The _HSV_ window displays the 3D position of the two markers in the frame of the camera (first line) and in the simulation frame (second line).
+    The _RGB Frame_ window displays the 3D position of the two markers in the frame of the camera (first line) and in the simulation frame (second line).
     </figcaption>
     </div>
 </div>
 
-The calibration ends when the _Calibration_ window closes and the _HSV_ window displays the position of the the two markers.
+The calibration ends when the _Calibration_ window closes and the _RGB Frame_ window displays the position of the the two markers.
 
-To make sure the calibration is successful, you can check the simulation coordinates of the markers in the HSV window:
+To make sure the calibration is successful, you can check the simulation coordinates of the markers in the _RGB Frame_ window:
 - The top marker should be at around `(32, -230, 32)`
 - The bottom marker should be at `(-32, -230, -32)`
 
