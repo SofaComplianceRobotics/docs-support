@@ -166,7 +166,7 @@ Regardless of the method you use to start the calibration, the process will star
     </figcaption>
     </div>
     <div>
-    <img className="centered" src={calib_rgb_window} width='90%' alt="The _RGB Frame_ window with the result of the green markers tracking."/>
+    <img className="centered" src={calib_rgb_window} width='66%' alt="The _RGB Frame_ window with the result of the green markers tracking."/>
     <figcaption>
     The _RGB Frame_ window displays the 3D position of the two markers in the frame of the camera (first line) and in the simulation frame (second line).
     </figcaption>
