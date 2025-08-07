@@ -68,7 +68,7 @@ Camera:
 
         # Example: Move all motors to 90 degrees (PI/2 radians)
         target_angles = [math.pi/2] * 4
-        emio.motors.setAngles(target_angles)
+        emio.motors.angles = target_angles
 
         # Disconnect when done
         emio.disconnect()
