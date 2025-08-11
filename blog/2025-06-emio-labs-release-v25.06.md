@@ -31,20 +31,20 @@ To upgrade, download the new version !
 You can now download Emio Labs for MacOS!
 Download the latest version [here](https://mailchi.mp/compliance-robotics.com/download-emio-labs) and follow the [installation steps](/docs/v25.06/Users/EmioLabs/emio-labs-user-manual/#installation).
 
-<img className="centered" src={emio_labs_macos} width="70%"/>
+<img className="centered" src={emio_labs_macos} width="70%" alt="Emio logo next to Apple logo"/>
 
 ### ✨ A New Emio API
 Emio Labs now comes with a new API to use Emio without the simulation environment. Browse our [documentation](/docs/v25.06/Developers/emio-api/) to learn how to use this API.
 
 
-<img className="centered" src={emio_api_img} width="70%"/>
+<img className="centered" src={emio_api_img} width="70%" alt="screenshot of the Emio API documentation page"/>
 
 ### ✨ Emio SOFA API Documentation
 To help you customize your Emio SOFA scene, we created a new documentation page for that!
 
 Check this page to learn about the [Emio SOFA API](/docs/v25.06/Developers/emio-sofa-api/).
 
-<img className="centered" src={emio_sofa_api_img} width="70%"/>
+<img className="centered" src={emio_sofa_api_img} width="70%" alt="screenshot of the Emio SOFA API documentation page"/>
 
 ## Other Changes
 

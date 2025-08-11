@@ -128,21 +128,21 @@ const config: Config = {
         {
           html: `
           <a href="https://www.linkedin.com/company/compliance-robotics">
-             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_linkedin.png' width="30" height="30" />
+             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_linkedin.png' width="30" height="30" alt="LinkedIn logo" />
           </a>
           `
         },
         {
           html: `
           <a href="https://www.youtube.com/@ComplianceRobotics">
-             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_youtube.png' width="30" height="30" />
+             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_youtube.png' width="30" height="30" alt="Youtube logo" />
           </a>
           `
         },
         {
           html: `
           <a href="https://www.compliance-robotics.com">
-             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_CR.png' width="30" height="30" />
+             <img src='https://sofacompliancerobotics.github.io/docs-support/img/footer_icon_CR.png' width="30" height="30" alt="Compliance Robotics logo"/>
           </a>
           `
         }
