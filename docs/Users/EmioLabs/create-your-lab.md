@@ -30,7 +30,7 @@ Navigate through the directories in `assets/labs`. Each directory has a `.md` fi
 
 - the **name** of the directory containing your `.md` file
 - the **filename** (if different than the directory name)
-- a **title** and a **description** to display in the main dashboard
+- a **title** and a **description** to display in the main Table of Contents
 
 For example:
 
