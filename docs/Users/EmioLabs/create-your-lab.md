@@ -22,7 +22,28 @@ By following this documentation you’ll be able to modify the labs and create y
 
 A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. 
 
-Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application. The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button ( <img src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> ) in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
+:::tip[note]
+Have a look at the [Emio.lab_empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) GitHub repository to see an example of a lab that you can use as a template to create your own lab.
+:::
+
+Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application, and a `.json` file which contains the description of the lab to display in the main table of contents of the Emio Labs application. This file should either be named `lab.json` or match the name of your lab directory. You'll need to provide:
+
+- the **name** of the directory containing your `.md` file
+- the **filename** (if different than the directory name)
+- a **title** and a **description** to display in the main Table of Contents
+
+For example:
+
+```json title="/assets/labs/mylab/mylab.json"
+{
+    "name": "mylab",
+    "title": "My Lab",
+    "description": "discover my lab",
+    "url": "https://github.com/URL_TO_MY_LAB_REPOSITORY",
+}
+```
+
+The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button ( <img src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> ) in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
 <img className="centered" src={emio_labs_directory} width="20%" alt="Hierarchy of files for a lab"/>
 <figcaption>Markdown and python files of the lab models.</figcaption>
@@ -32,34 +53,13 @@ Navigate through the directories in `assets/labs`. Each directory has a `.md` fi
 <img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
-The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. You'll need to provide:
-
-- the **name** of the directory containing your `.md` file
-- the **filename** (if different than the directory name)
-- a **title** and a **description** to display in the main dashboard
-
-The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
+The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
 
 ```json title="/assets/labs/labsConfig.json"
 {
-    "labs": [
-        {
-            "name": "introduction",
-            "title": "Introduction",
-            "description": "discover Emio and its software GUI"
-        },
-        {
-            "name": "lab_models",
-            "filename": "lab_models.md",
-            "title": "Lab 1. Models",
-            "description": "discover and analyse different models"
-        },
-        {
-            "name": "sandbox",
-            "filename": "sandbox.md",
-            "title": "Sandbox",
-            "description": "set up Emio exactly how you want"
-        }]
+    "labs": [{"name": "introduction"},
+             {"name": "lab_models"},
+             {"name": "sandbox"}]
 }
 ```
 
