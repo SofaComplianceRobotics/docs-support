@@ -65,7 +65,10 @@ The order of the labs in the application will match the order in the `labsConfig
 
 ## Write your own Lab in Markdown
 
-You can always refer to the `README.md` file of the `assets/labs` directory for the Markdown cheat sheet. It provides a quick overview of all the Markdown syntax elements and the ones developed for this application, which we presents now.
+Markdown is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats.
+We use it to write our labs and the Markdown files are rendered by the application and displayed in a user-friendly way.
+
+Here we describe the basic syntax of Markdown and the extended syntax that we use in the **Emio Labs** application.
 
 ### Basic Syntax
 
