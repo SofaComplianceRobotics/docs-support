@@ -26,7 +26,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                 className={clsx("button button--secondary button--lg", styles.whitebutton)}
-                to={`${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"/"}`}>
+                to={`${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"https://docs-support.compliance-robotics.com/docs/next/"}`}>
                 Get Started
               </Link>
             </div>

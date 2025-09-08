@@ -49,7 +49,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, link, description}: FeatureItem) {
   const preferredVersion = useDocsPreferredVersion();
-  const preferredVersionPath = `${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"/"}`;
+  const preferredVersionPath = `${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"https://docs-support.compliance-robotics.com/docs/next/"}`;
   const linkWithVersion = link.startsWith('/Users') ? `${preferredVersionPath}${link}` : link;
   return (
     <div className={clsx('col col--3 col--offset-1')}>
