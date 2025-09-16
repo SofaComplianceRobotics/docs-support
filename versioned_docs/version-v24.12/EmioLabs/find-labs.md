@@ -23,8 +23,8 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 ## Lab 1. Models for Soft Robotics
 
 :::verified
-Author: Compliance Robotics \
-Recommended audience: Master's students in robotics, mechanical engineering, or related fields. \
+___Author___: Compliance Robotics \
+___Recommended audience___: Master's students in robotics, mechanical engineering, or related fields. \
 *Distributed with the Emio Labs application* 
 :::
 
@@ -40,12 +40,12 @@ Recommended audience: Master's students in robotics, mechanical engineering, or 
     </>}
 />
 
-## :unlock: Lab 2. Inverse Kinematics
+## :rocket: Lab 2. Inverse Kinematics
 
 :::verified
-Author: Compliance Robotics \
-Recommended audience: Master's students in robotics, mechanical engineering, or related fields with experience in Python programming. \
-:unlock: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
+___Author___: Compliance Robotics \
+___Recommended audience___: Master's students in robotics, mechanical engineering, or related fields with experience in Python programming. \
+:rocket: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 :::
 
 **Explore the principles of inverse kinematics as applied to soft robots, and write your own inverse kinematic solver in python.**
@@ -64,8 +64,8 @@ Recommended audience: Master's students in robotics, mechanical engineering, or 
 ## Project 1. Pick & Place
 
 :::verified
-Author: Compliance Robotics \
-Recommended audience: Undergraduate students in robotics, mechanical engineering, or related fields. \
+___Author___: Compliance Robotics \
+___Recommended audience___: Undergraduate students in robotics, mechanical engineering, or related fields. \
 *Distributed with the Emio Labs application* 
 :::
 
@@ -80,12 +80,12 @@ Recommended audience: Undergraduate students in robotics, mechanical engineering
     </>}
 />
 
-## :unlock: Lab 3. Design
+## :rocket: Lab 3. Design
 
 :::verified
-Authors: <QuentinPeyronLink/> & Compliance Robotics \
-Recommended audience: Undergraduate students in robotics, mechanical engineering, or related fields. \
-:unlock: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
+___Authors___: <QuentinPeyronLink/> & Compliance Robotics \
+___Recommended audience___: Undergraduate students in robotics, mechanical engineering, or related fields. \
+:rocket: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 
 <QuentinPeyron/>
 :::
@@ -104,8 +104,8 @@ Recommended audience: Undergraduate students in robotics, mechanical engineering
 ## Lab 4. Closed Loop
 
 :::verified
-Author: Compliance Robotics \
-Recommended audience: Master's students in robotics, control, mechanical engineering, or related fields. \
+___Author___: Compliance Robotics \
+___Recommended audience___: Master's students in robotics, control, mechanical engineering, or related fields. \
 *Distributed with the Emio Labs application* 
 :::
 
