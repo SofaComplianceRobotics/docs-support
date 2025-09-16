@@ -24,7 +24,8 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Master's students in robotics, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Discover and analyse different models. Discover the accuracy and limitation of continuum mechanics models.**
@@ -34,16 +35,17 @@ Author: Compliance Robotics \
     This lab consist of understanding these models and their parameters, and experimentally analyzing their behavior. To do so, different legs with various geometries are provided with the robot. Each leg leading to different mechanical behaviors. You will be able to confront the models with the legs one by one.
     </>}
     image={<>
-    <img className="centered" src={lab_models} width="250px"/>
+    <img className="centered" src={lab_models} width="250px" alt="A deformed Emio leg over time"/>
     <figcaption> Lab 1. Models </figcaption>
     </>}
 />
 
-## Lab 2. Inverse Kinematics
+## :unlock: Lab 2. Inverse Kinematics
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Master's students in robotics, mechanical engineering, or related fields with experience in Python programming. \
+:unlock: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 :::
 
 **Explore the principles of inverse kinematics as applied to soft robots, and write your own inverse kinematic solver in python.**
@@ -54,7 +56,7 @@ Author: Compliance Robotics \
     By the end of this lab, you will have a better understanding of the concept of mechanical compliance and the formulation of an optimization problem that allows to get the inverse kinematics from the mechanical compliance model of soft robots.
     </>}
     image={<>
-    <img className="centered" src={lab_inverse} width="250px"/>
+    <img className="centered" src={lab_inverse} width="250px" alt="Emio next to a computer running SOFA Robotics"/>
     <figcaption> Lab 2. Inverse Kinematics </figcaption>
     </>}
 />
@@ -63,7 +65,8 @@ Author: Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Undergraduate students in robotics, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Start from scratch, end up with a full deformable pick & place robot, and solve a pick and place task.**
@@ -72,16 +75,17 @@ Author: Compliance Robotics \
     description={<>In this lab, we will test a simple pick & place example using a soft gripper attached to the robot's end-effector. This exercise aims to apply the concepts studied and reinforce the student understanding of inverse models in soft robotics by programming a complete pick & place cycle.
     </>}
     image={<>
-    <img className="centered" src={project_picknplace} width="250px"/>
+    <img className="centered" src={project_picknplace} width="250px" alt="The gripper attached to Emio legs grasping a cube"/>
     <figcaption> Project 1. Pick & Place </figcaption>
     </>}
 />
 
-## Lab 3. Design
+## :unlock: Lab 3. Design
 
 :::verified
 Authors: <QuentinPeyronLink/> & Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Undergraduate students in robotics, mechanical engineering, or related fields. \
+:unlock: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 
 <QuentinPeyron/>
 :::
@@ -89,10 +93,10 @@ Authors: <QuentinPeyronLink/> & Compliance Robotics \
 **Design your own legs and gripper for Emio, and check their performance in simulation.**
 
 <LabDescription
-    description={<>In this lab session, we will work on the design of the flexible legs composing Emio such that a pick & place task can be realized.In particular, we aim at picking an object which is not reachable with the initial design of the robot.For that purpose, we propose you to follow an iterative and interactive design process where fast mechanical simulations are used to predict the system behavior and performances.
+    description={<>In this lab, we will work on the design of the flexible legs composing Emio such that a pick & place task can be realized.In particular, we aim at picking an object which is not reachable with the initial design of the robot. For that purpose, we propose you to follow an iterative and interactive design process where fast mechanical simulations are used to predict the system behavior and performances.
     </>}
     image={<>
-    <img className="centered" src={lab_design} width="250px"/>
+    <img className="centered" src={lab_design} width="250px" alt="The FreeCAD software with the sketch of a leg displayed"/>
     <figcaption> Lab 3. Design </figcaption>
     </>}
 />
@@ -101,7 +105,8 @@ Authors: <QuentinPeyronLink/> & Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Master's students in robotics, control, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Discover closed loop control strategies, from basic inverse kinematic proportional control, to state feedback plus observer.**
@@ -114,7 +119,7 @@ Author: Compliance Robotics \
     - And finally give some insight of what could be achieved with more time.
     </>}
     image={<>
-    <img className="centered" src={lab_closed} width="250px"/>
+    <img className="centered" src={lab_closed} width="250px" alt="Screenshot of SOFA Robotics plotting errors"/>
     <figcaption> Lab 4. Closed Loop </figcaption>
     </>}
 />

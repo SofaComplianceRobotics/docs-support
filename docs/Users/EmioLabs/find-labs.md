@@ -24,7 +24,8 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Master's students in robotics, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Discover and analyse different models. Discover the accuracy and limitation of continuum mechanics models.**
@@ -39,11 +40,12 @@ Author: Compliance Robotics \
     </>}
 />
 
-## Lab - Inverse Kinematics
+## :unlock: Lab - Inverse Kinematics
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Master's students in robotics, mechanical engineering, or related fields with experience in Python programming. \
+:unlock: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 :::
 
 **Explore the principles of inverse kinematics as applied to soft robots, and write your own inverse kinematic solver in python.**
@@ -63,7 +65,8 @@ Author: Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Undergraduate students in robotics, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Start from scratch, end up with a full deformable pick & place robot, and solve a pick and place task.**
@@ -77,11 +80,12 @@ Author: Compliance Robotics \
     </>}
 />
 
-## Lab - Design
+## :unlock: Lab - Design
 
 :::verified
 Authors: <QuentinPeyronLink/> & Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Undergraduate students in robotics, mechanical engineering, or related fields. \
+:unlock: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 
 <QuentinPeyron/>
 :::
@@ -101,7 +105,8 @@ Authors: <QuentinPeyronLink/> & Compliance Robotics \
 
 :::verified
 Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+Recommended audience: Master's students in robotics, control, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Discover closed loop control strategies, from basic inverse kinematic proportional control, to state feedback plus observer.**
