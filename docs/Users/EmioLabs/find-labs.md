@@ -24,7 +24,7 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 
 :::verified
 ___Author___: Compliance Robotics \
-___Recommended audience___: Master's students in robotics, mechanical engineering, or related fields. \
+___Recommended audience___: Master's or PhD students in robotics, mechanical engineering, or related fields. \
 *Distributed with the Emio Labs application* 
 :::
 
@@ -44,7 +44,7 @@ ___Recommended audience___: Master's students in robotics, mechanical engineerin
 
 :::verified
 ___Author___: Compliance Robotics \
-___Recommended audience___: Master's students in robotics, mechanical engineering, or related fields with experience in Python programming. \
+___Recommended audience___: Master's or PhD students in robotics, mechanical engineering, or related fields with experience in Python programming. \
 :rocket: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 :::
 
@@ -105,7 +105,7 @@ ___Recommended audience___: Undergraduate students in robotics, mechanical engin
 
 :::verified
 ___Author___: Compliance Robotics \
-___Recommended audience___: Master's students in robotics, control, mechanical engineering, or related fields. \
+___Recommended audience___: Master's or PhD students in robotics, control engineering, or related fields. \
 *Distributed with the Emio Labs application* 
 :::
 
