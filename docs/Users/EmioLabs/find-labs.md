@@ -23,8 +23,9 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 ## Lab - Models for Soft Robotics
 
 :::verified
-Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+___Author___: Compliance Robotics \
+___Recommended audience___: Master's or PhD students in robotics, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Discover and analyse different models. Discover the accuracy and limitation of continuum mechanics models.**
@@ -39,11 +40,12 @@ Author: Compliance Robotics \
     </>}
 />
 
-## Lab - Inverse Kinematics
+## :rocket: Lab - Inverse Kinematics
 
 :::verified
-Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+___Author___: Compliance Robotics \
+___Recommended audience___: Master's or PhD students in robotics, mechanical engineering, or related fields with experience in Python programming. \
+:rocket: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 :::
 
 **Explore the principles of inverse kinematics as applied to soft robots, and write your own inverse kinematic solver in python.**
@@ -62,8 +64,9 @@ Author: Compliance Robotics \
 ## Project - Pick & Place
 
 :::verified
-Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+___Author___: Compliance Robotics \
+___Recommended audience___: Undergraduate students in robotics, mechanical engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Start from scratch, end up with a full deformable pick & place robot, and solve a pick and place task.**
@@ -77,11 +80,12 @@ Author: Compliance Robotics \
     </>}
 />
 
-## Lab - Design
+## :rocket: Lab - Design
 
 :::verified
-Authors: <QuentinPeyronLink/> & Compliance Robotics \
-*Distributed with the Emio Labs application*
+___Authors___: <QuentinPeyronLink/> & Compliance Robotics \
+___Recommended audience___: Undergraduate students in robotics, mechanical engineering, or related fields. \
+:rocket: *This lab features content that does not require the robot. Distributed with the Emio Labs application.*
 
 <QuentinPeyron/>
 :::
@@ -100,8 +104,9 @@ Authors: <QuentinPeyronLink/> & Compliance Robotics \
 ## Lab - Closed Loop
 
 :::verified
-Author: Compliance Robotics \
-*Distributed with the Emio Labs application*
+___Author___: Compliance Robotics \
+___Recommended audience___: Master's or PhD students in robotics, control engineering, or related fields. \
+*Distributed with the Emio Labs application* 
 :::
 
 **Discover closed loop control strategies, from basic inverse kinematic proportional control, to state feedback plus observer.**
