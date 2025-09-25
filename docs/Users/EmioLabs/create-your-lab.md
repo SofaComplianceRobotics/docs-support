@@ -26,7 +26,7 @@ A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (w
 Have a look at the [Emio.lab_empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) GitHub repository to see an example of a lab that you can use as a template to create your own lab.
 :::
 
-Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application, and a `.json` file which contains the description of the lab to display in the main table of contents of the Emio Labs application. This file should either be named `lab.json` or match the name of your lab directory. You'll need to provide:
+Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application, and a `lab.json` file which contains the description of the lab to display in the main table of contents of the Emio Labs application. You'll need to provide:
 
 - the **name** of the directory containing your `.md` file
 - the **filename** (if different than the directory name)
@@ -34,7 +34,7 @@ Navigate through the directories in `assets/labs`. Each directory has a `.md` fi
 
 For example:
 
-```json title="/assets/labs/mylab/mylab.json"
+```json title="/assets/labs/mylab/lab.json"
 {
     "name": "mylab",
     "title": "My Lab",
