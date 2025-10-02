@@ -138,8 +138,8 @@ To access a lab:
 
 If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
 
-## Managing Labs in Emio Labs
-Since Emio Labs v25.12, you can add and reorder labs into Emio Labs via the **Labs Configurator** and the **Reset Labs** window.
+## Managing the Labs
+Since Emio Labs v25.12, you can add and reorder labs into the app via the **Labs Configurator** and the **Reset Labs** window.
 
 The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
 From there, you can **activate** a lab to be viewed in the app and **reorder** the labs by checking and drag and dropping the lab cards.
@@ -148,16 +148,18 @@ From there, you can **activate** a lab to be viewed in the app and **reorder** t
 ### Adding a Lab 
 With the **Labs Configurator**, you can also add labs to the application.
 
+:::tip
 A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) template.
+:::
 
 To open the configurator, click on **Labs>Configure Labs** in the top menu bar.
 
-<img className="centered" src={emio_labs_labsconfigurator} width="50%" alt="overview of the labs configurator window"/>
+<img className="centered" src={emio_labs_labsconfigurator} width="70%" alt="overview of the labs configurator window"/>
 
-You can add a lab by inputing either of the following in the text input:
-- a local path on your computer to a folder containing the lab material;
+You can add a lab by inputting either of the following in the text input:
+- A local path on your computer to a folder containing the lab material;
      - e.g., _/home/username/path/to/a/lab/folder_
-- a link (http or https) to a `zip` archive.
+- A link (`http` or `https`) to a `zip` archive.
      - e.g., _https://github.com/SofaComplianceRobotics/Emio.lab_empty/archive/refs/heads/main.zip_
 
 
@@ -171,7 +173,7 @@ You can reset the labs content by opening the **Reset Labs** window by clicking 
 In the window, either select the labs you want to reset and click the **Reset Selected** button or simply click the **Reset All** button to reset all the labs.
 
 
-<img className="centered" src={emio_labs_resetlabs} width="50%" alt="overview of the labs configurator window"/>
+<img className="centered" src={emio_labs_resetlabs} width="70%" alt="overview of the labs configurator window"/>
 
 :::tip[important]
 Note: You can only reset the labs that have been added with the Labs Configurator or the core labs.
