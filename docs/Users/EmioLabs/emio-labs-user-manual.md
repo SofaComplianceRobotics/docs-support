@@ -5,6 +5,8 @@ sidebar_position: 1
 
 import emiolabs_overview from './img/emio-labs-overview.png';
 import exercise_overview from './img/exercise.png';
+import emio_labs_labsconfigurator from './img/emio-labs-labsconfigurator.png';
+import emio_labs_resetlabs from './img/emio-labs-resetlabs.png';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -135,6 +137,45 @@ To access a lab:
 3. Follow the step-by-step instructions within each lab.
 
 If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
+
+## Managing Labs in Emio Labs
+Since Emio Labs v25.12, you can add and reorder labs into Emio Labs via the **Labs Configurator** and the **Reset Labs** window.
+
+The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
+From there, you can **activate** a lab to be viewed in the app and **reorder** the labs by checking and drag and dropping the lab cards.
+
+
+### Adding a Lab 
+With the **Labs Configurator**, you can also add labs to the application.
+
+A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) template.
+
+To open the configurator, click on **Labs>Configure Labs** in the top menu bar.
+
+<img className="centered" src={emio_labs_labsconfigurator} width="50%" alt="overview of the labs configurator window"/>
+
+You can add a lab by inputing either of the following in the text input:
+- a local path on your computer to a folder containing the lab material;
+     - e.g., _/home/username/path/to/a/lab/folder_
+- a link (http or https) to a `zip` archive.
+     - e.g., _https://github.com/SofaComplianceRobotics/Emio.lab_empty/archive/refs/heads/main.zip_
+
+
+Then click on the **Add** button to add the lab to the list of available labs for Emio Labs. This will copy the folder from the input into the `path/to/home/emio-labs/version/assets/labs` folder.
+
+By default, the lab will be checked and added to the application. If you want to remove it to the Emio Labs app, click on the checkbox.
+
+### Resetting the Labs
+You can reset the labs content by opening the **Reset Labs** window by clicking the **Labs>Reset Labs**. Resetting a lab means copying back the original content of the labs into the `path/to/home/emio-labs/version/assets/labs` folder. This way, if you made changes to the labs material, you can easily come back to the initial state.
+
+In the window, either select the labs you want to reset and click the **Reset Selected** button or simply click the **Reset All** button to reset all the labs.
+
+
+<img className="centered" src={emio_labs_resetlabs} width="50%" alt="overview of the labs configurator window"/>
+
+:::tip[important]
+Note: You can only reset the labs that have been added with the Labs Configurator or the core labs.
+:::
 
 ## Using the Simulation Software
 
