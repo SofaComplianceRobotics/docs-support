@@ -7,6 +7,7 @@ import emiolabs_overview from './img/emio-labs-overview.png';
 import exercise_overview from './img/exercise.png';
 import emio_labs_labsconfigurator from './img/emio-labs-labsconfigurator.png';
 import emio_labs_resetlabs from './img/emio-labs-resetlabs.png';
+import emio_labs_empty from './img/emio-labs-empty.png';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -155,6 +156,7 @@ A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Em
 To open the configurator, click on **Labs>Configure Labs** in the top menu bar.
 
 <img className="centered" src={emio_labs_labsconfigurator} width="70%" alt="overview of the labs configurator window"/>
+<figcaption>The labs configurator of the **Emio Labs** application. Remove, add, or organize the labs.</figcaption>
 
 You can add a lab by inputting either of the following in the text input:
 - A local path on your computer to a folder containing the lab material;
@@ -162,6 +164,8 @@ You can add a lab by inputting either of the following in the text input:
 - A link (`http` or `https`) to a `zip` archive.
      - e.g., _https://github.com/SofaComplianceRobotics/Emio.lab_empty/archive/refs/heads/main.zip_
 
+<img className="centered" src={emio_labs_empty} width="70%" alt="how to get a link to a zip archive on GitHub"/>
+<figcaption>Getting a link to a zip archive on GitHub.</figcaption>
 
 Then click on the **Add** button to add the lab to the list of available labs for Emio Labs. This will copy the folder from the input into the `path/to/home/emio-labs/version/assets/labs` folder.
 
@@ -173,7 +177,8 @@ You can reset the labs content by opening the **Reset Labs** window by clicking 
 In the window, either select the labs you want to reset and click the **Reset Selected** button or simply click the **Reset All** button to reset all the labs.
 
 
-<img className="centered" src={emio_labs_resetlabs} width="70%" alt="overview of the labs configurator window"/>
+<img className="centered" src={emio_labs_resetlabs} width="70%" alt="overview of the reset labs window"/>
+<figcaption>Resetting the labs from the application.</figcaption>
 
 :::tip[important]
 Note: You can only reset the labs that have been added with the Labs Configurator or the core labs.
