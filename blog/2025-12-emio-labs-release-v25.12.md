@@ -11,19 +11,30 @@ date: 2025-12-31T10:00
 
 import lab_empty from './2025-12-release/img/lab-empty.png'
 import calibration from './2025-12-release/img/calibration.png'
+import github_labempty from './2025-12-release/img/emio-labs-empty.png'
+import reset_labs from './2025-12-release/img/emio-labs-resetlabs.png'
+import labs_configurator from './2025-12-release/img/emio-labs-labsconfigurator.png'
+
 
 ## Highlights
 
 ### ✨ Labs Configurator
 
-Configure your labs with ease using the new Labs Configurator! Add and organize your labs directly from the Emio Labs interface. This feature allows you to customize the application to your curiculum needs.
+Configure your labs with ease using the new Labs Configurator! Add, remove, and organize your labs directly from the Emio Labs interface. This feature allows you to customize the application to your curiculum needs. Follow this documentation for more details: [Configuring Emio Labs](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/emio-labs-user-manual/#configuring-the-labs).
+
+<img className="centered" src={labs_configurator} width="70%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/>
+
+### ✨ Reset Labs
+Easily reset your labs to their original state with the new Reset Labs feature. This is particularly useful for educators who want to ensure that all students start with the same setup. You can reset individual labs or all labs at once. Follow this documentation for more details: [Resetting the Labs](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/emio-labs-user-manual/#resetting-the-labs).
+
+<img className="centered" src={reset_labs} width="70%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/>
 
 ### ✨ New Content
 
 We are excited to introduce new content to Emio Labs, including new demos and a new lab. These additions will help you explore the capabilities of Emio:
 
-- [demo_sensing](https://github.com/SofaComplianceRobotics/Emio.demo_sensing): A new demo that showcases the sensing capabilities of Emio using the camera
-- [demo_tictactoe](https://github.com/SofaComplianceRobotics/Emio.demo_tictactoe): Play Tic Tac Toe with Emio! This demo allows you to play the classic game against Emio, showcasing the pick-and-place capabilities of Emio.
+- [demo_sensing](https://github.com/SofaComplianceRobotics/Emio.demo_sensing): A new demo that showcases the sensing capabilities of Emio using the camera. Use Emio as a joystick, and teleoperate another Emio. 
+- [demo_tictactoe](https://github.com/SofaComplianceRobotics/Emio.demo_tictactoe): Play Tic Tac Toe with Emio! This demo allows you to play the classic game against Emio, showcasing the pick-and-place capabilities of Emio, and the use of computer vision and AI to recognize the game pawns.
 - [demo_sofagym](https://github.com/SofaComplianceRobotics/Emio.demo_sofagym): A new demo that showcases the integration of Emio with SofaGym, allowing you to use reinforcement learning in a simulated environment to train Emio to solve the push-T task.
 - [lab_control]
 
