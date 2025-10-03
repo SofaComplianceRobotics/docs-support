@@ -5,13 +5,11 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import {useDocsPreferredVersion} from '@docusaurus/theme-common';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
-  const preferredVersion = useDocsPreferredVersion();
   return (
       <header className={clsx('hero hero--primary', styles.heroBannerHomePage)}>
         <div style={{display: "flex", alignItems:"center"}}>
@@ -26,7 +24,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                 className={clsx("button button--secondary button--lg", styles.whitebutton)}
-                to={`${preferredVersion.preferredVersion?preferredVersion.preferredVersion.path:"/"}`}>
+                to={"docs/next"}>
                 Get Started
               </Link>
             </div>
