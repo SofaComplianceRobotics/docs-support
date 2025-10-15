@@ -14,11 +14,16 @@ import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 
 # Find your Labs
 
-:::tip
-Teach soft robotics with the original content created by Compliance Robotics. It provides a practical introduction to the concepts of soft robotics: models, inverse kinematics, pick & place, design, and closed loop.
+Teach soft robotics with the original content created by Compliance Robotics (distributed with Emio Labs). It provides a practical introduction to the concepts of soft robotics: models, inverse kinematics, pick & place, design, and closed loop.
 
+Explore our [GitHub repositories](https://github.com/orgs/SofaComplianceRobotics/repositories?q=emiolabslibrary) to access a comprehensive collection of labs and demos designed for Emio and the Emio Labs application.
+
+In this page you will find a **selection of labs and projects**. Each lab is described with its recommended audience, and a short description. We are continuously working on new labs, projects and demos, so don't hesitate to check back regularly for updates or subscribe to our [newsletter](https://mailchi.mp/compliance-robotics.com/subscribe-to-newsletter).
+
+:::tip
 *[Easily compose your labs and add your own content](create-your-lab.md). Share your content for Emio with the community. Contact us to add your content to this page by sending an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).*
 :::
+
 
 ## Lab - Models for Soft Robotics
 
