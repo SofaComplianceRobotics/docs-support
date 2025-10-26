@@ -139,7 +139,7 @@ To access a lab:
 
 If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
 
-## Managing the Labs
+## Configuring the Labs
 Since Emio Labs v25.12, you can add and reorder labs into the app via the **Labs Configurator** and the **Reset Labs** window.
 
 The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
