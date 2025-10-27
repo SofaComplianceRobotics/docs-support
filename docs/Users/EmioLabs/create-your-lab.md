@@ -201,32 +201,6 @@ You can optionally add a label to the option by using the syntax `[MY_LABEL]`For
 
 You may have as many options as you want.
 
-#### Buttons
-
-```markdown
-#runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
-
-#open-button("MY_FILE")
-```
-
-An argument can be the current value of a select block by using its unique select name, that you defined. For example:
-
-```markdown
-#runsofa-button("MY_SCENE.py", "MY_UNIQUE_SELECT_NAME", "MY_ARGUMENT_2")
-```
-
-#### Icons
-
-```markdown
-#icon(ICON_NAME)
-```
-
-We use the icon library [font awesome](https://fontawesome.com/icons). For example:
-
-```markdown
-#icon(warning)
-```
-
 #### Input
 
 ```markdown
@@ -245,6 +219,40 @@ For example:
 <img className="centered" src={emio_labs_input} width="40%" alt="Example of an input field with the placeholder and a value."/>
 <figcaption>Input example. (left) Placeholder. (right) Value.</figcaption>
 
+#### Buttons
+
+There are three types of buttons available :
+
+1. The `runsofa-button` will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
+    ```markdown
+    #runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
+    ```
+2. The `python-button` will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
+    ```markdown
+    #python-button("MY_SCRIPT.py", "OPTIONAL_PATH_TO_PYTHON_MODULES")
+    ```
+3. The `open-button` will open a file `MY_FILE` with the default application associated with the file type on your system.
+    ```markdown
+    #open-button("MY_FILE")
+    ```
+
+An argument can be a value of a `select block` or an `input` field, by using its unique name that you defined. For example:
+
+```markdown
+#runsofa-button("MY_SCENE.py", "MY_UNIQUE_SELECT_OR_INPUT_NAME", "MY_ARGUMENT_2")
+```
+
+#### Icons
+
+```markdown
+#icon(ICON_NAME)
+```
+
+We use the icon library [font awesome](https://fontawesome.com/icons). For example:
+
+```markdown
+#icon(warning)
+```
 
 ## Share your Labs
 
