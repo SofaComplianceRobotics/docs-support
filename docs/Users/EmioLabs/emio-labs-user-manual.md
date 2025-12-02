@@ -8,6 +8,7 @@ import exercise_overview from './img/exercise.png';
 import emio_labs_labsconfigurator from './img/emio-labs-labsconfigurator.png';
 import emio_labs_resetlabs from './img/emio-labs-resetlabs.png';
 import emio_labs_empty from './img/emio-labs-empty.png';
+import emio_labs_exportimport from './img/emio-labs-exportimportconfig.png';
 import sofa_icon from './img/SOFAIcon.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -138,18 +139,13 @@ To access a lab:
 If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
 
 ## Configuring the Labs
-Since Emio Labs v25.12, you can add and reorder labs into the app via the **Labs Configurator** and the **Reset Labs** window.
+Since Emio Labs v25.12, you can add and reorder labs into the app via the **Labs Configurator** and reset or delete labs with the **Reset Labs** window.
 
+
+
+### Adding and Rearraging Labs
 The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
 From this window, you can **activate** a lab to be viewed in the app and **reorder** the labs by checking and drag and dropping the lab cards.
-
-
-### Adding a Lab 
-With the **Labs Configurator**, you can also add labs to the application.
-
-:::tip
-A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) template.
-:::
 
 To open the configurator, click on **Labs>Configure Labs** in the top menu bar.
 
@@ -169,6 +165,11 @@ Then click on the **Add** button to add the lab to the list of available labs fo
 
 By default, the lab will be checked and added to the application.
 
+:::tip
+A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) template.
+Refer to [Create Your Own Lab](./create-your-lab) for all the details to create a lab.
+:::
+
 ### Resetting the Labs
 You can reset or delete labs by opening the **Reset Labs** window by clicking the **Labs>Reset Labs**. Resetting a lab means copying back the original content of the labs into the `path/to/home/emio-labs/version/assets/labs` folder. This way, if you made changes to the labs material, you can easily come back to the initial state.
 
@@ -183,6 +184,29 @@ Note: You can only reset the labs that have been added with the Labs Configurato
 :::
 
 To delete labs, just check the labs you want to delete and then click on the red __Delete__ button.
+
+### Import/Export Labs Configuration
+You can easily import and export labs configuration. 
+It is particularly convenient when you want to share a labs configuration across several computers.
+
+Click on the top menu bar in __Labs__>__Import Config__ or __Labs__>__Export Config__.
+
+<img className="centered" src={emio_labs_exportimport} />
+
+### Manually Edit the Lab Config File
+:::warning[important]
+Note: This is not the recommended method. Instead, use the [Labs Configurator](#configuring-the-labs).
+:::
+
+The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
+
+```json title="/assets/labs/labsConfig.json"
+{
+    "labs": [{"name": "introduction"},
+             {"name": "lab_models"},
+             {"name": "sandbox"}]
+}
+```
 
 ## Using the Simulation Software
 

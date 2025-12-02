@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Emio
+title: Getting Started With Emio
 sidebar_position: 1
 ---
 
@@ -19,7 +19,7 @@ import calib_window from './img/calibration_window.png';
 import calib_rgb_window from './img/calibration_rgb.png';
 import calib_simulation from './img/calibration_simulation.png';
 
-# Getting Started with Emio
+# Getting Started With Emio
 
 Emio is a parallel deformable robot. Together with the desktop application [Emio Labs](../../../Users/EmioLabs/), this hands-on platform provides a practical introduction to the concepts of compliant and deformable robotics. 
 
@@ -53,7 +53,7 @@ Emio features two distinct configurations, as shown in the images below:
     </div>
 </div>
 
-## Connecting Emio to your Computer
+## Connecting Emio to Your Computer
 You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch.
 To connect Emio to your computer:
 1. Plug the USB cable into the USB port of Emio (see Figure 2),

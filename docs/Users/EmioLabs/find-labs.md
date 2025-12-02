@@ -1,5 +1,5 @@
 ---
-title: Find your labs
+title: Find a Lab
 sidebar_position: 2
 ---
 
@@ -12,7 +12,7 @@ import {LabDescription} from './_find-labs_.mdx';
 import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 
 
-# Find your Labs
+# Find a Lab
 
 Teach soft robotics with the original content created by Compliance Robotics (distributed with Emio Labs). It provides a practical introduction to the concepts of soft robotics: models, inverse kinematics, pick & place, design, and closed loop.
 
