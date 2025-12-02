@@ -69,7 +69,7 @@ const config: Config = {
         },
         blog: {
           blogTitle: 'News',
-          postsPerPage: 3,
+          postsPerPage: 2,
           blogSidebarTitle: 'All news',
           blogSidebarCount: 'ALL',
         },
