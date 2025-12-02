@@ -8,6 +8,7 @@ import exercise_overview from './img/exercise.png';
 import emio_labs_labsconfigurator from './img/emio-labs-labsconfigurator.png';
 import emio_labs_resetlabs from './img/emio-labs-resetlabs.png';
 import emio_labs_empty from './img/emio-labs-empty.png';
+import sofa_icon from './img/SOFAIcon.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -65,17 +66,12 @@ Ensure your system meets the following minimum requirements:
        3. And finally, install the required Python modules by running `python -m pip install -r requirements.txt`.
        :::
 
-       1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
-       2. **Portable.** If you have downloaded the `.zip`, double-click the file to create a `.app` file. To launch the **Emio Labs** application, simply click this new file. 
+       1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions.
+       2. **Portable.** If you have downloaded the `.zip`, double-click the file to create a `.app` file.
+
+       To launch Emio Labs on MacOS, please refer to the [section below](#running-emio-labs-on-macos) 
   </TabItem>
 </Tabs>
-
-Once installed, try the Emio Labs application. 
-
-
-:::tip[important]
-A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
-:::
 
 ### Running Emio Labs on MacOS
 :::warning
@@ -111,15 +107,17 @@ To resolve this:
 
 **Emio Labs** consists of several key components:
 
-- Main Dashboard: Navigate between different labs and access resources.
+- Main Table of Contents: Navigate between different labs and access resources.
 - Lab Environment: Interactive space where you'll follow learning materials and complete exercises and simulations.
-- Simulation Interface (sofa-robotics): Launch and interact with the numerical twin of Emio.
+- Simulation Application (sofa-robotics): Launch and interact with the numerical twin of Emio.
 - To reset the application go to **Edit > Reset App** in the main menu bar. This will reset the quiz, select the default parameters in the labs, etc.
 
 <img className="centered" src={emiolabs_overview} width="50%" alt="emio labs overview"/>
 <figcaption>The **Emio Labs** application on the Introduction page. The main dashboard is located at the top of each page.</figcaption>
 
-
+:::tip[important]
+A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
+:::
 
 ## Navigating the Labs
 
@@ -133,7 +131,7 @@ The original content of **Emio Labs** created by Compliance Robotics offers a se
 
 To access a lab:
 
-1. Click on the desired lab from the main dashboard.
+1. Click on the desired lab from the table of contents.
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
@@ -143,7 +141,7 @@ If you want to create your own content, you can follow this [documentation](crea
 Since Emio Labs v25.12, you can add and reorder labs into the app via the **Labs Configurator** and the **Reset Labs** window.
 
 The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
-From there, you can **activate** a lab to be viewed in the app and **reorder** the labs by checking and drag and dropping the lab cards.
+From this window, you can **activate** a lab to be viewed in the app and **reorder** the labs by checking and drag and dropping the lab cards.
 
 
 ### Adding a Lab 
@@ -167,12 +165,12 @@ You can add a lab by inputting either of the following in the text input:
 <img className="centered" src={emio_labs_empty} width="70%" alt="how to get a link to a zip archive on GitHub"/>
 <figcaption>Getting a link to a zip archive on GitHub.</figcaption>
 
-Then click on the **Add** button to add the lab to the list of available labs for Emio Labs. This will copy the folder from the input into the `path/to/home/emio-labs/version/assets/labs` folder.
+Then click on the **Add** button to add the lab to the list of available labs for Emio Labs. This will copy or download the folder from the input into the `path/to/home/emio-labs/version/assets/labs` folder.
 
-By default, the lab will be checked and added to the application. If you want to remove it to the Emio Labs app, click on the checkbox.
+By default, the lab will be checked and added to the application.
 
 ### Resetting the Labs
-You can reset the labs content by opening the **Reset Labs** window by clicking the **Labs>Reset Labs**. Resetting a lab means copying back the original content of the labs into the `path/to/home/emio-labs/version/assets/labs` folder. This way, if you made changes to the labs material, you can easily come back to the initial state.
+You can reset or delete labs by opening the **Reset Labs** window by clicking the **Labs>Reset Labs**. Resetting a lab means copying back the original content of the labs into the `path/to/home/emio-labs/version/assets/labs` folder. This way, if you made changes to the labs material, you can easily come back to the initial state.
 
 In the window, either select the labs you want to reset and click the **Reset Selected** button or simply click the **Reset All** button to reset all the labs.
 
@@ -184,12 +182,14 @@ In the window, either select the labs you want to reset and click the **Reset Se
 Note: You can only reset the labs that have been added with the Labs Configurator or the core labs.
 :::
 
+To delete labs, just check the labs you want to delete and then click on the red __Delete__ button.
+
 ## Using the Simulation Software
 
 The simulation software provides a numerical twin of Emio for experimentation:
 
 - Each lab contains exercise sections within you could be asked to launch the simulation corresponding to the exercise.
-- To launch the simulation, click the **SOFA** button within the section.
+- To launch the simulation, click the **SOFA** <img className="drop-shadow" src={sofa_icon} style={{height: '1em', border: '', borderRadius: '2px'}} /> button within the section.
 - For information about the simulation software, follow the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual.md).
 
 <img className="centered" src={exercise_overview} width="50%" alt="overview of an exercise section"/>
@@ -199,13 +199,16 @@ The simulation software provides a numerical twin of Emio for experimentation:
 
 After completing the requirements in simulation, you may have the opportunity to pilot the real soft robot:
 
-- Ensure the physical device is properly connected and powered on.
-- Toggle the "Simulation/Robot" button at the top of the simulation software to establish a connection between the simulator and the real device. When in "Robot" mode, pressing the play button will send simulation commands directly to the real device. 
+- Ensure the physical device is properly connected and powered on by following [this guide](../../Emio/getting-started-with-emio/).
+- Toggle the __Simulation/Robot__ button at the top of the simulation software to establish a connection between the simulator and the real device. 
+- When in _Robot_ mode, pressing the play button will send simulation commands directly to the real device. 
 - And finally use the interface controls to pilote Emio (see the [SOFA Robotics docs](../SOFARobotics/GUI-user-manual.md)).
 
 ## Sandbox
 
-The **Emio Labs** application offers a sandbox mode which allow you to set up Emio exactly as you want. Using the original set of legs and connectors or your own designed parts. In the main dashboard click on the Sandbox link to open the corresponding page: 
+The **Emio Labs** application offers a sandbox mode which allows you to set up Emio exactly as you want. Using the original set of legs and connectors or your own designed parts. 
+
+In the main dashboard click on the Sandbox link to open the corresponding page: 
 
 1. Follow the instructions to help you set up your Emio and the numerical twin.
 2. Launch the corresponding simulation by clicking on the SOFA button as usual, and enjoy.
@@ -216,4 +219,7 @@ Access supplementary materials through this website, including:
 
 - [FAQs](faq.md)
 
+For lab-related troubleshouting, refer to the documentation in the lab itself or the README file if you are using a lab from a Git repo.
+
 For additional help or inquiries, please contact our support team using this [form](/emio-support-form).
+
