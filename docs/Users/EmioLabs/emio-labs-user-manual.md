@@ -167,7 +167,7 @@ By default, the lab will be checked and added to the application.
 
 :::tip
 A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) template.
-Refer to [Create Your Own Lab](./create-your-lab) for all the details to create a lab.
+Refer to [Create Your Own Lab](create-your-lab.md) for all the details to create a lab.
 :::
 
 ### Resetting the Labs
