@@ -114,7 +114,7 @@ If you notice a large difference between the simulation and reality markers, you
 
         You will need (see the image to the right):
 
-        - The Aruco marker 
+        - The Aruco marker
         - Two green markers
         - The blue elevators to raise the platform
 
@@ -130,6 +130,12 @@ If you notice a large difference between the simulation and reality markers, you
         <figcaption>The set up for calibration of the camera. (1) the Aruco marker. (2) two green markers. (3) the elevators.</figcaption>
     </div>
 </div>
+
+:::tip
+The calibration marker normally comes with Emio but you can 3D print it using either:
+- [the whole marker](https://github.com/SofaComplianceRobotics/Emio.CoreAssets/tree/main/data/meshes)
+- [the support](https://github.com/SofaComplianceRobotics/Emio.CoreAssets/tree/main/data/meshes) and the [Aruco marker](https://github.com/SofaComplianceRobotics/Emio.CoreAssets/tree/main/data/meshes)
+:::
 
 ### Start the Calibration
 Calibration can be done using several methods: with Emio Labs or with the Emio API.
