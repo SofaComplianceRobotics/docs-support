@@ -133,8 +133,8 @@ If you notice a large difference between the simulation and reality markers, you
 
 :::tip
 The calibration marker normally comes with Emio but you can 3D print it using either:
-- [the whole marker file](https://github.com/SofaComplianceRobotics/Emio.CoreAssets/tree/main/data/meshes) (requires a multicolor 3D printer)
-- [the support file](https://github.com/SofaComplianceRobotics/Emio.CoreAssets/tree/main/data/meshes) and the [Aruco marker file](https://github.com/SofaComplianceRobotics/Emio.CoreAssets/tree/main/data/meshes)
+- <a target="_blank" href="./files/aruco.3mf" download>the whole marker file</a> (requires a multicolor 3D printer)
+- <a target="_blank" href="./files/aruco_part1_support_100mm.step" download>the support file</a> and the <a target="_blank" href="./files/aruco_part2_id672_70mm.step" download>Aruco marker file</a>
 
 The Aruco marker should be printed in __black__ and the support in __white__ for better performance.
 :::
