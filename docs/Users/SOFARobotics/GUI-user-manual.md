@@ -18,6 +18,8 @@ import repeatblock from './img/gui-repeat-block.png';
 import interblocks from './img/gui-inter-blocks.png';
 import trackmenu from './img/gui-track-menu.png';
 
+export const BLOCK_SIZE = 12
+
 Learn how to use the graphical user interface (GUI) for SOFA Robotics, designed to facilitate the programming and control of your robot simulations.
 
 :::note[about]
@@ -135,7 +137,7 @@ All blocks have a contextual menu with utility actions:
 
 You can also insert a block or swap blocks thanks to the inter-blocks buttons:
 
-<img className="centered" src={interblocks} style={{maxHeight:'10vh', minHeight:'50px'}} alt="image of the two buttons to sawp and insert a block between two blocks" />
+<img className="centered" src={interblocks} style={{maxHeight:'10vh', minHeight:'50px'}} alt="image of the two buttons to swp and insert a block between two blocks" />
 <figcaption>Example of the inter-block action buttons</figcaption>
 
 ##### Move Action Block
@@ -155,7 +157,7 @@ If you use the *Move Window* to place the effector at a desired position and the
 You can always adjust the *waypoint* position directly on the *block*. Additionally, you can modify the duration of the motion or its speed.
 </div>
 <div style={{flex: "0 0 40%"}}>
-<img className="centered" src={moveblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}} alt="Image of a Move block with the duration, speed, position and rotation values."/>
+<img className="centered" src={moveblock} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'100px', objectFit: 'contain'}} alt="Image of a Move block with the duration, speed, position and rotation values."/>
 <figcaption>Move block</figcaption>
 </div>
 </div>
@@ -167,7 +169,7 @@ You can always adjust the *waypoint* position directly on the *block*. Additiona
 The *Wait* block pauses the trajectory for a given duration, set in seconds.
 </div>
 <div style={{flex: "0 0 40%"}}>
-<img className="centered" src={waitblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}} />
+<img className="centered" src={waitblock} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'100px', objectFit: 'contain'}} />
 <figcaption>Wait block</figcaption>
 </div>
 </div>
@@ -186,8 +188,8 @@ They both have the same values:
 </div>
 <div style={{flex: "0 0 40%"}}>
 <div className="centered" style={{display:'flex', justifyContent: 'center', flexDirection: 'column'}}>
-    <img src={pickblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}}/>
-    <img src={placeblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}}/>
+    <img src={pickblock} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'100px', objectFit: 'contain'}}/>
+    <img src={placeblock} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'100px', objectFit: 'contain'}}/>
 </div>
 <figcaption>Pick block</figcaption>
 </div>
@@ -209,12 +211,12 @@ The values you can set for the *Repeat* block are:
 
 </div>
 <div style={{flex: "0 0 40%"}}>
-<img className="centered" src={repeatblock} style={{maxHeight:'30vh', minHeight:'100px', objectFit: 'contain'}}/>
+<img className="centered" src={repeatblock} style={{maxHeight:BLOCK_SIZE*2+'vh', minHeight:'100px', objectFit: 'contain'}}/>
 <figcaption>Repeat block</figcaption>
 </div>
 </div>
 You can add this block using the menu of the track then **Add Modifier**.
-<img className="centered" src={trackmenu} style={{maxHeight:'10vh', minHeight:'50px', objectFit: 'contain'}}/>
+<img className="centered" src={trackmenu} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'50px', objectFit: 'contain'}}/>
 <figcaption>Track menu</figcaption>
 
 ### Move Window
