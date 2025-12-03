@@ -18,7 +18,7 @@ import repeatblock from './img/gui-repeat-block.png';
 import interblocks from './img/gui-inter-blocks.png';
 import trackmenu from './img/gui-track-menu.png';
 
-export const BLOCK_SIZE = 12
+export const BLOCK_SIZE = 15
 
 Learn how to use the graphical user interface (GUI) for SOFA Robotics, designed to facilitate the programming and control of your robot simulations.
 
@@ -42,16 +42,14 @@ The windows offer various functionalities, enabling you to program or directly c
 
 #### Overview of the Windows
 
-- **Program:** Create a program for your robot
-- **Move:** Directly control your robot using sliders for the tool center point’s (TCP) target or motor adjustments.
-- **Input/Output (wip):** Create your program using inputs from external software.
-- **My Robot:** View information about the robot and adjust settings.
-- **Plotting:** Display simulation data in graphical form.
-
-- **Viewport:** Control the 3D view of the simulation.
-
-- **Scene Graph**: View the scene graph of the simulation.
-- **Log:** Display the log of the simulation.
+- **Program:** Create a program for your robot  
+- **Move:** Directly control your robot using sliders for the tool center point’s (TCP) target or motor adjustments.  
+- **Input/Output (wip):** Pilot your robot or create your program using inputs from external software.  
+- **My Robot:** View information about the robot and adjust settings.  
+- **Plotting:** Display simulation data in graphical form.  
+- **Viewport:** The 3D view of the simulation.  
+- **Scene Graph**: View the scene graph of the simulation.  
+- **Log:** Display the log of the simulation.  
 
 #### Overview of the Viewport
 
@@ -59,7 +57,7 @@ The windows offer various functionalities, enabling you to program or directly c
 - **Play/Pause/Step** the simulation using the buttons at the top center of the 3D view.
 - The TCP target is visualized as a frame (blue, red, and green).
 - Use the *combo box* near the *play/pause/step* buttons to choose which window controls the TCP target:
-    - Move (via sliders)
+    - Move (via sliders or a pad)
     - Input/Output (wip: via an external software)
     - Program (via way-points)
 
@@ -93,7 +91,7 @@ Switch the GUI between dark and light mode using the *sun*/*moon* button at the 
 <img className="centered" src={programwindow} alt="Program Window" width="100%"/>
 <figcaption>Program Window</figcaption>
 
-This window is used to program the robot. It is organized around a timeline. To program the robot (digital twin or real), add actions and modifiers blocks a track.
+This window is used to program the robot. It is organized around a timeline. To program the robot (digital twin or real), add actions and modifiers blocks to tracks.
 
 The *Program Window* top bar contains the following buttons (from left to right):
 
@@ -101,7 +99,7 @@ The *Program Window* top bar contains the following buttons (from left to right)
 - **Export**: Export a program
 - **Restart**: Restart the program
 - **Display Blocks** based on simulation time or not 
-- **Draw** the trajectory
+- **Draw the trajectory**
 - **Repeat**: Repeat the entire program from start to end
 - **Reverse**: Loop the entire program, going forward and backward
 
@@ -119,8 +117,6 @@ There are several blocks to compose your program:
 - **Modifier** block:
     - *Repeat*: Repeat a section of your program
 
-<div style={{display: "flex"}}>
-<div style={{flex: "1 1 0%"}}>
 All blocks have a contextual menu with utility actions:
 - *Add Before/After*: inserts a block before or after the block
 - *Duplicate*: ducplicates a block after
@@ -128,17 +124,19 @@ All blocks have a contextual menu with utility actions:
 - *Swap*: swaps between either the block before or after
 - *Overwrite*: overwrites the position of the waypoint with the current position in the move window (only available with Move block)
 - *Delete*: deletes the block
-</div>
-<div style={{flex: "0 0 40%"}}>
-<img className="centered" src={blockoptions} alt="Example of a contextual menu for the Move block"/>
+
+You can also insert a block or swap blocks thanks to the inter-blocks buttons (see image below) that appear when hovering between two blocks.
+
+<div style={{display: "flex", alignItems: 'flex-end', justifyContent: 'space-evenly'}}>
+<div >
+<img className="centered" src={blockoptions} style={{maxHeight:BLOCK_SIZE*1.3+'vh', minHeight:'50px'}}  alt="Example of a contextual menu for the Move block"/>
 <figcaption>Example of a contextual menu for the Move block</figcaption>
 </div>
-</div>
-
-You can also insert a block or swap blocks thanks to the inter-blocks buttons:
-
-<img className="centered" src={interblocks} style={{maxHeight:'10vh', minHeight:'50px'}} alt="image of the two buttons to swp and insert a block between two blocks" />
+<div>
+<img className="centered" src={interblocks} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'50px'}} alt="image of the two buttons to swp and insert a block between two blocks" />
 <figcaption>Example of the inter-block action buttons</figcaption>
+</div>
+</div>
 
 ##### Move Action Block
 
@@ -187,16 +185,15 @@ They both have the same values:
 - *release*: toggle to activate the release of the gripper, meaning apply the opening distance (right value)
 </div>
 <div style={{flex: "0 0 40%"}}>
-<div className="centered" style={{display:'flex', justifyContent: 'center', flexDirection: 'column'}}>
-    <img src={pickblock} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'100px', objectFit: 'contain'}}/>
+<div className="centered" style={{display:'flex', justifyContent: 'center', flexDirection: 'row'}}>
+    <img src={pickblock} style={{maxHeight:BLOCK_SIZE*1.02  +'vh', minHeight:'100px', objectFit: 'contain'}}/>
     <img src={placeblock} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'100px', objectFit: 'contain'}}/>
 </div>
-<figcaption>Pick block</figcaption>
+<figcaption>Pick/place blocks</figcaption>
 </div>
 </div>
 
 ##### Repeat Modifier Block
-
 
 <div style={{display: "flex"}}>
 
@@ -216,7 +213,7 @@ The values you can set for the *Repeat* block are:
 </div>
 </div>
 You can add this block using the menu of the track then **Add Modifier**.
-<img className="centered" src={trackmenu} style={{maxHeight:BLOCK_SIZE+'vh', minHeight:'50px', objectFit: 'contain'}}/>
+<img className="centered" src={trackmenu} style={{maxHeight:BLOCK_SIZE*1.1+'vh', minHeight:'50px', objectFit: 'contain'}}/>
 <figcaption>Track menu</figcaption>
 
 ### Move Window
@@ -238,7 +235,6 @@ This window is particularly useful for:
     <figcaption>Move Window</figcaption>
 </div>
 </div>
-
 
 <div style={{display: "flex"}}>
 <div style={{flex: "1 1 0%"}}>
