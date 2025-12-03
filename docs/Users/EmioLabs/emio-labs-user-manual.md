@@ -243,7 +243,7 @@ In the main dashboard click on the Sandbox link to open the corresponding page:
 
 Access supplementary materials through this website, including:
 
-- [FAQs](faq.md)
+- [FAQs](../faq.md)
 
 For lab-related troubleshouting, refer to the documentation in the lab itself or the README file if you are using a lab from a Git repo.
 

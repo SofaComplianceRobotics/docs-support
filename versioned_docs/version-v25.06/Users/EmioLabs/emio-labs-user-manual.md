@@ -166,6 +166,6 @@ The **Emio Labs** application offers a sandbox mode which allow you to set up Em
 
 Access supplementary materials through this website, including:
 
-- [FAQs](faq.md)
+- [FAQs](../faq.md)
 
 For additional help or inquiries, please contact our support team using this [form](/emio-support-form).

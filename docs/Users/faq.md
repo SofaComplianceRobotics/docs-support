@@ -24,7 +24,7 @@ Check the following list of frequently asked questions. If you can't find the an
     <summary>How can I change the legs on the robot?</summary>
     <aside>
     
-    Have a look at Emio’s [User Manual](../../Emio/emio-hardware-user-manual) for detailed instructions.
+    Have a look at Emio’s [User Manual](../Emio/emio-hardware-user-manual) for detailed instructions.
     
     </aside>
 </details>
@@ -34,7 +34,7 @@ Check the following list of frequently asked questions. If you can't find the an
 <details>
     <summary>Why doesn't my simulation seem to control the real robot?</summary>
     <aside>
-    - Check that the physical device is properly connected and powered on. Refer to Emio's [User Manual](../../Emio/emio-hardware-user-manual) for detailed instructions.
+    - Check that the physical device is properly connected and powered on. Refer to Emio's [User Manual](../Emio/emio-hardware-user-manual) for detailed instructions.
     - Make sure only one simulation is running. Close all active simulations and restart the simulation software.
     - Check for any errors in the corresponding logs (found in the Emio Labs application, beneath the SOFA button you've just clicked).
     - If you encounter an error message, consult the **Emio Labs > Introduction > Let's try Emio > Troubleshooting** section.
