@@ -1,5 +1,5 @@
 ---
-title: Find your labs
+title: Find a Lab
 sidebar_position: 2
 ---
 
@@ -12,7 +12,7 @@ import {LabDescription} from './_find-labs_.mdx';
 import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 
 
-# Find your Labs
+# Find a Lab
 
 Teach soft robotics with the original content created by Compliance Robotics (distributed with Emio Labs). It provides a practical introduction to the concepts of soft robotics: models, inverse kinematics, pick & place, design, and closed loop.
 
@@ -23,7 +23,6 @@ In this page you will find a **selection of labs and projects**. Each lab is des
 :::tip
 *[Easily compose your labs and add your own content](create-your-lab.md). Share your content for Emio with the community. Contact us to add your content to this page by sending an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).*
 :::
-
 
 ## Lab - Models for Soft Robotics
 
@@ -98,7 +97,7 @@ ___Recommended audience___: Undergraduate students in robotics, mechanical engin
 **Design your own legs and gripper for Emio, and check their performance in simulation.**
 
 <LabDescription
-    description={<>In this lab, we will work on the design of the flexible legs composing Emio such that a pick & place task can be realized.In particular, we aim at picking an object which is not reachable with the initial design of the robot. For that purpose, we propose you to follow an iterative and interactive design process where fast mechanical simulations are used to predict the system behavior and performances.
+    description={<>In this lab, we will work on the design of the flexible legs composing Emio such that a pick & place task can be realized. In particular, we aim at picking an object which is not reachable with the initial design of the robot. For that purpose, we propose you to follow an iterative and interactive design process where fast mechanical simulations are used to predict the system behavior and performances.
     </>}
     image={<>
     <img className="centered" src={lab_design} width="250px" alt="The FreeCAD software with the sketch of a leg displayed"/>
@@ -111,7 +110,7 @@ ___Recommended audience___: Undergraduate students in robotics, mechanical engin
 :::verified
 ___Author___: Compliance Robotics \
 ___Recommended audience___: Master's or PhD students in robotics, control engineering, or related fields. \
-*Distributed with the Emio Labs application* 
+*Distributed with the Emio Labs application*
 :::
 
 **Discover closed loop control strategies, from basic inverse kinematic proportional control, to state feedback plus observer.**

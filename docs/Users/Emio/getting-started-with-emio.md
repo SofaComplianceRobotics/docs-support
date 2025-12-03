@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Emio
+title: Getting Started With Emio
 sidebar_position: 1
 ---
 
@@ -19,7 +19,7 @@ import calib_window from './img/calibration_window.png';
 import calib_rgb_window from './img/calibration_rgb.png';
 import calib_simulation from './img/calibration_simulation.png';
 
-# Getting Started with Emio
+# Getting Started With Emio
 
 Emio is a parallel deformable robot. Together with the desktop application [Emio Labs](../../../Users/EmioLabs/), this hands-on platform provides a practical introduction to the concepts of compliant and deformable robotics. 
 
@@ -53,7 +53,7 @@ Emio features two distinct configurations, as shown in the images below:
     </div>
 </div>
 
-## Connecting Emio to your Computer
+## Connecting Emio to Your Computer
 You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch.
 To connect Emio to your computer:
 1. Plug the USB cable into the USB port of Emio (see Figure 2),
@@ -114,7 +114,7 @@ If you notice a large difference between the simulation and reality markers, you
 
         You will need (see the image to the right):
 
-        - The Aruco marker 
+        - The Aruco marker
         - Two green markers
         - The blue elevators to raise the platform
 
@@ -130,6 +130,14 @@ If you notice a large difference between the simulation and reality markers, you
         <figcaption>The set up for calibration of the camera. (1) the Aruco marker. (2) two green markers. (3) the elevators.</figcaption>
     </div>
 </div>
+
+:::tip
+The calibration marker normally comes with Emio but you can 3D print it using either:
+- <a target="_blank" href="./files/aruco.3mf" download>the whole marker file</a> (requires a multicolor 3D printer)
+- <a target="_blank" href="./files/aruco_part1_support_100mm.step" download>the support file</a> and the <a target="_blank" href="./files/aruco_part2_id672_70mm.step" download>Aruco marker file</a>
+
+The Aruco marker should be printed in __black__ and the support in __white__ for better performance.
+:::
 
 ### Start the Calibration
 Calibration can be done using several methods: with Emio Labs or with the Emio API.

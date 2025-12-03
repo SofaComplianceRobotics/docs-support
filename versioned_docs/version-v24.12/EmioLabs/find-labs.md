@@ -1,5 +1,5 @@
 ---
-title: Find your labs
+title: Find Your Labs
 sidebar_position: 4
 ---
 
@@ -12,7 +12,7 @@ import {LabDescription} from './_find-labs_.mdx';
 import {QuentinPeyron, QuentinPeyronLink} from './_find-labs_.mdx';
 
 
-# Find your Labs
+# Find Your Labs
 
 :::tip
 Teach soft robotics with the original content created by Compliance Robotics. It provides a practical introduction to the concepts of soft robotics: models, inverse kinematics, pick & place, design, and closed loop.

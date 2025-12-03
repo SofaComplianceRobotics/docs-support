@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Welcome to the Documentation
 
-This documentation is organized by profil and solutions. 
+This documentation is organized by profile and solutions. 
 Navigate the documentation in the sidebar on the left.
 
 To learn how to use our robotic and software solutions follow the documentation under the **Users** section.
