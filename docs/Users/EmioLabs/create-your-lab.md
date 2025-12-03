@@ -65,6 +65,10 @@ We use it to write our labs and the Markdown files are rendered by the applicati
 
 Here we describe the basic syntax of Markdown and the extended syntax that we use in the **Emio Labs** application.
 
+:::tip
+The [Emio.lab_empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) lab gives a usage example of all the syntax explained below.
+:::
+
 ### Basic Syntax
 
 The basic syntax is the same as the [CommonMark specifications](https://commonmark.org/help/).

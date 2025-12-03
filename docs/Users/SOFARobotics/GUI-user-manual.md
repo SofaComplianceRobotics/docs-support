@@ -4,15 +4,24 @@ import lightmode from './img/gui-light-mode.png';
 import darkmode from './img/gui-dark-mode.png';
 import programwindow from './img/gui-program-window.png';
 import movewindow from './img/gui-move-window.png';
+import movepad from './img/gui-move-pad.png';
 import myrobotwindow from './img/gui-myrobot-window.png';
 import plottingwindow from './img/gui-plotting-window.png';
 import simulationbutton from './img/gui-simulation-button.png';
 import viewportbuttons from './img/gui-viewport-buttons.png';
+import blockoptions from './img/gui-program-block-options.png';
+import moveblock from './img/gui-move-block.png';
+import waitblock from './img/gui-wait-block.png';
+import pickblock from './img/gui-pick-block.png';
+import placeblock from './img/gui-place-block.png';
+import repeatblock from './img/gui-repeat-block.png';
+import interblocks from './img/gui-inter-blocks.png';
+import trackmenu from './img/gui-track-menu.png';
 
 Learn how to use the graphical user interface (GUI) for SOFA Robotics, designed to facilitate the programming and control of your robot simulations.
 
 :::note[about]
-[SOFA](https://www.sofa-framework.org/) is an open-source framework designed for interactive mechanical simulations, with a strong focus on bio-mechanics and robotics. It provides advanced constitutive models and algorithms for efficiently computing both soft and rigid body dynamics. SOFA supports linear and non-linear elastic models, offers both explicit and implicit integration schemes, and includes traditional linear solvers. This powerful engine integrates numerous algorithms and models, making it highly suitable for complex simulation needs in bio-mechanics and robotics.
+[SOFA](https://www.sofa-framework.org/) is an open-source framework designed for interactive mechanical simulations, with a strong focus on bio-mechanics and robotics. It provides advanced constitutive models and algorithms for efficiently computing both soft and rigid body dynamics. SOFA supports linear and non-linear elastic models, offers both explicit and implicit integration schemes, and includes traditional linear solvers.
 
 At Compliance Robotics, we have developed a dedicated graphical user interface (GUI) for SOFA, tailored specifically for robotics applications. This open-source software enables you to control and program your robot with ease.
 :::
@@ -82,21 +91,9 @@ Switch the GUI between dark and light mode using the *sun*/*moon* button at the 
 <img className="centered" src={programwindow} alt="Program Window" width="100%"/>
 <figcaption>Program Window</figcaption>
 
-This window is used to program the robot. You can add action and modifier blocks to a track to compose your program:
+This window is used to program the robot. It is organized around a timeline. To program the robot (digital twin or real), add actions and modifiers blocks a track.
 
-- **Action** blocks:
-    - **Move**: Define a waypoint for the TCP target
-    - **Pick**: When equipped with a gripper, program the closing of the gripper
-    - **Place**: Program the opening of the gripper
-    - **Wait**: Add a pause to your program
-- **Modifier** block:
-    - **Repeat**: Repeat a section of your program
-
-If you use the *Move Window* to place the effector at a desired position and then add a *Move Action Block* to the track, it serves two purposes. First, it's an excellent way to test if the desired position is within the robot's working space. Second, this position will be used to initialize the *Move Action Block*. 
-
-You can always adjust the *waypoint* position directly on the *block*. Additionally, you can modify the duration of the motion or its speed.
-
-The *Program Window* also has the following buttons (from left to right):
+The *Program Window* top bar contains the following buttons (from left to right):
 
 - **Import**: Import a program (.crprog file) to the software
 - **Export**: Export a program
@@ -107,6 +104,88 @@ The *Program Window* also has the following buttons (from left to right):
 - **Reverse**: Loop the entire program, going forward and backward
 
 When the *Draw trajectory* button is toggled, you can highlight the section of the trajectory corresponding to a specific *Move Action Block* by hovering over the block with your mouse.
+
+
+#### Program Blocks
+There are several blocks to compose your program:
+
+- **Action** blocks:
+    - *Move*: Define a waypoint for the TCP target
+    - *Wait*: Add a pause to your program
+    - *Pick*: When equipped with a gripper, program the closing of the gripper
+    - *Place*: Program the opening of the gripper
+- **Modifier** block:
+    - *Repeat*: Repeat a section of your program
+
+All blocks have a contextual menu with utility actions:
+<img className="centered" src={blockoptions} width="50%" alt="Example of a contextual menu for the Move block"/>
+<figcaption>Example of a contextual menu for the Move block</figcaption>
+
+- *Add Before/After*: inserts a block before or after the block
+- *Duplicate*: ducplicates a block after
+- *Replace*: turns the block into another block type 
+- *Swap*: swaps between either the block before or after
+- *Overwrite*: overwrites the position of the waypoint with the current position in the move window (only available with Move block)
+- *Delete*: deletes the block
+
+You can also insert a block or swap blocks thanks to the inter-blocks buttons:
+
+<img className="centered" src={interblocks} style={{maxHeight:'15vh', minHeight:'100px'}} alt="image of the two buttons to sawp and insert a block between two blocks" />
+<figcaption>Example of the inter-block action buttons</figcaption>
+
+##### Move Action Block
+<img className="centered" src={moveblock} style={{maxHeight:'15vh', minHeight:'100px'}} alt="Image of a Move block with the duration, speed, position and rotation values."/>
+<figcaption>Move block</figcaption>
+The *Move* block adds a waypoint to the target's trajectory.
+
+The *Move* block contains the following values:
+- *duration*: duration in seconds for this block to reach the waypoint's position. Setting the duration will change the speed accordingly.
+- *speed*: speed at which the target will move towards the waypoint. The unit depends on the scene unit. Setting the speed will change the duration accordingly.
+- *wp.pos*: sets the waypoint position toward the target will move
+- *wp.rot*: the waypoint rotation toward the target will move. Only available if the simulation allows it
+
+If you use the *Move Window* to place the effector at a desired position and then add a *Move Action Block* to the track, it serves two purposes. First, it's an excellent way to test if the desired position is within the robot's working space. Second, this position will be used to initialize the *Move Action Block*. 
+
+You can always adjust the *waypoint* position directly on the *block*. Additionally, you can modify the duration of the motion or its speed.
+
+##### Wait Action Block
+<img className="centered" src={waitblock} style={{maxHeight:'15vh', minHeight:'100px'}} />
+<figcaption>Wait block</figcaption>
+
+The * Wait* block pauses the trajectory for a given duration, set in seconds.
+
+
+##### Pick and Place Action Blocks
+<div className="centered" style={{display:'flex', justifyContent: 'center'}}>
+    <img src={pickblock} style={{maxHeight:'15vh', minHeight:'100px'}}/>
+    <img src={placeblock} style={{maxHeight:'15vh', minHeight:'100px'}}/>
+</div>
+<figcaption>Pick block</figcaption>
+
+The *Pick* and *Place* blocks control the gripper's opening distance and so is only available if the simulation has a gripper.
+Basically, these blocks are the same except that the release toggle is active in the case of the *Place* block. 
+This means that the you can transform a *Pick* block into a *Place* one by activating  the *reease* toggle and vice-versa.
+
+They both have the same values:
+- *duration*: the duration for the opening or closing in seconds
+- *distances*: the closing and opening gripper distance in your scene unit
+- *release*: toggle to activate the release of the gripper, meaning apply the opening distance (right value)
+
+
+##### Repeat Modifier Block
+<img className="centered" src={repeatblock} style={{maxHeight:'15vh', minHeight:'100px'}}/>
+<figcaption>Repeat block</figcaption>
+
+The *Repeat* block allows to repeat mutiple times a part of the program. It does not have to exactly match the start or end of a block. 
+You can add this block using the menu of the track then **Add Modifier**.
+<img className="centered" src={trackmenu} style={{maxHeight:'15vh', minHeight:'100px'}}/>
+<figcaption>Track menu</figcaption>
+
+The values you can set for the *Repeat* block are:
+- *iterations*: the number of times you want to repeat what is in the block
+- *counts*: the remaining number of iterations to go through
+- *start time*: at what time in the timeline the repetition starts. You can drag the left side of the block to define it as well.
+- *end time*: the time in the timeline at which the repetition ends. You can drag the right side of the block to define it as well.
 
 ### Move Window
 
@@ -128,7 +207,26 @@ This window is particularly useful for:
 </div>
 </div>
 
+
+<div style={{display: "flex"}}>
+<div style={{flex: "1 1 0%"}}>
+Since v25.12, you can also control the TCP target position using the *Move Pad* widget.
+
+To control the target in a plane, 
+- grab the knob and drag it into the pad
+- press the left `Ctrl` keyboard key, to switch control to the third axis.
+</div>
+<div style={{flex: "0 0 40%"}}>
+    <img className="centered" src={movepad} alt="Move Window" width="100%"/>
+    <figcaption>Pad in Move Window</figcaption>
+</div>
+</div>
+
 ### Input/Output Window (WIP)
+
+:::warning
+This window is under development. For now there are no suppor for ROS or any communication protocol.
+:::
 
 The Input/Output Window allows you to interface the simulation with external software. Using communication libraries like ROS (Robot Operating System), you can send data directly to control the robot's behavior.
 
@@ -144,7 +242,9 @@ The window provides options to configure the communication settings and monitor 
 
 <div style={{display: "flex"}}>
 <div style={{flex: "1 1 0%"}}>
-The *My Robot Window* displays essential information about your robot and allows you to adjust various settings. Key features include:
+The *My Robot Window* displays essential information about your robot and allows you to adjust various settings. What can be seen and modified is defined inside the simulation scene file.
+
+Key features include:
 
 - **Robot Information:** View technical specifications
 - **Settings Configuration:** Adjust operational parameters such as maximum speed and acceleration
@@ -157,7 +257,9 @@ The *My Robot Window* displays essential information about your robot and allows
 
 ### Plotting Window
 
-The Plotting Window provides powerful data visualization capabilities for analyzing simulation data in real-time. Key features include:
+The Plotting Window provides powerful data visualization capabilities for analyzing simulation data in real-time. The available data are defined in the simulation scene file.
+
+Key features include:
 
 - **Real-time Plotting:** View live data from the simulation as it runs
 - **Multiple Data Types:** Plot various parameters including:
