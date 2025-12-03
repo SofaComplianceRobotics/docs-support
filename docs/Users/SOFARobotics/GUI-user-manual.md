@@ -117,25 +117,31 @@ There are several blocks to compose your program:
 - **Modifier** block:
     - *Repeat*: Repeat a section of your program
 
+<div style={{display: "flex"}}>
+<div style={{flex: "1 1 0%"}}>
 All blocks have a contextual menu with utility actions:
-<img className="centered" src={blockoptions} width="50%" alt="Example of a contextual menu for the Move block"/>
-<figcaption>Example of a contextual menu for the Move block</figcaption>
-
 - *Add Before/After*: inserts a block before or after the block
 - *Duplicate*: ducplicates a block after
 - *Replace*: turns the block into another block type 
 - *Swap*: swaps between either the block before or after
 - *Overwrite*: overwrites the position of the waypoint with the current position in the move window (only available with Move block)
 - *Delete*: deletes the block
+</div>
+<div style={{flex: "0 0 40%"}}>
+<img className="centered" src={blockoptions} alt="Example of a contextual menu for the Move block"/>
+<figcaption>Example of a contextual menu for the Move block</figcaption>
+</div>
+</div>
 
 You can also insert a block or swap blocks thanks to the inter-blocks buttons:
 
-<img className="centered" src={interblocks} style={{maxHeight:'15vh', minHeight:'100px'}} alt="image of the two buttons to sawp and insert a block between two blocks" />
+<img className="centered" src={interblocks} style={{maxHeight:'10vh', minHeight:'50px'}} alt="image of the two buttons to sawp and insert a block between two blocks" />
 <figcaption>Example of the inter-block action buttons</figcaption>
 
 ##### Move Action Block
-<img className="centered" src={moveblock} style={{maxHeight:'15vh', minHeight:'100px'}} alt="Image of a Move block with the duration, speed, position and rotation values."/>
-<figcaption>Move block</figcaption>
+
+<div style={{display: "flex"}}>
+<div style={{flex: "1 1 0%"}}>
 The *Move* block adds a waypoint to the target's trajectory.
 
 The *Move* block contains the following values:
@@ -147,21 +153,28 @@ The *Move* block contains the following values:
 If you use the *Move Window* to place the effector at a desired position and then add a *Move Action Block* to the track, it serves two purposes. First, it's an excellent way to test if the desired position is within the robot's working space. Second, this position will be used to initialize the *Move Action Block*. 
 
 You can always adjust the *waypoint* position directly on the *block*. Additionally, you can modify the duration of the motion or its speed.
+</div>
+<div style={{flex: "0 0 40%"}}>
+<img className="centered" src={moveblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}} alt="Image of a Move block with the duration, speed, position and rotation values."/>
+<figcaption>Move block</figcaption>
+</div>
+</div>
 
 ##### Wait Action Block
-<img className="centered" src={waitblock} style={{maxHeight:'15vh', minHeight:'100px'}} />
+
+<div style={{display: "flex"}}>
+<div style={{flex: "1 1 0%"}}>
+The *Wait* block pauses the trajectory for a given duration, set in seconds.
+</div>
+<div style={{flex: "0 0 40%"}}>
+<img className="centered" src={waitblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}} />
 <figcaption>Wait block</figcaption>
-
-The * Wait* block pauses the trajectory for a given duration, set in seconds.
-
+</div>
+</div>
 
 ##### Pick and Place Action Blocks
-<div className="centered" style={{display:'flex', justifyContent: 'center'}}>
-    <img src={pickblock} style={{maxHeight:'15vh', minHeight:'100px'}}/>
-    <img src={placeblock} style={{maxHeight:'15vh', minHeight:'100px'}}/>
-</div>
-<figcaption>Pick block</figcaption>
-
+<div style={{display: "flex"}}>
+<div style={{flex: "1 1 0%"}}>
 The *Pick* and *Place* blocks control the gripper's opening distance and so is only available if the simulation has a gripper.
 Basically, these blocks are the same except that the release toggle is active in the case of the *Place* block. 
 This means that the you can transform a *Pick* block into a *Place* one by activating  the *reease* toggle and vice-versa.
@@ -170,22 +183,39 @@ They both have the same values:
 - *duration*: the duration for the opening or closing in seconds
 - *distances*: the closing and opening gripper distance in your scene unit
 - *release*: toggle to activate the release of the gripper, meaning apply the opening distance (right value)
-
+</div>
+<div style={{flex: "0 0 40%"}}>
+<div className="centered" style={{display:'flex', justifyContent: 'center', flexDirection: 'column'}}>
+    <img src={pickblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}}/>
+    <img src={placeblock} style={{maxHeight:'15vh', minHeight:'100px', objectFit: 'contain'}}/>
+</div>
+<figcaption>Pick block</figcaption>
+</div>
+</div>
 
 ##### Repeat Modifier Block
-<img className="centered" src={repeatblock} style={{maxHeight:'15vh', minHeight:'100px'}}/>
-<figcaption>Repeat block</figcaption>
 
+
+<div style={{display: "flex"}}>
+
+<div style={{flex: "1 1 0%"}}>
 The *Repeat* block allows to repeat mutiple times a part of the program. It does not have to exactly match the start or end of a block. 
-You can add this block using the menu of the track then **Add Modifier**.
-<img className="centered" src={trackmenu} style={{maxHeight:'15vh', minHeight:'100px'}}/>
-<figcaption>Track menu</figcaption>
 
 The values you can set for the *Repeat* block are:
 - *iterations*: the number of times you want to repeat what is in the block
 - *counts*: the remaining number of iterations to go through
 - *start time*: at what time in the timeline the repetition starts. You can drag the left side of the block to define it as well.
 - *end time*: the time in the timeline at which the repetition ends. You can drag the right side of the block to define it as well.
+
+</div>
+<div style={{flex: "0 0 40%"}}>
+<img className="centered" src={repeatblock} style={{maxHeight:'30vh', minHeight:'100px', objectFit: 'contain'}}/>
+<figcaption>Repeat block</figcaption>
+</div>
+</div>
+You can add this block using the menu of the track then **Add Modifier**.
+<img className="centered" src={trackmenu} style={{maxHeight:'10vh', minHeight:'50px', objectFit: 'contain'}}/>
+<figcaption>Track menu</figcaption>
 
 ### Move Window
 
