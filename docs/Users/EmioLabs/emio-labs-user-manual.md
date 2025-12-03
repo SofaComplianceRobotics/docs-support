@@ -170,11 +170,12 @@ A lab should follow the [Lab Empty](https://github.com/SofaComplianceRobotics/Em
 Refer to [Create Your Own Lab](create-your-lab.md) for all the details to create a lab.
 :::
 
-### Resetting the Labs
-You can reset or delete labs by opening the **Reset Labs** window by clicking the **Labs>Reset Labs**. Resetting a lab means copying back the original content of the labs into the `path/to/home/emio-labs/version/assets/labs` folder. This way, if you made changes to the labs material, you can easily come back to the initial state.
+### Resetting/Deleting the Labs
+You can reset or delete labs by opening the **Reset/Delete Labs** window by clicking the **Labs>Reset/Delete Labs**. Resetting a lab means copying back the original content of the labs into the `path/to/home/emio-labs/version/assets/labs` folder. This way, if you made changes to the labs material, you can easily come back to the initial state.
 
-In the window, either select the labs you want to reset and click the **Reset Selected** button or simply click the **Reset All** button to reset all the labs.
+In the window, either select the labs you want to reset and click the **Reset Selected** button or simply click the **Reset All** button to reset all the labs.  
 
+You can also **permanently delete** labs from the computer, using the same window (see image below).
 
 <img className="centered" src={emio_labs_resetlabs} width="70%" alt="overview of the reset labs window"/>
 <figcaption>Resetting the labs from the application.</figcaption>
@@ -185,13 +186,14 @@ Note: You can only reset the labs that have been added with the Labs Configurato
 
 To delete labs, just check the labs you want to delete and then click on the red __Delete__ button.
 
-### Import/Export Labs Configuration
-You can easily import and export labs configuration. 
+### Export/Import Labs Configuration
+You can easily export and import labs configuration. 
 It is particularly convenient when you want to share a labs configuration across several computers.
 
-Click on the top menu bar in __Labs__>__Import Config__ or __Labs__>__Export Config__.
+Click on the top menu bar in __Labs__>__Export Config__ or __Labs__>__Import Config__.
 
-<img className="centered" src={emio_labs_exportimport} />
+<img className="centered" width="70%" src={emio_labs_exportimport} alt="Exporting/importing a configuration"/>
+<figcaption>Exporting/importing a configuration.</figcaption>
 
 ### Manually Edit the Lab Config File
 :::warning[important]

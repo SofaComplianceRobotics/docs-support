@@ -6,7 +6,7 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# SOFA Robotics without Emio Labs
+# SOFA Robotics Without Emio Labs
 
 This guide provides instructions for using SOFA Robotics independently of the Emio Labs application.
 

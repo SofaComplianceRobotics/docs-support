@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Emio
+title: Getting Started With Emio
 sidebar_position: 1
 ---
 
@@ -12,7 +12,7 @@ import motor_cap2 from './img/motor-cap2.png';
 import motor_cap3 from './img/motor-cap3.png';
 import motor_cap4 from './img/motor-cap4.png';
 
-# Getting Started with Emio
+# Getting Started With Emio
 
 Emio is a parallel deformable robot developed by [Compliance Robotics](https://compliance-robotics.com/). 
 It features a structure composed of four servo motor-actuated deformable legs connected together. 
