@@ -245,7 +245,7 @@ The window provides options to configure the communication settings and monitor 
 The *My Robot Window* displays essential information about your robot and allows you to adjust various settings. What can be seen and modified is defined inside the simulation scene file.
 
 Key features include:
-
+- **Port Selection**: Select the port to which to connect and see the connection status. This means you can have multiple Emios connected to your computer.
 - **Robot Information:** View technical specifications
 - **Settings Configuration:** Adjust operational parameters such as maximum speed and acceleration
 </div>
