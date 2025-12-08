@@ -6,11 +6,11 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# SOFA Robotics without Emio Labs
+# SOFA Robotics Without Emio Labs
 
 This guide provides instructions for using SOFA Robotics independently of the Emio Labs application.
 
-:::warning
+:::important
 - To use SOFA Robotics independently of Emio Labs, you first need to download the appropriate Emio Labs package for your operating system. This package may come as an installer (`.deb` for Linux, `.msi` for Windows, or `.dmg` for MacOS) or as a compressed archive (`.zip`). 
 - It is important to note that portable formats (`.AppImage` for Linux, `.exe` for Windows, `.app` for MacOS), which run from a temporary directory, are **not** supported. 
 - Ensure you extract or install the package to a permanent location on your system before proceeding.
@@ -53,14 +53,14 @@ Open a terminal and run the commands for your operating system as outlined below
   <TabItem value="linux" label="Linux" default>
         ```bash
         export SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
-        export PATH=$PATH:$SOFA_ROOT\bin
-        export PYTHONHOME=$SOFA_ROOT\bin\python
-        export PYTHONPATH=$SOFA_ROOT\bin\python\lib\python3.10\site-packages
-        export PYTHONPATH=$PYTHONPATH:$SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages
+        export PATH=$PATH:$SOFA_ROOT/bin
+        export PYTHONHOME=$SOFA_ROOT/bin/python
+        export PYTHONPATH=$SOFA_ROOT/bin/python/lib/python3.10/site-packages
+        export PYTHONPATH=$PYTHONPATH:$SOFA_ROOT/plugins/SofaPython3/lib/python3/site-packages
         ```
   </TabItem>
   <TabItem value="windows" label="Windows">
-        #### Using Powershell:
+        **Using Powershell**:
 
         ```powershell
         $env:SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
@@ -70,7 +70,7 @@ Open a terminal and run the commands for your operating system as outlined below
         $env:PYTHONPATH+=";$env:SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages"
         ```
 
-        #### Using Command Prompt:
+        **Using Command Prompt**:
 
         ```bash
         set SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
@@ -83,7 +83,8 @@ Open a terminal and run the commands for your operating system as outlined below
   <TabItem value="macos" label="MacOS">
         ```bash
         export SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
-        export PATH=$PATH:$SOFA_ROOT\bin
+        export PATH=$PATH:$SOFA_ROOT/bin
+        export PYTHONPATH=$PYTHONPATH:$SOFA_ROOT/plugins/SofaPython3/lib/python3/site-packages
         ```
   </TabItem>
 </Tabs>
@@ -130,5 +131,61 @@ To run your own simulation:
       ```bash
       runSofa -l SofaPython3,SofaImGui your_scene.py
       ```
+  </TabItem>
+</Tabs>
+
+
+## Using Emio Assets
+If you want to use the Emio assets (e.g. scenes, parts, meshes, etc. ), you need to add the Emio Labs `assets` folder to the `PYTHONPATH`.
+
+You have two options: 
+- use the assets from the `path/to/home/emio-labs/VERSION/assets` folder that is created at the first launch of Emio Labs
+- use directly the assets from the Emio Labs installation folder (i.e. `PATH_TO_EMIO_LABS/resources/assets`)
+
+:::warning
+If you use the assets in the `PATH_TO_EMIO_LABS` folder, changes made there cannot be reverted except by downloading and copying the content of [Emio.CoreAssets](https://github.com/SofaComplianceRobotics/Emio.CoreAssets) back in the `PATH_TO_EMIO_LABS/resources/assets` folder.
+:::
+
+To set the `PYTHONPATH` variable, use the corresponding command:
+
+<Tabs className="unique-tabs" groupId="operating-systems">
+  <TabItem value="linux" label="Linux" default>
+        ```bash
+        export PYTHONPATH=$PYTHONPATH:PATH_TO_EMIO_LABS/resources/assets
+        ```
+        or
+        ```bash
+        export PYTHONPATH=$PYTHONPATH:path/to/home/emio-labs/VERSION/assets
+        ```
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+        **Using Powershell**:
+
+        ```powershell
+        $env:PYTHONPATH+=";PATH_TO_EMIO_LABS\resources\assets
+        ```
+        or
+        ```powershell
+        $env:PYTHONPATH+=";path\to\home\emio-labs\VERSION\assets
+        ```
+
+        **Using Command Prompt**:
+
+        ```bash
+        set PYTHONPATH=$PYTHONPATH:$PATH_TO_EMIO_LABS\resources\assets
+        ```
+        or
+        ```bash
+        set PYTHONPATH=$PYTHONPATH:path\to\home\emio-labs\VERSION\assets
+        ```
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+        ```bash
+        export PYTHONPATH=$PYTHONPATH:PATH_TO_EMIO_LABS/resources/assets
+        ```
+        or
+        ```bash
+        export PYTHONPATH=$PYTHONPATH:path/to/home/emio-labs/VERSION/assets
+        ```
   </TabItem>
 </Tabs>

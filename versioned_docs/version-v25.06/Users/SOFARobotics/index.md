@@ -6,7 +6,7 @@ import sofa_robotics from './img/gui-light-mode.png';
 
 # SOFA Robotics 
 
-## SOFA Simulation Framework with a Robotics Designed GUI 
+## SOFA Simulation Framework With a Robotics Designed GUI 
 
 <img className="centered" src={sofa_robotics} alt="SOFA Robotics screenshot" width="60%"/>
 <figcaption>The **SOFA Robotics** GUI.</figcaption>

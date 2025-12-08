@@ -1,11 +1,16 @@
 ---
-title: Migrate from v24.12 to v25.06
+title: Migration Guide
 sidebar_position: 1
 ---
 
-# Migrate from v24.12 to v25.06
+# Migration Guide
 
-This document outlines the steps required to migrate your simulation python scripts from version v24.12 to version v25.06.
+:::note
+This document outlines the steps required to migrate your simulation python scripts between releases.  
+**If not mentioned here**, your scripts should work without any modification.
+:::
+
+## Migrate from v24.12 to v25.12
 
 1. `Sofa.ImGui.getRobotConnection()` has been removed. Use `Sofa.ImGui.getRobotConnectionToggle()` instead. 
 Corresponding error message: `AttributeError: module 'Sofa.ImGui' has no attribute 'getRobotConnection'`

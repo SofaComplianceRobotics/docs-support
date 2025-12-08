@@ -7,7 +7,7 @@ import emio_robot from '/static/img/emio_SOFA.jpg';
 
 # Emio Labs 
 
-## A Desktop Application with Interactive Labs 
+## A Desktop Application With Interactive Labs 
 
 <img className="centered" src={emio_labs_overview} alt="Emio Labs Overview" width="40%"/>
 <figcaption>The **Emio Labs** application on the Introduction page. The main dashboard is located at the top of each page.</figcaption>
