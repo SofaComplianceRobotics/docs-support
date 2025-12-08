@@ -224,7 +224,7 @@ An argument can be the current value of a select block by using its unique selec
 We use the icon library [font awesome](https://fontawesome.com/icons). For example:
 
 ```markdown
-#icon(warning)
+#icon(exclamation-triangle) <-- will display a warning icon
 ```
 
 #### Input

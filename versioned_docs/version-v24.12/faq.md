@@ -24,7 +24,7 @@ Check the following list of frequently asked questions. If you can't find the an
     <summary>How can I change the legs on the robot?</summary>
     <aside>
     
-    Have a look at Emio’s [Hardware User Manual](https://www.notion.so/136582ce7d3a810aa99cdf5a5640ec86?pvs=21) for detailed instructions.
+    Have a look at Emio’s [User Manual](../EmioLabs/emio-hardware-user-manual) for detailed instructions.
     
     </aside>
 </details>
@@ -34,7 +34,7 @@ Check the following list of frequently asked questions. If you can't find the an
 <details>
     <summary>Why doesn't my simulation seem to control the real robot?</summary>
     <aside>
-    - Check that the physical device is properly connected and powered on. Refer to Emio's [Hardware User Manual](https://www.notion.so/136582ce7d3a810aa99cdf5a5640ec86?pvs=21) for detailed instructions.
+    - Check that the physical device is properly connected and powered on. Refer to Emio's [User Manual](../EmioLabs/emio-hardware-user-manual) for detailed instructions.
     - Make sure only one simulation is running. Close all active simulations and restart the simulation software.
     - Check for any errors in the corresponding logs (found in the emio-labs application, beneath the SOFA button you've just clicked).
     - If you encounter an error message, consult the **emio-labs > Introduction > Let's try Emio > Troubleshooting** section.
@@ -58,7 +58,7 @@ Check the following list of frequently asked questions. If you can't find the an
 <details>
     <summary>Who should I contact if I have a question?</summary>
     <aside>
-    - If you're experiencing issues with your Emio and cannot find a solution on our website, please contact our support team. You can reach them by filling out [this form](https://www.notion.so/136582ce7d3a8102af15f555ffa9f5c2?pvs=21) or sending an email to [support@compliance-robotics.com](mailto:support@compliance-robotics.com). Our team will respond to you as quickly as possible.
+    - If you're experiencing issues with your Emio and cannot find a solution on our website, please contact our support team. You can reach them by filling out [this form](/emio-support-form) or sending an email to [support@compliance-robotics.com](mailto:support@compliance-robotics.com). Our team will respond to you as quickly as possible.
     - For questions about our products or if you need advice before making a purchase, please get in touch with us. You can do so by completing [this form](https://compliance-robotics.com/#contact-us) or sending an email to [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).
     </aside>
 </details>

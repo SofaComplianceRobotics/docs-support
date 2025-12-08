@@ -60,7 +60,7 @@ Open a terminal and run the commands for your operating system as outlined below
         ```
   </TabItem>
   <TabItem value="windows" label="Windows">
-        #### Using Powershell:
+        **Using Powershell**:
 
         ```powershell
         $env:SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
@@ -70,7 +70,7 @@ Open a terminal and run the commands for your operating system as outlined below
         $env:PYTHONPATH+=";$env:SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages"
         ```
 
-        #### Using Command Prompt:
+        **Using Command Prompt**:
 
         ```bash
         set SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
@@ -158,7 +158,7 @@ To set the `PYTHONPATH` variable, use the corresponding command:
         ```
   </TabItem>
   <TabItem value="windows" label="Windows">
-        #### Using Powershell:
+        **Using Powershell**:
 
         ```powershell
         $env:PYTHONPATH+=";PATH_TO_EMIO_LABS\resources\assets
@@ -168,7 +168,7 @@ To set the `PYTHONPATH` variable, use the corresponding command:
         $env:PYTHONPATH+=";path\to\home\emio-labs\VERSION\assets
         ```
 
-        #### Using Command Prompt:
+        **Using Command Prompt**:
 
         ```bash
         set PYTHONPATH=$PYTHONPATH:$PATH_TO_EMIO_LABS\resources\assets

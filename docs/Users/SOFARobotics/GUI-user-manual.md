@@ -238,7 +238,7 @@ This window is particularly useful for:
 
 <div style={{display: "flex"}}>
 <div style={{flex: "1 1 0%"}}>
-Since v25.12, you can also control the TCP target position using the *Move Pad* widget.
+You can also control the TCP target position using the *Move Pad* widget.
 
 To control the target in a plane, 
 - grab the knob and drag it into the pad

@@ -117,10 +117,10 @@ To resolve this:
 <figcaption>The **Emio Labs** application on the Introduction page. The main dashboard is located at the top of each page.</figcaption>
 
 :::tip[important]
-A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, simply delete or remove it from your Home directory, then rerun the application.
+A directory <code>~/emio-labs</code> containing all the assets (labs, python scripts, meshes, etc.) is created in your Home directory after the first run of the application. The application uses the files of this directory. If you make modifications and want to reset the directory to its original state, use the [**Reset Labs**](#resettingdeleting-the-labs) window (recommended), or remove the directory from your Home directory then rerun the application.
 :::
 
-## Navigating the Labs
+## The Labs
 
 The original content of **Emio Labs** created by Compliance Robotics offers a series of labs covering various aspects of soft robotics:
 
@@ -138,12 +138,7 @@ To access a lab:
 
 If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
 
-## Configuring the Labs
-Since Emio Labs v25.12, you can add and reorder labs into the app via the **Labs Configurator** and reset or delete labs with the **Reset Labs** window.
-
-
-
-### Adding and Rearraging Labs
+### Configuring the Labs
 The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
 From this window, you can **activate** a lab to be viewed in the app and **reorder** the labs by checking and drag and dropping the lab cards.
 

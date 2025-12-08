@@ -12,7 +12,7 @@ Check the following list of frequently asked questions. If you can't find the an
 <details> 
     <summary>Can I customize Emio's setup in simulation?</summary>
     <aside>
-    The **Emio Labs** application offers a sandbox mode that allows you to set up Emio exactly as you want, using either the original set of legs and connectors or your own designed legs or center part. In the main dashboard, click on the Sandbox link to open the corresponding page:
+    The **Emio Labs** application offers a sandbox mode that allows you to set up Emio exactly as you want, using either the original set of legs and connectors or your own designed legs or connector. In the main dashboard, click on the Sandbox link to open the corresponding page:
     
     1. Follow the instructions to set up your Emio and its numerical twin.
     2. Launch the corresponding simulation by clicking the SOFA button as usual, and enjoy!
