@@ -53,10 +53,13 @@ The lab directory usually contains at least one `.py` file, implementing a simul
 <figcaption>Markdown and python files of the introduction lab.</figcaption>
 
 ### Render my Lab Into Emio Labs
-In order to see the lab into Emio Labs, it needs to be located in the directory `path/to/home/emio-labs/VERSION/assets/labs/LAB_DIR_NAME`. You can add a copy of your lab using the __Lab Configurator__ or manually place it there. You will then be able to see how it renders in the app.
+In order to see the lab into Emio Labs, it needs to be located in the directory `path/to/home/emio-labs/VERSION/assets/labs/LAB_DIR_NAME`. You can add a copy of your lab using the __Lab Configurator__. You will then be able to see how it renders in the app.
 
 <img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
+
+### Add Python packages
+If you want to install additional Python packages for your lab, follow the steps in [this section](../emio-labs-user-manual#install-python-packages-for-emio-labs).
 
 ## Write Your Own Lab in Markdown
 

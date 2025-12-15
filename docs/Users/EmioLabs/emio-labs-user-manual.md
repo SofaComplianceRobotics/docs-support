@@ -234,6 +234,21 @@ In the main dashboard click on the Sandbox link to open the corresponding page:
 1. Follow the instructions to help you set up your Emio and the numerical twin.
 2. Launch the corresponding simulation by clicking on the SOFA button as usual, and enjoy.
 
+## Install Python packages for Emio Labs
+For some labs or if you are creating your own lab, you might need to install Python packages that are not shipped with the embedded Emio Labs Python.
+
+To do this:
+
+1. Find the Python installation of Emio Labs by going to the installation folder of Emio Labs, for example on Windows that might be `C:\Users\<USERNAME>\AppData\Local\Programs\emio-labs` .
+2. There should be a folder `resources\sofa\bin\python`. This is where the Python running with Emio Labs is.
+3. Open a terminal in this folder ( e.g. `C:\Users\<USERNAME>\AppData\Local\Programs\emio-labs\resources\sofa\bin\python`).
+4. To install the Python package of name `lepackage`, type in `python -m pip install lepackage` 
+5. If admin rights are necessary, accept or type in the admin password when prompted
+
+:::warning
+If you are on MacOS, there is no Python shipped with Emio Labs. Use the Python you installed in the [installation process](#installation)
+:::
+
 ## Additional Resources
 
 Access supplementary materials through this website, including:
