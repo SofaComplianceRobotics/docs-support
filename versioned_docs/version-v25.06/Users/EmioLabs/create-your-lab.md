@@ -1,5 +1,5 @@
 ---
-title: Create your own lab
+title: Create Your Own Lab
 sidebar_position: 3
 ---
 
@@ -12,7 +12,7 @@ import emio_labs_qcm02 from './img/emio-labs-qcm02.png'
 import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
 import emio_labs_input from './img/emio-labs-input.png'
 
-# Create your own Lab
+# Create Your Own Lab
 
 Learn how to create your own labs for the **Emio Labs** application.
 
@@ -27,7 +27,7 @@ Navigate through the directories in `assets/labs`. Each directory has a `.md` fi
 <img className="centered" src={emio_labs_directory} width="20%"/>
 <figcaption>Markdown and python files of the lab models.</figcaption>
 
-## Compose your own Set of Labs
+## Compose Your Own Set of Labs
 
 <img className="centered" src={emio_labs_dashboard} width="70%"/>
 <figcaption>The main dashboard of the Emio Labs application shows the labs content of the application.</figcaption>
@@ -63,7 +63,7 @@ The order of the labs in the application will match the order in the `labsConfig
 }
 ```
 
-## Write your own Lab in Markdown
+## Write Your Own Lab in Markdown
 
 Markdown is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats.
 We use it to write our labs and the Markdown files are rendered by the application and displayed in a user-friendly way.
@@ -155,7 +155,7 @@ You can add videos by using the following container :
 
 The `main-video` will move to the bottom right corner of the application when scrolling down. Only one `main-video` should be used in a markdown file (lab).
 
-#### Highlighted block
+#### Highlighted Block
 
 You can highlight some text by using the following block fence with the keyword `highlight` :
 
@@ -165,7 +165,7 @@ MY_CONTENT
 :::
 ```
 
-#### Exercise block
+#### Exercise Block
 
 You can highlight your exercises by using the following block fence with the keyword `exercise` :
 
@@ -175,7 +175,7 @@ MY_EXERCISE_CONTENT
 :::
 ```
 
-#### Collapsible block
+#### Collapsible Block
 
 Create collapsible section with the following block fence with the keyword `collapse` :
 
@@ -185,7 +185,7 @@ MY_CONTENT
 :::
 ```
 
-#### Select block
+#### Select Block
 
 Create select content with the following block fence with the keyword `select`. 
 Inside the select block, you can define options with the keyword `option` followed by the value for the option. Each option should have a unique value.
@@ -224,7 +224,7 @@ An argument can be the current value of a select block by using its unique selec
 We use the icon library [font awesome](https://fontawesome.com/icons). For example:
 
 ```markdown
-#icon(warning)
+#icon(exclamation-triangle) <-- will display a warning icon
 ```
 
 #### Input
@@ -246,6 +246,6 @@ For example:
 <figcaption>Input example. (left) Placeholder. (right) Value.</figcaption>
 
 
-## Share your Labs
+## Share Your Labs
 
 We can help you design and share your own labs with the community. Just send us an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com), explaining us your project and your needs.

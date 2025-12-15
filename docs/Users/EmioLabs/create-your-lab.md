@@ -1,5 +1,5 @@
 ---
-title: Create your own lab
+title: Create Your Own Lab
 sidebar_position: 3
 ---
 
@@ -12,24 +12,28 @@ import emio_labs_qcm02 from './img/emio-labs-qcm02.png'
 import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
 import emio_labs_input from './img/emio-labs-input.png'
 
-# Create your own Lab
+# Create Your Own Lab
 
 Learn how to create your own labs for the **Emio Labs** application.
 
-## Introduction
+## Setup
+
+### Lab Architecture
+:::tip
+For a quickstart, have a look at the [Emio.lab_empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) GitHub repository to see an example of a lab that you can use as a template to create your own lab.
+:::
+
 The content of the **Emio Labs** application can be easily adjusted or completely changed. 
 By following this documentation you’ll be able to modify the labs and create your own content.
 
-A lab is written as a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (with the `.md` extension) that should be located in the directory `assets/labs/LAB_DIR_NAME`. 
+A valid lab is a directory contianing:
+- a main [Markdown](https://en.wikipedia.org/wiki/Markdown) file that can include other markdown files
+- a `lab.json` file containing metadata about the lab (e.g., its title)
 
-:::tip[note]
-Have a look at the [Emio.lab_empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) GitHub repository to see an example of a lab that you can use as a template to create your own lab.
-:::
-
-Navigate through the directories in `assets/labs`. Each directory has a `.md` file which can be loaded and displayed by the application, and a `lab.json` file which contains the description of the lab to display in the main table of contents of the Emio Labs application. You'll need to provide:
+The `lab.json` needs to provide:
 
 - the **name** of the directory containing your `.md` file
-- the **filename** (if different than the directory name)
+- the **filename** of the `.md` file (if different than the directory name)
 - a **title** and a **description** to display in the main Table of Contents
 
 For example:
@@ -43,36 +47,35 @@ For example:
 }
 ```
 
-The directories also usually contain a `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button ( <img src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> ) in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
+The lab directory usually contains at least one `.py` file, implementing a simulation scene for SOFA. This simulation will typically be launched when clicking the SOFA button <img className="drop-shadow" src="/img/logo_sofa.png" alt="sofa-icon" style={{borderRadius:0,width:20}}/> in the exercise sections of the lab. These directories might also contain extra files needed for the lab, like parameters file or python scripts.
 
 <img className="centered" src={emio_labs_directory} width="20%" alt="Hierarchy of files for a lab"/>
-<figcaption>Markdown and python files of the lab models.</figcaption>
+<figcaption>Markdown and python files of the introduction lab.</figcaption>
 
-## Compose your own Set of Labs
+### Render my Lab Into Emio Labs
+In order to see the lab into Emio Labs, it needs to be located in the directory `path/to/home/emio-labs/VERSION/assets/labs/LAB_DIR_NAME`. You can add a copy of your lab using the __Lab Configurator__. You will then be able to see how it renders in the app.
 
 <img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
-The content of the application is set in the file `assets/labs/labsConfig.json`. If you want to add or remove some labs, you can simply modify this file. The order of the labs in the application will match the order in the `labsConfig.json` file. For example:   
+### Add Python packages
+If you want to install additional Python packages for your lab, follow the steps in [this section](../emio-labs-user-manual#install-python-packages-for-emio-labs).
 
-```json title="/assets/labs/labsConfig.json"
-{
-    "labs": [{"name": "introduction"},
-             {"name": "lab_models"},
-             {"name": "sandbox"}]
-}
-```
-
-## Write your own Lab in Markdown
+## Write Your Own Lab in Markdown
 
 Markdown is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats.
 We use it to write our labs and the Markdown files are rendered by the application and displayed in a user-friendly way.
 
 Here we describe the basic syntax of Markdown and the extended syntax that we use in the **Emio Labs** application.
 
+:::tip
+The [Emio.lab_empty](https://github.com/SofaComplianceRobotics/Emio.lab_empty) lab gives a usage example of all the syntax explained below.
+:::
+
 ### Basic Syntax
 
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+The basic syntax is the same as the [CommonMark specifications](https://commonmark.org/help/).
+All markdown applications use this syntax.
 
 | **Element** | **Markdown Syntax** |
 | --- | --- |
@@ -88,8 +91,11 @@ These are the elements outlined in John Gruber’s original design document. All
 | Image | ```![alt text](image.jpg)``` |
 
 ### Extended Syntax
+We also added extensions to the original Markdown to ease the making of labs.
 
-These elements extend the basic syntax by adding additional features. It will only be understood by this application. We use nested fenced block principle to define our custom blocks. A block fence is a sequence of at least three consecutive `:`. The content of the fenced block consists of all subsequent lines, until a closing block fence with at least as many `:` as the opening block fence.
+These elements extend the basic syntax by adding additional features. It will only be understood by this application.
+
+We use nested fenced block principle to define our custom blocks. A block fence is a sequence of at least three consecutive `:`. The content of the fenced block consists of all subsequent lines, until a closing block fence with at least as many `:` as the opening block fence.
 
 If you want to nest multiple fenced blocks, the parent block fence should have more `:` than the children. For example :
 
@@ -97,8 +103,8 @@ If you want to nest multiple fenced blocks, the parent block fence should have 
 :::: parent
 ::: child
 MY_CONTENT
-::: // end of child
-:::: // end of parent
+::: <-- end of child
+:::: <-- end of parent
 ```
 
 #### Quiz
@@ -121,7 +127,7 @@ This will give the following :
 <img className="centered" src={emio_labs_quizopenanswer} width="70%" alt="Example of the correct answer displayed once the answer has been submitted"/>
 <figcaption>After giving an answer and clicking on the `Submit` button.</figcaption>
 
-For a question with multiple choice, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the list of possible answer the next line, inside the block fence. The good answers are set with `[X]` and the wrong answers with `[]` . For example : 
+For a question with multiple choices, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the list of possible answers in the next lines, inside the block fence. The good answers are set with `[X]` and the wrong answers with `[]` . For example : 
 
 ```markdown
 :::: quiz 
@@ -153,7 +159,7 @@ You can add videos by using the following container :
 #video("PATH_OR_URL_TO_MY_VIDEO")
 ```
 
-The `main-video` will move to the bottom right corner of the application when scrolling down. Only one `main-video` should be used in a markdown file (lab).
+The `main-video` will move to the bottom right corner of the application when scrolling down. Only one `main-video` should be used in a lab (including main and other markdown files).
 
 #### Highlighted block
 
@@ -165,7 +171,7 @@ MY_CONTENT
 :::
 ```
 
-#### Exercise block
+#### Exercise Block
 
 You can highlight your exercises by using the following block fence with the keyword `exercise` :
 
@@ -175,7 +181,7 @@ MY_EXERCISE_CONTENT
 :::
 ```
 
-#### Collapsible block
+#### Collapsible Block
 
 Create collapsible section with the following block fence with the keyword `collapse` :
 
@@ -185,7 +191,7 @@ MY_CONTENT
 :::
 ```
 
-#### Select block
+#### Select Block
 
 Create select content with the following block fence with the keyword `select`. 
 Inside the select block, you can define options with the keyword `option` followed by the value for the option. Each option should have a unique value.
@@ -201,7 +207,8 @@ You can optionally add a label to the option by using the syntax `[MY_LABEL]`For
 
 You may have as many options as you want.
 
-#### Input
+#### Text Input
+You can add an text input field with: 
 
 ```markdown
 #input("MY_UNIQUE_INPUT_NAME", "MY_OPTIONAL_PLACEHOLDER", "MY_OPTIONAL_DEFAULT_VALUE")
@@ -223,37 +230,38 @@ For example:
 
 There are three types of buttons available :
 
-1. The `runsofa-button` will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
+1. __The SOFA button__ will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
     ```markdown
     #runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
     ```
-2. The `python-button` will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
+2. __The Python button__ will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
     ```markdown
     #python-button("MY_SCRIPT.py", "OPTIONAL_PATH_TO_PYTHON_MODULES")
     ```
-3. The `open-button` will open a file `MY_FILE` with the default application associated with the file type on your system.
+3. __The Open button__ will open a file `MY_FILE` with the default application associated with the file type on your system.
     ```markdown
     #open-button("MY_FILE")
     ```
 
-An argument can be a value of a `select block` or an `input` field, by using its unique name that you defined. For example:
+An argument can be a value of a [`select block`](#select-block) or an [`input`](#text-input) field, by using its unique name that you defined. For example:
 
 ```markdown
 #runsofa-button("MY_SCENE.py", "MY_UNIQUE_SELECT_OR_INPUT_NAME", "MY_ARGUMENT_2")
 ```
 
 #### Icons
+We use the icon library [font awesome](https://fontawesome.com/icons). You can browse and copy the name of a free icon to put into the Markdown command:
 
 ```markdown
 #icon(ICON_NAME)
 ```
 
-We use the icon library [font awesome](https://fontawesome.com/icons). For example:
-
+For example:
 ```markdown
-#icon(warning)
+#icon(exclamation-triangle) <-- will display a warning icon
 ```
 
-## Share your Labs
+
+## Share Your Labs
 
 We can help you design and share your own labs with the community. Just send us an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com), explaining us your project and your needs.
