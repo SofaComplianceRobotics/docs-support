@@ -67,7 +67,7 @@ You can now **save your project** as a `.crproj` file. This file contains a lot 
     <img className="centered" src={action_swap_button} width="70%"/>
     <figcaption>Swap action button</figcaption>
 
-4. Scene Graph Window: You can now click on a component or a node to **highlight** it in the viewport.
+4. Scene Graph Window: You can now click on a component or a node to **highlight** it in the 3D view.
 
     <img className="centered" src={sofa_robotics_highlights} width="100%"/>
     <figcaption>Highlight objects in the viewport</figcaption>
