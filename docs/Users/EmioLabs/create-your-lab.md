@@ -58,7 +58,7 @@ In order to see the lab into Emio Labs, it needs to be located in the directory 
 <img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
-### Adding Python packages
+### Add Python packages
 If you want to install additional Python packages for your lab, follow the steps in [this section](../emio-labs-user-manual#install-python-packages-for-emio-labs).
 
 ## Write Your Own Lab in Markdown
