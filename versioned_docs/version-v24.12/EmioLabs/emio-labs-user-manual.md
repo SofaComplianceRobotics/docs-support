@@ -21,7 +21,7 @@ Welcome to the user manual of the software **emio-labs**. This desktop applicati
 Ensure your system meets the following minimum requirements:
 
 - Operating System (OS) minimum: Windows 10 or Ubuntu 22.04
-- RAM: 8GB minimum, 16GB recommended
+- RAM: 16GB minimum
 - Storage: 2GB free space
 
 ### Installation

@@ -23,7 +23,7 @@ This desktop application is designed to teach soft robotics through interactive 
 Ensure your system meets the following minimum requirements:
 
 - Operating System (OS) minimum: Windows 10, Ubuntu 22.04 or MacOS14
-- RAM: 8GB minimum, 16GB recommended
+- RAM: 16GB minimum
 - Storage: 2GB free space
 
 ### Installation
