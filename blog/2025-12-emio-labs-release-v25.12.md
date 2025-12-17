@@ -20,7 +20,7 @@ import export_import from './2025-12-release/img/emio-labs-exportimportconfig.pn
 ## Highlights
 
 ### ✨ Camera Calibration
-We introduced a new process to calibrate the camera Emio Labs. This allows you to accurately map the real-world coordinates to the camera's view, enhancing the interaction with Emio in your lab environment.
+We introduced a new process to calibrate the camera of Emio. 
 
 There are two ways to calibrate the camera:
 - Using the [Emio API](https://docs-support.compliance-robotics.com/docs/v25.12/Developers/emio-api#camera-calibration-tool) to calibrate the camera programmatically.
