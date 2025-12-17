@@ -1,0 +1,9 @@
+{
+    "label": "Users",
+    "position": 2,
+    "collapsed": false,
+    "link": {
+        "type": "generated-index",
+        "description": "Follow this documentation to learn how to use our robotic and software solutions. You will find detailed documentation, tutorials, examples and more to help you get started."
+    }
+}

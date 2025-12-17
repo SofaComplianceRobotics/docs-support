@@ -97,10 +97,10 @@ sudo /Applications/emio-labs.app/Contents/MacOS/emio-labs
 You may encounter a security warning when launching the application for the first time. 
 
 To resolve this:
-1. Open **System Preferences**.
-2. Go to **Security & Privacy**.
-3. Under the **Security** section, click on **Open Anyway** next to the message about the blocked application.
-4. Confirm by clicking **Open** in the pop-up dialog.
+1. Open **System Settings**.
+2. Go to **Privacy & Security**.
+3. Under the **Security** section, click on **Open Anyway** next to the message about the blocked application 'emio-labs'.
+4. Confirm by clicking **Open Anyway** in the pop-up dialog.
 5. Enter your password if prompted.
 6. Restart the application.
 
