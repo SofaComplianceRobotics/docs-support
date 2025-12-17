@@ -23,17 +23,17 @@ import export_import from './2025-12-release/img/emio-labs-exportimportconfig.pn
 We introduced a new process to calibrate the camera Emio Labs. This allows you to accurately map the real-world coordinates to the camera's view, enhancing the interaction with Emio in your lab environment.
 
 There are two ways to calibrate the camera:
-- Using the [Emio API](/docs/v25.12/Developers/emio-api#camera-calibration-tool) to calibrate the camera programmatically.
-- Using the [Emio Labs camera calibration scene](/docs/v25.12/Users/Emio/getting-started-with-emio#calibrating-the-camera) to calibrate the camera through the user interface from the sandbox section of Emio Labs.
+- Using the [Emio API](https://docs-support.compliance-robotics.com/docs/v25.12/Developers/emio-api#camera-calibration-tool) to calibrate the camera programmatically.
+- Using the [Emio Labs camera calibration scene](https://docs-support.compliance-robotics.com/docs/v25.12/Users/Emio/getting-started-with-emio/#calibrating-the-camera) to calibrate the camera through the user interface from the sandbox section of Emio Labs.
 
-<a href="/docs/v25.12/Users/Emio/getting-started-with-emio#calibrating-the-camera"> <img className="centered" src={calibration} width="70%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/> </a>
+<a href="https://docs-support.compliance-robotics.com/docs/v25.12/Users/Emio/getting-started-with-emio#calibrating-the-camera"> <img className="centered" src={calibration} width="70%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/> </a>
 
 <!--truncate--> 
 
 ### ✨ Configure Labs
 
 Configure your labs directly from the application. Add new labs, remove those you don't need, and organize them to meet your curiculum.  
-Follow this documentation for more details: [Configuring the Labs](/docs/v25.12/Users/EmioLabs/emio-labs-user-manual#configuring-the-labs).
+Follow this documentation for more details: [Configuring the Labs](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/emio-labs-user-manual#configuring-the-labs).
 
 <img className="centered" src={labs_configurator} width="100%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/>  
 
@@ -43,7 +43,7 @@ You can also export and import your labs configuration as a JSON file. This is u
 <img className="centered" src={export_import} width="100%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/>  
 
 ### ✨ Reset/Delete Labs
-Easily reset your labs to their original state with the new Reset Labs feature. This is particularly useful to ensure that all students start with the same setup. You can reset individual labs or all labs at once. Follow this documentation for more details: [Resetting the Labs](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/emio-labs-user-manual#resetting-the-labs).
+Easily reset your labs to their original state with the new Reset Labs feature. This is particularly useful to ensure that all students start with the same setup. You can reset individual labs or all labs at once. Follow this documentation for more details: [Resetting the Labs](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/emio-labs-user-manual#resettingdeleting-the-labs).
 
 <img className="centered" src={reset_labs} width="100%" style={{boxShadow:"rgba(149, 157, 165, 0.2) 0px 8px 24px"}}/>
 
@@ -66,11 +66,11 @@ We've made a [new GitHub repository](https://github.com/SofaComplianceRobotics/E
 ### Enhancements
 - The core assets of Emio Labs are now in a [public GitHub repository](https://github.com/SofaComplianceRobotics/Emio.CoreAssets). You can now open issues and propose changes. 
 - We have organized the sections of the labs as files to make it easier to navigate.
-- The descriptions of each lab are now located in the `lab.json` file, directly in the lab folder (see [this documentation](/docs/v25.12/Users/EmioLabs/create-your-lab#introduction))
+- The descriptions of each lab are now located in the `lab.json` file, directly in the lab folder (see [this documentation](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/create-your-lab#introduction))
 - You can now use your own centerpart and leg meshes, by placing them directly in the lab folder, in folders named `data/meshes/centerparts` or `data/meshes/legs`.
 
 ### New Features
-- We have reintroduced the [python button](/docs/v25.12/Users/EmioLabs/create-your-lab#buttons) to run python scripts directly from Emio Labs. 
+- We have reintroduced the [python button](https://docs-support.compliance-robotics.com/docs/v25.12/Users/EmioLabs/create-your-lab#buttons) to run python scripts directly from Emio Labs. 
 - Check for updates directly from Emio Labs. You can now check for updates and download the latest version of Emio Labs directly from the application.
 
 ### Bug Fixes

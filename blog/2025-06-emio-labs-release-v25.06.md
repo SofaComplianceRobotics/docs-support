@@ -29,7 +29,7 @@ To upgrade, download the new version !
 ### ✨ Emio Labs on MacOS!
 
 You can now download Emio Labs for MacOS!
-Download the latest version [here](https://mailchi.mp/compliance-robotics.com/download-emio-labs) and follow the [installation steps](/docs/v25.06/Users/EmioLabs/emio-labs-user-manual/#installation).
+Download the latest version [here](https://mailchi.mp/compliance-robotics.com/download-emio-labs) and follow the [installation steps](https://docs-support.compliance-robotics.com/docs/v25.06/Users/EmioLabs/emio-labs-user-manual/#installation).
 
 <img className="centered" src={emio_labs_macos} width="70%" alt="Emio logo next to Apple logo"/>
 
