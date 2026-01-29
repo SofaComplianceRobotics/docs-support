@@ -211,13 +211,13 @@ An argument can be the current value of a select block by using its unique selec
 #### Icons
 
 ```markdown
-#icon(ICON_NAME)
+#icon("ICON_NAME")
 ```
 
 We use the icon library [font awesome](https://fontawesome.com/icons). For example:
 
 ```markdown
-#icon(exclamation-triangle) <-- will display a warning icon
+#icon("warning") <-- will display a warning icon
 ```
 
 ## Share Your Labs
