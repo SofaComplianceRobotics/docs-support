@@ -253,12 +253,12 @@ An argument can be a value of a [`select block`](#select-block) or an [`input`](
 We use the icon library [font awesome](https://fontawesome.com/icons). You can browse and copy the name of a free icon to put into the Markdown command:
 
 ```markdown
-#icon(ICON_NAME)
+#icon("ICON_NAME")
 ```
 
 For example:
 ```markdown
-#icon(exclamation-triangle) <-- will display a warning icon
+#icon("warning") <-- will display a warning icon
 ```
 
 
