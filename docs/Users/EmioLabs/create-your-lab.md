@@ -232,15 +232,19 @@ There are three types of buttons available :
 
 1. __The SOFA button__ will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
     ```markdown
-    #runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
+    #runsofa-button("assets/labs/<LAB_NAME>/MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
     ```
 2. __The Python button__ will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
     ```markdown
-    #python-button("MY_SCRIPT.py", "OPTIONAL_PATH_TO_PYTHON_MODULES")
+    #python-button("'assets/labs/<LAB_NAME>/MY_SCRIPT.py' arg1 'example/path/as/arg2'", "OPTIONAL_PATH_TO_PYTHON_MODULES")
+    ```
+    You can use this button to install extra Python packages with:
+    ```markdown
+    #python-button("-m pip install --target 'assets/labs/<LAB_NAME>/modules/site-packages' -r 'assets/labs/<LAB_NAME>/requirements.txt'")
     ```
 3. __The Open button__ will open a file `MY_FILE` with the default application associated with the file type on your system.
     ```markdown
-    #open-button("MY_FILE")
+    #open-button("assets/labs/<LAB_NAME>/MY_FILE")
     ```
 
 An argument can be a value of a [`select block`](#select-block) or an [`input`](#text-input) field, by using its unique name that you defined. For example:

@@ -88,7 +88,7 @@ All markdown applications use this syntax.
 | Code | \`code\`<br/> \`\`\`languageblock<br/>code<br/>\`\`\` |
 | Horizontal Rule | ```---``` |
 | Link | ```[title](https://www.example.com)``` |
-| Image | ```![alt text](image.jpg)``` |
+| Image | ```![alt text](assets/labs/<LAB_NAME>/image.jpg)``` |
 
 ### Extended Syntax
 We also added extensions to the original Markdown to ease the making of labs.
@@ -232,15 +232,15 @@ There are three types of buttons available :
 
 1. __The SOFA button__ will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
     ```markdown
-    #runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
+    #runsofa-button("assets/labs/<LAB_NAME>/MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
     ```
 2. __The Python button__ will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
     ```markdown
-    #python-button("MY_SCRIPT.py", "OPTIONAL_PATH_TO_PYTHON_MODULES")
-    ```
+    #python-button("assets/labs/<LAB_NAME>/MY_SCRIPT.py", "OPTIONAL_PATH_TO_PYTHON_MODULES")
+    ```    
 3. __The Open button__ will open a file `MY_FILE` with the default application associated with the file type on your system.
     ```markdown
-    #open-button("MY_FILE")
+    #open-button("assets/labs/<LAB_NAME>/MY_FILE")
     ```
 
 An argument can be a value of a [`select block`](#select-block) or an [`input`](#text-input) field, by using its unique name that you defined. For example:

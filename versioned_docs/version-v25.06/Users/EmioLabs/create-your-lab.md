@@ -85,7 +85,7 @@ These are the elements outlined in John Gruber’s original design document. All
 | Code | \`code\`<br/> \`\`\`languageblock<br/>code<br/>\`\`\` |
 | Horizontal Rule | ```---``` |
 | Link | ```[title](https://www.example.com)``` |
-| Image | ```![alt text](image.jpg)``` |
+| Image | ```![alt text](assets/labs/<LAB_NAME>/image.jpg)``` |
 
 ### Extended Syntax
 
@@ -204,7 +204,7 @@ You may have as many options as you want.
 #### Buttons
 
 ```markdown
-#runsofa-button("MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
+#runsofa-button("assets/labs/<LAB_NAME>/MY_SCENE.py", "MY_ARGUMENT_1", "MY_ARGUMENT_2")
 
 #open-button("MY_FILE")
 ```
@@ -212,7 +212,7 @@ You may have as many options as you want.
 An argument can be the current value of a select block by using its unique select name, that you defined. For example:
 
 ```markdown
-#runsofa-button("MY_SCENE.py", "MY_UNIQUE_SELECT_NAME", "MY_ARGUMENT_2")
+#runsofa-button("assets/labs/<LAB_NAME>/MY_SCENE.py", "MY_UNIQUE_SELECT_NAME", "MY_ARGUMENT_2")
 ```
 
 #### Icons
