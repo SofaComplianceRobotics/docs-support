@@ -58,6 +58,8 @@ Ensure your system meets the following minimum requirements:
 
        1. **Installer.** If you have downloaded an installer `.dmg`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
        2. **Portable.** If you have downloaded the `.zip`, double-click the file to create a `.app` file. To launch the **Emio Labs** application, simply click this new file. 
+       
+       To launch Emio Labs on MacOS, please refer to the [section below](#running-emio-labs-on-macos). 
   </TabItem>
 </Tabs>
 
