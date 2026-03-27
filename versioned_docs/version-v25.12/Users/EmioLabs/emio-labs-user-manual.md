@@ -39,8 +39,6 @@ Ensure your system meets the following minimum requirements:
   <TabItem value="linux" label="Linux" default>
        :::important[requirements]
        - To use the portable `.AppImage`, install libfuse2: `sudo apt install libfuse2`
-
-       - When trying to connect the real robot, if you get a `[Errno 13] Permission denied: '/dev/ttyUSB0'` message. Run the following command in terminal: `sudo chmod 777 /dev/ttyUSB0`. Make sure that the name of the USB port matches the one from the error message.
        ::: 
        1. **Installer.** If you have downloaded an installer `.deb`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
        2. **Portable.** If you have downloaded a portable `.AppImage`, untar the file, the **Emio Labs** application is the resulting executable file.   
@@ -49,10 +47,6 @@ Ensure your system meets the following minimum requirements:
   <TabItem value="windows" label="Windows">
        :::important[requirements]
        - All formats require [Microsoft Visual C++ 2022 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed.
-
-       - Depending on your version of Windows, you may need to install the [FTDI drivers](https://ftdichip.com/drivers/vcp-drivers/) to pilot the robot. This is typically necessary if, upon connecting the robot to your computer, you encounter the following error message:  
-       `[ERROR] No serial port found with manufacturer = FTDI`.  
-       Installing the drivers should resolve this issue.
        :::   
 
        1. **Installer.** If you have downloaded an installer `.msi`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
@@ -73,6 +67,8 @@ Ensure your system meets the following minimum requirements:
        To launch Emio Labs on MacOS, please refer to the [section below](#running-emio-labs-on-macos) 
   </TabItem>
 </Tabs>
+
+Check [Getting Starting with Emio](../../Users/Emio/getting-started-with-emio.md) for instructions on how to connect Emio to your computer and pilot the real robot.
 
 ### Running Emio Labs on MacOS
 :::warning
