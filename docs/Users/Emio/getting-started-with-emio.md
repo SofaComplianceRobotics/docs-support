@@ -53,22 +53,6 @@ Emio features two distinct configurations, as shown in the images below:
     </div>
 </div>
 
-## Connecting Emio to Your Computer
-You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch.
-To connect Emio to your computer:
-1. Plug the USB cable into the USB port of Emio (see Figure 2),
-2. Connect the other end of the USB cable to your computer,
-3. Plug the power supply into the power port of Emio (see Figure 3),
-4. Turn on the switch to power the robot (see Figure 3).
-
-<div style={{display: "flex"}}>
-    <div>
-        <img className="centered" src={emio_connections} width="30%" alt="The connection panel on the side of Emio"/>
-        <figcaption>(1) USB connection. (2) Power connection. (3) Switch to power the robot.</figcaption>
-    </div>
-</div>
-
-
 ## Attaching Legs to Motors
 Each motor is equipped with a drum and a cap for connecting a leg.
 
@@ -98,8 +82,63 @@ To attach a leg to a motor:
 </div>
 
 :::note
-Throughout the lab sessions, you will be instructed to configure Emio into specific setups. Simply follow the 
+When using [Emio Labs](../../../Users/EmioLabs/), throughout the lab sessions, you will be instructed to configure Emio into specific setups. Simply follow the 
 provided instructions by clicking on *Set up Emio*. We use colors to refer to the legs and connectors, and numbers to identify the motors.
+:::
+
+## Connecting Emio to Your Computer
+
+<Tabs className="unique-tabs" groupId="operating-systems">
+  <TabItem value="linux" label="Linux" default>
+
+     On Linux, serial ports require specific permissions to be accessed. By default, only the `root` user can access `/dev/ttyUSB*`. Here are two solutions to grant access to serial ports and pilot the real robot:
+
+          <Tabs className="unique-tabs" groupId="serial-ports">
+               <TabItem value="temporary" label="Temporary" default>
+                    Run the following command to grant read/write permissions:
+                    ```bash
+                    sudo chmod 777 /dev/ttyUSB0
+                    ```
+                    Note: Replace `ttyUSB0` with the actual port name. You can find it by running `ls /dev/ttyUSB*` or by using SOFA Robotics. This change will revert after reboot or disconnect.
+               </TabItem>
+               <TabItem value="permanent" label="Permanent" default>
+                    Add your user to the `dialout` group to access serial devices without root privileges:
+                    ```bash
+                    sudo usermod -aG dialout $USER
+                    ```
+                    Then log out and log back in (or reboot) for the group changes to take effect. This is the recommended approach.  
+               </TabItem>
+          </Tabs>
+
+  </TabItem>
+  <TabItem value="windows" label="Windows" default>
+
+       Depending on your version of Windows, you may need to install the [FTDI drivers](https://ftdichip.com/drivers/vcp-drivers/) to pilot the robot. This is typically necessary if, upon connecting the robot to your computer, you encounter the following error message:  
+       `[ERROR] No serial port found with manufacturer = FTDI`.  
+       Installing the drivers should resolve this issue.
+  </TabItem>
+</Tabs>
+
+You will find a USB cable in the drawer to connect the robot to your computer. The robot also has a power supply and a switch.
+To connect Emio to your computer:
+1. Plug the USB cable into the USB port of Emio,
+2. Connect the other end of the USB cable to your computer,
+3. Plug the power supply into the power port of Emio,
+4. Turn on the switch to power the robot.
+
+<div style={{display: "flex"}}>
+    <div>
+        <img className="centered" src={emio_connections} width="30%" alt="The connection panel on the side of Emio"/>
+        <figcaption>(1) USB connection. (2) Power connection. (3) Switch to power the robot.</figcaption>
+    </div>
+</div>
+
+:::note
+To pilot Emio, you have two options: 
+1. You can use [Emio Labs](../../../Users/EmioLabs/), which provides an intuitive interface to launch SOFA Robotics and run simulations to solve Emio's inverse kinematics and control the robot's end-effector.
+2. Or you can use the [Emio API](../../../Developers/emio-api/), which allows you to pilot the motors of Emio programmatically using Python.  
+
+You can find more information about these two options in the following sections.
 :::
 
 ## Calibrating the Camera
