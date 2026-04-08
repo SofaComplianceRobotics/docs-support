@@ -22,7 +22,7 @@ jobs:
           cache: npm
           
       - name: Fetch Emio API docs
-        uses: robinraju/release-downloader@v1
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: 'SofaComplianceRobotics/Emio.API'
           tag: 'release-main'
@@ -30,7 +30,7 @@ jobs:
           fileName: 'emio-api.md'
 
       - name: Fetch Emio SOFA API docs
-        uses: robinraju/release-downloader@v1
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: 'SofaComplianceRobotics/Emio.CoreAssets'
           tag: 'release-main'
