@@ -108,7 +108,7 @@ To resolve this:
 
 - Main Table of Contents: Navigate between different labs and access resources.
 - Lab Environment: Interactive space where you'll follow learning materials and complete exercises and simulations.
-- Simulation Application (sofa-robotics): Launch and interact with the numerical twin of Emio.
+- Simulation Application (SOFA Robotics): Launch and interact with the numerical twin of Emio.
 - To reset the application go to **Edit > Reset App** in the main menu bar. This will reset the quiz, select the default parameters in the labs, etc.
 
 <img className="centered" src={emiolabs_overview} width="50%" alt="emio labs overview"/>
@@ -232,16 +232,19 @@ In the main dashboard click on the Sandbox link to open the corresponding page:
 1. Follow the instructions to help you set up your Emio and the numerical twin.
 2. Launch the corresponding simulation by clicking on the SOFA button as usual, and enjoy.
 
-## Install Python packages for Emio Labs
-For some labs or if you are creating your own lab, you might need to install Python packages that are not shipped with the embedded Emio Labs Python.
+## Installing Python Packages for Emio Labs
 
-To do this:
+If you are creating your own lab, you might need to install Python packages that are not shipped with the embedded Emio Labs Python.
+To install these packages for your lab, you can add a `python-button` to the markdown file:
+    ```markdown
+    #python-button(pyargs=["-m", "pip", "install", "--target", "assets/labs/<LAB_NAME>/modules/site-packages", "MYPACKAGENAME"])
+    ```
+or if you have a requirement.txt file:
+    ```markdown
+    #python-button(pyargs=["-m", "pip", "install", "--target", "assets/labs/<LAB_NAME>/modules/site-packages", "-r", "assets/labs/<LAB_NAME>/requirements.txt"])
+    ```
 
-1. Find the Python installation of Emio Labs by going to the installation folder of Emio Labs, for example on Windows that might be `C:\Users\<USERNAME>\AppData\Local\Programs\emio-labs` .
-2. There should be a folder `resources\sofa\bin\python`. This is where the Python running with Emio Labs is.
-3. Open a terminal in this folder ( e.g. `C:\Users\<USERNAME>\AppData\Local\Programs\emio-labs\resources\sofa\bin\python`).
-4. To install the Python package of name `lepackage`, type in `python -m pip install lepackage` 
-5. If admin rights are necessary, accept or type in the admin password when prompted
+Then, on the page of your lab in the Emio Labs application, clicking on the Python button <img className="drop-shadow" src="/img/logo_python.png" alt="python-icon" style={{borderRadius:0,width:20}}/> will install the extra Python packages in the `modules/site-packages` directory of your lab.
 
 :::warning
 If you are on MacOS, there is no Python shipped with Emio Labs. Use the Python you installed in the [installation process](#installation)
