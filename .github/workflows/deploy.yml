@@ -37,6 +37,14 @@ jobs:
           out-file-path: 'docs/Developers'
           fileName: 'emio-sofa-api.md'
 
+      - name: Fetch DynamixelMotors API docs
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: 'SofaComplianceRobotics/DynamixelMotorsAPI'
+          tag: 'release-main'
+          out-file-path: 'docs/Developers'
+          fileName: 'dynamixelmotorsapi-api.md'
+
       - name: Install dependencies
         run: npm ci
       - name: Build website
