@@ -23,6 +23,7 @@ jobs:
         run: |
           curl --output-dir "docs/Developers" -OL https://github.com/SofaComplianceRobotics/Emio.API/releases/download/release-main/emio-api.md
           curl --output-dir "docs/Developers" -OL https://github.com/SofaComplianceRobotics/Emio.CoreAssets/releases/download/release-main/emio-sofa-api.md
+          curl --output-dir "docs/Developers" -OL https://github.com/SofaComplianceRobotics/DynamixelMotorsAPI/releases/download/release-main/dynamixelmotors-api.md
 
       - name: Install dependencies
         run: npm ci
