@@ -85,6 +85,10 @@ img {
   font-weight: bold;
 }
 
+.table-of-contents>li>a{
+  font-weight: bold;
+}
+
 .menu__link {
   font-weight: normal;
   font-size: normal;
