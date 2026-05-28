@@ -43,7 +43,7 @@ jobs:
           repository: 'SofaComplianceRobotics/DynamixelMotorsAPI'
           tag: 'release-main'
           out-file-path: 'docs/Developers'
-          fileName: 'dynamixelmotorsapi-api.md'
+          fileName: 'dynamixelmotors-api.md'
 
       - name: Install dependencies
         run: npm ci
