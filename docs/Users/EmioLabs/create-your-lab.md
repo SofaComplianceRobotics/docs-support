@@ -11,6 +11,8 @@ import emio_labs_qcm01 from './img/emio-labs-qcm01.png'
 import emio_labs_qcm02 from './img/emio-labs-qcm02.png'
 import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
 import emio_labs_input from './img/emio-labs-input.png'
+import emio_labs_calibration from './img/sandbox-calibration.png'
+import emio_labs_beamresampler from './img/sandbox-beamresampler.png'
 
 # Create Your Own Lab
 
@@ -58,8 +60,26 @@ In order to see the lab into Emio Labs, it needs to be located in the directory 
 <img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
-### Add Python packages
+### Add Python Packages
 If you want to install additional Python packages for your lab, follow the steps in [this section](../emio-labs-user-manual#install-python-packages-for-emio-labs).
+
+### Add a Predefined Module
+
+Using the <a href="#include">`#include`</a> syntax, you can include files in your markdown file for better resusability and modularity. For example, you can create a file `assets/labs/mylab/parameters.md` containing explanations about parameters you use for your lab and include it in your main markdown file with:
+
+```markdown
+#include("assets/labs/mylab/parameters.md")
+```
+
+There are several predefined modules that you can include in your lab and visualize in the *Sandbox* lab. They are located in the `assets/labs/modules` directory:
+- `assets/labs/modules/calibration.md` : contains the calibration parameters for the robots used in the labs
+    <img className="centered" src={emio_labs_calibration} width="30%" alt="Screenshot of calibration module"/>
+    <figcaption>Calibration module in the Sandbox lab.</figcaption>
+
+- `assets/labs/modules/beam_resampler.md`: contains tools to resample the beam mesh of a leg
+    <img className="centered" src={emio_labs_beamresampler} width="30%" alt="Screenshot of beam resampler module"/>
+    <figcaption>Beam resampler module in the Sandbox lab.</figcaption>
+
 
 ## Write Your Own Lab in Markdown
 
