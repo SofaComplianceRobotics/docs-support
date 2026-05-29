@@ -247,6 +247,58 @@ You can optionally add a label to the option by using the syntax `[MY_LABEL]`For
 
 You may have as many options as you want.
 
+#### Solutions
+You can hide solutions in a collapsible block with the keyword `solution`. A solution command will display a "Solution" collapse. When clicking on it, the content of the solution will be displayed.
+Don't forget to enable the solution mode in Emio Labs to see the solutions in the app. You can toggle it in **Labs>Enable/Disable Solutions** in the top menu bar of the app.
+
+It exists two ways to include solutions in your lab:
+- <a href="#inline-solution">the inline</a>
+- <a href="#solution-block">the solution block</a>
+
+:::info
+The labs that come with Emio Labs will look for the solution files in the solutions directory `path/to/home/emio-labs/VERSION/assets/solutions/LAB_NAME/`. Make sure to put the solution files in this directory.
+:::
+
+##### Inline Solution
+The content of the solution is given by the markdown file `MY_SOLUTION.md` and the solution block with the id `MY_SOLUTION_ID` in this markdown file. For example, if the solution file contains
+`#solution(file="assets/solutions/<LAB_NAME>/MY_SOLUTION.md", id="MY_SOLUTION_ID")`, it will display the content of the solution block with the id `MY_SOLUTION_ID` in the file `MY_SOLUTION.md`.
+
+
+The content of the file `MY_SOLUTION.md` should be a list of <a href="#solution-block">`solution blocks`</a> with IDs with `MY_SOLUTION_ID` among them. 
+
+`MY_SOLUTION.md` example:
+
+
+```markdown
+## A title that won't be in the solution.
+
+::: solution MY_SOLUTION_ID
+MY_SOLUTION_CONTENT_IN_MARKDOWN
+:::
+
+Some text that won't be in the solution.
+
+::: solution exercise-1
+MY_SOLUTION_CONTENT_IN_MARKDOWN_FOR_EXERCISE_1
+:::
+```
+
+
+##### Solution Block
+The content of the solution is directly written in the markdown file, inside a block fence with the keyword `solution`. For example:
+
+    ```markdown
+    :::: solution MY-UNIQUE-ID
+    MY_SOLUTION_CONTENT_IN_MARKDOWN
+    ::::
+    ```
+
+    ```markdown
+    :::: solution MY-UNIQUE-ID
+    #include("assets/solutions/<LAB_NAME>/MY_SOLUTION.md")
+    ::::
+    ```
+
 #### Text Input
 You can add an text input field with: 
 
