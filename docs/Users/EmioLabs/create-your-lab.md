@@ -180,6 +180,13 @@ For example:
 #icon("warning") <-- will display a warning icon
 ```
 
+#### Include
+You can include the content of another markdown file with the following syntax:
+
+```markdown
+#include("assets/labs/<LAB_NAME>/MY_MARKDOWN_FILE.md")
+```
+
 #### Quiz
 
 You can create a quiz with **open answer** or a **multiple choice question**. For an open answer, create a block fence with the keyword `quiz`. Inside the quiz fence block, create another block fence with the keyword `question`, followed by your question (on the same line) and the answer on the next line, inside the block fence. For example : 
