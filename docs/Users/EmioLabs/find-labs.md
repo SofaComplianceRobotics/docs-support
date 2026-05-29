@@ -36,7 +36,7 @@ ___Recommended audience___: General public. \
 **Get an introduction to Emio, the real device, the simulation software, and the coupling between them.**
 
 <LabDescription
-    description={<>This lab is an introduction to Emio and the SOFA Robotics application. It is designed to familiarize you with the robot, the simulation software, and the coupling between them. We advise you to <strong>start with this lab</strong> if you or your students are new to Emio and SOFA. You will be asked to set up the robot, connect it to the simulation, and pilot the real device from the simulation.</>}
+    description={<>This lab is an introduction to Emio and the SOFA Robotics application. It is designed to familiarize you with the robot, the simulation software, and the coupling between them. We advise you to <strong>start with this lab</strong> if you or your students are new to Emio or SOFA Robotics. You will be asked to set up the robot, connect it to the simulation, and pilot the real device from the simulation software.</>}
     image={<>
     <img className="centered" src={lab_introduction} width="250px" alt="Introduction to Emio and SOFA"/>
     <figcaption> Lab Introduction </figcaption>
