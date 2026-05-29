@@ -95,7 +95,7 @@ We also added extensions to the original Markdown to ease the making of labs.
 
 These elements extend the basic syntax by adding additional features. It will only be understood by this application.
 
-We use nested fenced block principle to define our custom blocks. A block fence is a sequence of at least three consecutive `:`. The content of the fenced block consists of all subsequent lines, until a closing block fence with at least as many `:` as the opening block fence.
+We use *nested fenced block* principle to define our custom blocks. A block fence is a sequence of at least three consecutive `:`. The content of the fenced block consists of all subsequent lines, until a closing block fence with at least as many `:` as the opening block fence.
 
 If you want to nest multiple fenced blocks, the parent block fence should have more `:` than the children. For example :
 
@@ -105,6 +105,79 @@ If you want to nest multiple fenced blocks, the parent block fence should have 
 MY_CONTENT
 ::: <-- end of child
 :::: <-- end of parent
+```
+
+#### Buttons
+
+There are three types of buttons available :
+
+1. The __runsofa-button__ will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
+    ```markdown
+    #runsofa-button(file="assets/labs/<LAB_NAME>/MY_SCENE.py", 
+                    pyargs=["MY_ARGUMENT_1", "MY_ARGUMENT_2"])
+    ```
+2. The __python-button__ will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
+    ```markdown
+    #python-button(file="assets/labs/<LAB_NAME>/MY_SCRIPT.py", 
+                   pyargs=["arg1", "example/path/as/arg2"], 
+                   extrapythonpath=["OPTIONAL_PATH_TO_PYTHON_MODULES"])
+    ```
+    You can use this button to install extra Python packages for your lab with:
+    ```markdown
+    #python-button(pyargs=["-m", "pip", "install", "--target", "assets/labs/<LAB_NAME>/modules/site-packages", "-r", "assets/labs/<LAB_NAME>/requirements.txt"])
+    ```
+3. The __open-button__ will open a file `MY_FILE` with the default application associated with the file type on your system.
+    ```markdown
+    #open-button(file="assets/labs/<LAB_NAME>/MY_FILE")
+    ```
+
+An argument can be a value of a [`select block`](#select-block) or an [`input`](#text-input) field, by using its unique name that you defined. For example:
+
+```markdown
+#runsofa-button(file="MY_SCENE.py", 
+                pyargs=["MY_UNIQUE_SELECT_OR_INPUT_NAME", "MY_ARGUMENT_2"])
+```
+
+#### Collapsible Block
+
+Create collapsible section with the following block fence with the keyword `collapse` :
+
+```markdown
+::: collapse MY_TITLE
+MY_CONTENT
+:::
+```
+
+#### Exercise Block
+
+You can highlight your exercises by using the following block fence with the keyword `exercise` :
+
+```markdown
+::: exercise
+MY_EXERCISE_CONTENT
+:::
+```
+
+#### Highlighted block
+
+You can highlight some text by using the following block fence with the keyword `highlight` :
+
+```markdown
+::: highlight
+MY_CONTENT
+:::
+```
+
+#### Icons
+We use the icon library [font awesome](https://fontawesome.com/icons). You can browse and copy the name of a free icon to put into the Markdown command:
+
+```markdown
+#icon("ICON_NAME")
+```
+
+For example:
+```markdown
+#icon("warning") <-- will display a warning icon
 ```
 
 #### Quiz
@@ -150,46 +223,6 @@ This will give the following :
 <img className="centered" src={emio_labs_qcm02} width="70%" alt="Example of a multiple choice question after submission. The correct answers are highlighted in green, the wrong one in red."/>
 <figcaption>After submitting the answer.</figcaption>
 
-#### Video
-
-You can add videos by using the following container :
-
-```markdown
-#main-video("PATH_OR_URL_TO_MY_VIDEO")
-#video("PATH_OR_URL_TO_MY_VIDEO")
-```
-
-The `main-video` will move to the bottom right corner of the application when scrolling down. Only one `main-video` should be used in a lab (including main and other markdown files).
-
-#### Highlighted block
-
-You can highlight some text by using the following block fence with the keyword `highlight` :
-
-```markdown
-::: highlight
-MY_CONTENT
-:::
-```
-
-#### Exercise Block
-
-You can highlight your exercises by using the following block fence with the keyword `exercise` :
-
-```markdown
-::: exercise
-MY_EXERCISE_CONTENT
-:::
-```
-
-#### Collapsible Block
-
-Create collapsible section with the following block fence with the keyword `collapse` :
-
-```markdown
-::: collapse MY_TITLE
-MY_CONTENT
-:::
-```
 
 #### Select Block
 
@@ -226,49 +259,16 @@ For example:
 <img className="centered" src={emio_labs_input} width="40%" alt="Example of an input field with the placeholder and a value."/>
 <figcaption>Input example. (left) Placeholder. (right) Value.</figcaption>
 
-#### Buttons
+#### Video
 
-There are three types of buttons available :
-
-1. The __runsofa-button__ will launch a SOFA simulation with the specified scene file `MY_SCENE.py`. You can pass as many arguments as you want to the scene file:
-    ```markdown
-    #runsofa-button(file="assets/labs/<LAB_NAME>/MY_SCENE.py", 
-                    pyargs=["MY_ARGUMENT_1", "MY_ARGUMENT_2"])
-    ```
-2. The __python-button__ will run a python script `MY_SCRIPT.py`. You can optionally provide a path to additional python modules that will be added to the `PYTHONPATH` before running the script.
-    ```markdown
-    #python-button(file="assets/labs/<LAB_NAME>/MY_SCRIPT.py", 
-                   pyargs=["arg1", "example/path/as/arg2"], 
-                   extrapythonpath=["OPTIONAL_PATH_TO_PYTHON_MODULES"])
-    ```
-    You can use this button to install extra Python packages for your lab with:
-    ```markdown
-    #python-button(pyargs=["-m", "pip", "install", "--target", "assets/labs/<LAB_NAME>/modules/site-packages", "-r", "assets/labs/<LAB_NAME>/requirements.txt"])
-    ```
-3. The __open-button__ will open a file `MY_FILE` with the default application associated with the file type on your system.
-    ```markdown
-    #open-button(file="assets/labs/<LAB_NAME>/MY_FILE")
-    ```
-
-An argument can be a value of a [`select block`](#select-block) or an [`input`](#text-input) field, by using its unique name that you defined. For example:
+You can add videos by using the following container :
 
 ```markdown
-#runsofa-button(file="MY_SCENE.py", 
-                pyargs=["MY_UNIQUE_SELECT_OR_INPUT_NAME", "MY_ARGUMENT_2"])
+#main-video("PATH_OR_URL_TO_MY_VIDEO")
+#video("PATH_OR_URL_TO_MY_VIDEO")
 ```
 
-#### Icons
-We use the icon library [font awesome](https://fontawesome.com/icons). You can browse and copy the name of a free icon to put into the Markdown command:
-
-```markdown
-#icon("ICON_NAME")
-```
-
-For example:
-```markdown
-#icon("warning") <-- will display a warning icon
-```
-
+The `main-video` will move to the bottom right corner of the application when scrolling down. Only one `main-video` should be used in a lab (including main and other markdown files).
 
 ## Share Your Labs
 
