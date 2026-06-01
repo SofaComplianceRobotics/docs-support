@@ -39,6 +39,7 @@ Ensure your system meets the following minimum requirements:
   <TabItem value="linux" label="Linux" default>
        :::important[requirements]
        - To use the portable format `.AppImage`, install libfuse2: `sudo apt install libfuse2`  
+       - Most Linux operating system distributions include Tk. If not already installed: `sudo apt install tk` 
        ::: 
 
        1. **Installer.** If you have downloaded an installer `.deb`, run it and follow the on-screen instructions. When the installation is completed, simply search for the **Emio Labs** application on your computer, as you would do with any other software.
