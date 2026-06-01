@@ -11,6 +11,8 @@ import emio_labs_qcm01 from './img/emio-labs-qcm01.png'
 import emio_labs_qcm02 from './img/emio-labs-qcm02.png'
 import emio_labs_qcm03 from './img/emio-labs-qcm03.png'
 import emio_labs_input from './img/emio-labs-input.png'
+import emio_labs_calibration from './img/sandbox-calibration.png'
+import emio_labs_beamresampler from './img/sandbox-beamresampler.png'
 
 # Create Your Own Lab
 
@@ -58,8 +60,22 @@ In order to see the lab into Emio Labs, it needs to be located in the directory 
 <img className="centered" src={emio_labs_dashboard} width="70%" alt="Example of a table of contents for the Emio Labs application"/>
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
-### Add Python packages
+### Add Python Packages
 If you want to install additional Python packages for your lab, follow the steps in [this section](../emio-labs-user-manual#install-python-packages-for-emio-labs).
+
+### Add a Built-In Module
+
+Using the <a href="#include">`#include`</a> syntax, you can easily include  the built-in modules that comes with Emio Labs.
+
+There are several built-in modules that you can visualize in the *Sandbox* lab. They are located in the `assets/labs/modules` directory:
+- `assets/labs/modules/calibration.md` : contains tools to calibrate the camera
+    <img className="centered" src={emio_labs_calibration} width="30%" alt="Screenshot of calibration module"/>
+    <figcaption>Calibration module in the Sandbox lab.</figcaption>
+
+- `assets/labs/modules/beam_resampler.md`: contains tools to resample the beam mesh of a leg
+    <img className="centered" src={emio_labs_beamresampler} width="30%" alt="Screenshot of beam resampler module"/>
+    <figcaption>Beam resampler module in the Sandbox lab.</figcaption>
+
 
 ## Write Your Own Lab in Markdown
 
