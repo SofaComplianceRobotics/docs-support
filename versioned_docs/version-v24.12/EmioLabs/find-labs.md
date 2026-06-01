@@ -3,6 +3,7 @@ title: Find Your Labs
 sidebar_position: 4
 ---
 
+import lab_introduction from './img/lab-introduction.png';
 import lab_models from './img/volumemodel.png';
 import lab_inverse from './img/emio-SOFA-extended.png';
 import project_picknplace from './img/emio-gripper-contact3.png';
@@ -19,6 +20,24 @@ Teach soft robotics with the original content created by Compliance Robotics. It
 
 *[Easily compose your labs and add your own content](create-your-lab.md). Share your content for Emio with the community. Contact us to add your content to this page by sending an email at this address [contact@compliance-robotics.com](mailto:contact@compliance-robotics.com).*
 :::
+
+## :checkered_flag:  Introduction 
+
+:::verified
+___Author___: Compliance Robotics \
+___Recommended audience___: General public. \
+*Distributed with the Emio Labs application* 
+:::
+
+**Get an introduction to Emio, the real device, the simulation software, and the coupling between them.**
+
+<LabDescription
+    description={<>This lab is an introduction to Emio and the SOFA Robotics application. It is designed to familiarize you with the robot, the simulation software, and the coupling between them. We advise you to <strong>start with this lab</strong> if you or your students are new to Emio or SOFA Robotics. You will be asked to set up the robot, connect it to the simulation, and pilot the real device from the simulation software.</>}
+    image={<>
+    <img className="centered" src={lab_introduction} width="250px" alt="Introduction to Emio and SOFA"/>
+    <figcaption> Lab Introduction </figcaption>
+    </>}
+/>  
 
 ## Lab 1. Models for Soft Robotics
 
