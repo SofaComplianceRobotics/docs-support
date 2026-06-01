@@ -63,16 +63,12 @@ In order to see the lab into Emio Labs, it needs to be located in the directory 
 ### Add Python Packages
 If you want to install additional Python packages for your lab, follow the steps in [this section](../emio-labs-user-manual#install-python-packages-for-emio-labs).
 
-### Add a Predefined Module
+### Add a Built-In Module
 
-Using the <a href="#include">`#include`</a> syntax, you can include files in your markdown file for better resusability and modularity. For example, you can create a file `assets/labs/mylab/parameters.md` containing explanations about parameters you use for your lab and include it in your main markdown file with:
+Using the <a href="#include">`#include`</a> syntax, you can easily include  the built-in modules that comes with Emio Labs.
 
-```markdown
-#include("assets/labs/mylab/parameters.md")
-```
-
-There are several predefined modules that you can include in your lab and visualize in the *Sandbox* lab. They are located in the `assets/labs/modules` directory:
-- `assets/labs/modules/calibration.md` : contains tools to calibrate the camera.
+There are several built-in modules that you can visualize in the *Sandbox* lab. They are located in the `assets/labs/modules` directory:
+- `assets/labs/modules/calibration.md` : contains tools to calibrate the camera
     <img className="centered" src={emio_labs_calibration} width="30%" alt="Screenshot of calibration module"/>
     <figcaption>Calibration module in the Sandbox lab.</figcaption>
 
