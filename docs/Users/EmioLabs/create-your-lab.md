@@ -72,7 +72,7 @@ Using the <a href="#include">`#include`</a> syntax, you can include files in you
 ```
 
 There are several predefined modules that you can include in your lab and visualize in the *Sandbox* lab. They are located in the `assets/labs/modules` directory:
-- `assets/labs/modules/calibration.md` : contains the calibration parameters for the robots used in the labs
+- `assets/labs/modules/calibration.md` : contains tools to calibrate the camera.
     <img className="centered" src={emio_labs_calibration} width="30%" alt="Screenshot of calibration module"/>
     <figcaption>Calibration module in the Sandbox lab.</figcaption>
 
