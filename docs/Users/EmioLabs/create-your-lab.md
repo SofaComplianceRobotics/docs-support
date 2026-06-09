@@ -61,7 +61,9 @@ In order to see the lab into Emio Labs, it needs to be located in the directory 
 <figcaption>The main table of contents of the Emio Labs application shows the labs content of the application.</figcaption>
 
 ### Paths in Emio Labs
-In Emio Labs, when showing images, videos or using extended syntax commands, you need to input paths to files. For those paths, you **must** start the path from the `assets` folder. Emio Labs will then replace the `assets` with the right absolute path to the file.
+In Emio Labs, when showing images, videos or using extended syntax commands, you need to input paths to files. For those paths, you **must** start the path from the `assets` folder. 
+
+Emio Labs will replace all the occurences of `assets/` with the absolute path to the assets folder, if the path start with `assets/`.
 
 For example, if you want to add an image in your lab `mylab` and a SOFA button, you should write: 
 
@@ -72,7 +74,7 @@ For example, if you want to add an image in your lab `mylab` and a SOFA button, 
 ```
 
 :::info
-For paths in the `pyargs` arguments of `python-button` and `runsofa-button`, this is not mandatory as long as you handle your paths correctly in the Python code.
+For paths in the `pyargs` arguments of `python-button` and `runsofa-button`, since this is your Python code, you can handle the paths as you wish but know that Emio Labs **will replace** paths that start with `assets/` by the absolute path to the `assets` folder.
 :::
 
 ### Add Python Packages
