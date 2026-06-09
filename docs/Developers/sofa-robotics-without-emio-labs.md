@@ -76,11 +76,11 @@ Open a terminal and run the commands for your operating system as outlined below
 
         ```bash
         set SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
-        set PATH=$PATH:$SOFA_ROOT\bin
-        set PYTHONHOME=$SOFA_ROOT\bin\python
-        set LD_LIBRARY_PATH=$SOFA_ROOT\lib:$SOFA_ROOT\bin\python\Lib
-        set PYTHONPATH=$SOFA_ROOT\bin\python\Lib\site-packages
-        set PYTHONPATH=$PYTHONPATH:$SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages
+        set PATH=%PATH%;$SOFA_ROOT\bin
+        set PYTHONHOME=%SOFA_ROOT%\bin\python
+        set LD_LIBRARY_PATH=%SOFA_ROOT%\lib;%SOFA_ROOT%\bin\python\Lib
+        set PYTHONPATH=%SOFA_ROOT%\bin\python\Lib\site-packages
+        set PYTHONPATH=%PYTHONPATH%;%SOFA_ROOT%\plugins\SofaPython3\lib\python3\site-packages
         ```
   </TabItem>
   <TabItem value="macos" label="MacOS">
