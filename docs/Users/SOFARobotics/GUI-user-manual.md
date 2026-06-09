@@ -17,6 +17,7 @@ import placeblock from './img/gui-place-block.png';
 import repeatblock from './img/gui-repeat-block.png';
 import interblocks from './img/gui-inter-blocks.png';
 import trackmenu from './img/gui-track-menu.png';
+import workbenches from './img/gui-workbenches.png';
 
 export const BLOCK_SIZE = 15
 
@@ -33,14 +34,22 @@ At Compliance Robotics, we have developed a dedicated graphical user interface (
 <img className="centered" src={lightmode} alt="GUI in light mode" width="100%"/>
 <figcaption>Play/Pause/Step buttons and driving tab selection</figcaption>
 
-### Simulation & Windows
+The software consists of three main components: a simulation **3D viewport**, where you can visualize the simulated robot, **workbenches**, and a series of **windows** that provide various functionalities.
 
-The software consists of two main components: a 3D view of the simulation and a set of windows. In the 3D view, you can observe the simulated robot.
-To change what is displayed in the 3D view, from the main bar, go to **View>Viewport**. 
+### Overview of the Workbenches
 
-The windows offer various functionalities, enabling you to program or directly control your robot.
+**Workbenches** can be considered as a set of windows and functionalities specially grouped for a certain task. There are three workbenches:
 
-#### Overview of the Windows
+1. **Scene Editor** - For building and editing the scene.
+2. **Simulation Mode** - For running the simulation.
+3. **Live Control** - For connecting to and controlling the real robot with the finalized scene.
+
+<img className="centered" src={workbenches} alt="Workbenches" width="35%"/>
+<figcaption>Workbenches</figcaption>
+
+### Overview of the Windows
+
+The **windows** offer various functionalities, enabling you to program or directly control your robot.
 
 - **Program:** Create a program for your robot  
 - **Move:** Directly control your robot using sliders for the tool center point’s (TCP) target or motor adjustments.  
@@ -51,16 +60,19 @@ The windows offer various functionalities, enabling you to program or directly c
 - **Scene Graph**: View the scene graph of the simulation.  
 - **Log:** Display the log of the simulation.  
 
-#### Overview of the Viewport
+### Overview of the Viewport
 
-- 3D view of the simulated robot.
-- **Play/Pause/Step** the simulation using the buttons at the top center of the 3D view.
+The viewport displays:
+
+- The 3D view of the simulated robot.
 - The TCP target is visualized as a frame (blue, red, and green).
-- Use the *combo box* near the *play/pause/step* buttons to choose which window controls the TCP target:
+- **Play/Pause/Step/Reload** the simulation using the buttons at the top center of the 3D view.
+- The *combo box*, near the *play/pause/step/reload* buttons, choose which window controls the TCP target:
     - Move (via sliders or a pad)
     - Input/Output (wip: via an external software)
     - Program (via way-points)
 
+To change what is displayed in the viewport, from the main bar, go to **View>Show**. 
 
 ### Controlling the Real Robot
 
