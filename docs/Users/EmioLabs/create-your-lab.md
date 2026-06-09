@@ -272,7 +272,7 @@ It exists two ways to include solutions in your lab:
 - <a href="#solution-block">the solution block</a>
 
 :::info
-The labs that come with Emio Labs will look for the solution files in the solutions directory `path/to/home/emio-labs/VERSION/assets/solutions/LAB_NAME/`. Make sure to put the solution files in this directory.
+The labs that come with Emio Labs will look for the solution files in the solutions directory `path/to/home/emio-labs/VERSION/assets/solutions/LAB_NAME/`. Make sure to put the solution files in the right directory. If you are creating your own lab and want to add solutions, you can simply create a `solutions` folder in your lab directory and add the solutions there. For example, if your lab is located in `assets/labs/my_lab`, the solutions would be in `assets/labs/my_lab/solutions`. Or you can expect them to be in `assets/solutions/my_lab` like the core labs.
 :::
 
 ##### Solution Block
