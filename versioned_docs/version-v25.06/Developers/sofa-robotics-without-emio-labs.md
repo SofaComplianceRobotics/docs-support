@@ -55,6 +55,7 @@ Open a terminal and run the commands for your operating system as outlined below
         export SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
         export PATH=$PATH:$SOFA_ROOT/bin
         export PYTHONHOME=$SOFA_ROOT/bin/python
+        export LD_LIBRARY_PATH=$SOFA_ROOT/lib:$SOFA_ROOT/bin/python/lib
         export PYTHONPATH=$SOFA_ROOT/bin/python/lib/python3.10/site-packages
         export PYTHONPATH=$PYTHONPATH:$SOFA_ROOT/plugins/SofaPython3/lib/python3/site-packages
         ```
@@ -66,6 +67,7 @@ Open a terminal and run the commands for your operating system as outlined below
         $env:SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
         $env:PATH+=";$env:SOFA_ROOT\bin"
         $env:PYTHONHOME="$env:SOFA_ROOT\bin\python"
+        $env:LD_LIBRARY_PATH="$env:SOFA_ROOT\lib;$env:SOFA_ROOT\bin\python\Lib"
         $env:PYTHONPATH="$env:SOFA_ROOT\bin\python\Lib\site-packages"
         $env:PYTHONPATH+=";$env:SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages"
         ```
@@ -76,6 +78,7 @@ Open a terminal and run the commands for your operating system as outlined below
         set SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
         set PATH=$PATH:$SOFA_ROOT\bin
         set PYTHONHOME=$SOFA_ROOT\bin\python
+        set LD_LIBRARY_PATH=$SOFA_ROOT\lib:$SOFA_ROOT\bin\python\Lib
         set PYTHONPATH=$SOFA_ROOT\bin\python\Lib\site-packages
         set PYTHONPATH=$PYTHONPATH:$SOFA_ROOT\plugins\SofaPython3\lib\python3\site-packages
         ```
@@ -84,6 +87,7 @@ Open a terminal and run the commands for your operating system as outlined below
         ```bash
         export SOFA_ROOT=PATH_TO_SOFA_ROBOTICS_DIR
         export PATH=$PATH:$SOFA_ROOT/bin
+        export LD_LIBRARY_PATH=$SOFA_ROOT/lib
         export PYTHONPATH=$PYTHONPATH:$SOFA_ROOT/plugins/SofaPython3/lib/python3/site-packages
         ```
   </TabItem>
