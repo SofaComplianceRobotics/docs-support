@@ -9,7 +9,7 @@ import emio_labs_labsconfigurator from './img/emio-labs-labsconfigurator.png';
 import emio_labs_resetlabs from './img/emio-labs-resetlabs.png';
 import emio_labs_empty from './img/emio-labs-empty.png';
 import emio_labs_exportimport from './img/emio-labs-exportimportconfig.png';
-import emio_labs_solutions from './img/emio_labs_solutions.png';
+import emio_labs_solutions from './img/emio-labs-solutions.png';
 import sofa_icon from './img/SOFAIcon.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
