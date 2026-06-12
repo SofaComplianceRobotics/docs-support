@@ -9,6 +9,7 @@ import emio_labs_labsconfigurator from './img/emio-labs-labsconfigurator.png';
 import emio_labs_resetlabs from './img/emio-labs-resetlabs.png';
 import emio_labs_empty from './img/emio-labs-empty.png';
 import emio_labs_exportimport from './img/emio-labs-exportimportconfig.png';
+import emio_labs_solutions from './img/emio-labs-solutions.png';
 import sofa_icon from './img/SOFAIcon.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -111,6 +112,7 @@ To resolve this:
 - Lab Environment: Interactive space where you'll follow learning materials and complete exercises and simulations.
 - Simulation Application (SOFA Robotics): Launch and interact with the numerical twin of Emio.
 - To reset the application go to **Edit > Reset App** in the main menu bar. This will reset the quiz, select the default parameters in the labs, etc.
+- To toggle the solutions in the labs, go to **Labs>Enable/Disable Solutions** in the main menu bar. This will show/hide the solutions in the labs.
 
 <img className="centered" src={emiolabs_overview} width="50%" alt="emio labs overview"/>
 <figcaption>The **Emio Labs** application on the Introduction page. The main dashboard is located at the top of each page.</figcaption>
@@ -135,7 +137,16 @@ To access a lab:
 2. Read the lab overview and objectives.
 3. Follow the step-by-step instructions within each lab.
 
-If you want to create your own content, you can follow this [documentation](create-your-lab.md). 
+If you want to create your own content, you can follow this [documentation](create-your-lab.md).
+
+### Solutions
+Some labs contain solutions to the exercises. You can show or hide these solutions by toggling the **Labs>Enable/Disable Solutions** in the top menu bar (see image below).
+<img className="centered" src={emio_labs_solutions} width="70%" alt="toggle solutions"/>
+<figcaption>Toggle the solutions in the labs from the top menu bar.</figcaption>
+
+:::info
+The labs that come with Emio Labs will look for the solution files in the solutions directory `path/to/home/emio-labs/VERSION/assets/solutions/LAB_NAME/`. Make sure to put the solution files in the right directory.
+:::
 
 ### Configuring the Labs
 The **Labs Configurator** lists all the labs available for Emio Labs that are in the `path/to/home/emio-labs/version/assets/labs` folder.
