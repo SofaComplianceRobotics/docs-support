@@ -38,7 +38,7 @@ The software consists of three main components: a simulation **3D viewport**, wh
 
 ### Overview of the Workbenches
 
-**Workbenches** can be considered as a set of windows and functionalities specially grouped for a certain task. There are three workbenches:
+**Workbenches** can be considered as a set of windows giving access to functionalities specially grouped for a certain task. There are three workbenches:
 
 1. **Scene Editor** - For building and editing the scene.
 2. **Simulation Mode** - For running the simulation.
